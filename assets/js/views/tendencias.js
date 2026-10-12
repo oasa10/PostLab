@@ -27,8 +27,8 @@ export function render(root, ctx) {
   const top2 = f2.por.slice().sort((a, b) => b.n - a.n)[0];
 
   root.append(
-    h('h1', null, 'Tendencias'),
-    h('p', { class: 'lead' }, 'Cuándo se dispara el prefijo, qué clase de «después» domina en cada fase y en qué campos se usa más. Las cifras cuentan los términos de PostLab, no la frecuencia real de uso de cada palabra.'),
+    h('h2', { class: 'vis-h' }, 'Tendencias'),
+    h('p', { class: 'vis-lead' }, 'Cuándo se dispara el prefijo, qué clase de «después» manda en cada época y en qué campos se usa más. Un aviso honrado: contamos los términos de PostLab, no cuántas veces se dice cada palabra por la calle.'),
     bloque('Términos por década', `La década con más términos es la de ${pico.d} (${pico.n}). Antes de 1900 hay ${plural(antes, 'término', 'términos')} desde 1700, que no aparecen en el gráfico.`, caja('dec'),
       tabla(['Década', 'Términos'], decadas.map(x => [`${x.d}s`, x.n]))),
     bloque('Del post que rompe al post que lamenta', `En la eclosión (1966–1994) el valor más frecuente es ${top2.c}, ${VALORES[top2.c].nombre.toLowerCase()} (${pct(top2.n, f2.tot)} % de las etiquetas). Desde 1995 el agotamiento (P4) pasa del ${share(f2, 'P4')} % al ${share(f3, 'P4')} %, y la ruptura (P2) del ${share(f2, 'P2')} % al ${share(f3, 'P2')} %.`, caja('fase'),
@@ -38,7 +38,7 @@ export function render(root, ctx) {
       bloque('Por áreas', `${areas.length} áreas del saber. La que más términos reúne es ${areas[0][0].toLowerCase()} (${areas[0][1]}).`, caja('area'), tabla(['Área', 'Términos'], areas)),
       bloque('Por familias', 'Agrupados por aquello a lo que se aplica el prefijo: la base.', caja('fam'), tabla(['Familia', 'Términos'], fams))),
     h('section', null, h('h2', null, 'Grados: el después del después'),
-      h('p', { class: 'muted' }, 'Casi todos los términos son de primer grado. Apilar el prefijo es raro, y tres veces ya es parodia.'),
+      h('p', { class: 'muted' }, 'Casi todos los términos son de primer grado. Apilar el prefijo es raro, y a la tercera ya es parodia (o un grito de auxilio).'),
       h('div', { class: 'grid g3' },
         statG('Primer grado', 'post', grados[0]), statG('Segundo grado', 'post-post', grados[1]), statG('Tercer grado', 'post-post-post', grados[2]))),
   );

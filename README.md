@@ -8,12 +8,21 @@ Web: https://oasa10.github.io/PostLab/
 
 ## Qué se puede hacer
 
-- **Explorar**: buscar y filtrar por área, familia, valor del prefijo, grado, década y estado de verificación.
-- **Cronología**: de 1700 a hoy, con las tres fases de lo post y los hitos.
-- **Mapa**: la red de conexiones entre términos, agrupados por familias.
-- **Tendencias**: términos por década, valores del prefijo por fase, áreas, familias y grados.
-- **Aprender**: una ruta de diez paradas, los seis valores del prefijo, las cinco P, un detector de saltos, la ley del relevo y un glosario.
-- **Jugar**: ¿Qué post es?, Ordena la historia y Seis maneras de decir «después».
+La web tiene dos niveles.
+
+**Enterarte** (nivel 1, para consultar):
+
+- **Explorar**: buscar y filtrar por área, familia, valor del prefijo, grado, década y estado de verificación. Cada ficha explica por qué y cómo surgió el término, cinco ejemplos y qué tiene que ver con hoy.
+- **Viajar**: de 1700 a hoy, con las fases de lo post, los hitos y un viaje guiado en seis paradas.
+- **Visualizar**: el mapa post-relacional, las tendencias y el pulso de lo post (un cardiograma de términos nuevos por año).
+
+**Implicarte** (nivel 2, para hacer):
+
+- **Aprender**: una ruta de diez paradas con preguntas, los seis valores del prefijo, las cinco P, un detector de saltos, la ley del relevo y un glosario.
+- **Jugar**: ¿Qué post es?, Ordena la historia, Seis maneras de decir «después» y ¿Antes o después?
+- **Pensar y aplicar**: seis actividades para mirar el presente con lo aprendido: el termómetro (sentir, actuar, pensar), el laboratorio de las cinco P, cazadores de posts, ¿y tú qué harías?, tu relato y bautiza el siguiente post.
+
+Todo lo que se hace en el nivel 2 queda en **Tu cuaderno**, que ordena el recorrido en cuatro ejes (ser, saber, hacer, creer y crear) con insignias. El cuaderno se guarda solo en el navegador de quien lo usa (`localStorage`); no sale de su ordenador.
 
 ## Los datos
 
@@ -24,6 +33,7 @@ La fuente de verdad son tres tablas CSV en `data/csv/`:
 | `terminos.csv` | Un término por fila. Las listas van separadas por ` ; ` y cada fuente es `título \| url`. |
 | `relaciones.csv` | Las conexiones entre términos (origen, destino, tipo). |
 | `hitos.csv` | Los hitos. Los que no tienen fuente no se muestran en la web. |
+| `contenido.csv` | Los apartados de cada ficha: contexto, cinco ejemplos, implicaciones actuales, un dato curioso y una pregunta. |
 
 Estados de verificación:
 
@@ -36,6 +46,7 @@ Para regenerar los JSON que lee la web después de editar un CSV:
 ```sh
 python3 tools/build_data.py      # necesita numpy para calcular las posiciones del mapa
 python3 tools/aprender_src.py    # textos de la sección Aprender
+python3 tools/pensar_src.py      # textos de Pensar y aplicar
 ```
 
 ## Ver la web en tu ordenador

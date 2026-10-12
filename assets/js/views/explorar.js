@@ -1,4 +1,4 @@
-import { h, VALORES, CODIGOS, FAMILIAS, ESTADOS, termCard, plural, norm } from '../lib.js';
+import { h, VALORES, CODIGOS, FAMILIAS, ESTADOS, termCard, plural, norm, cabeza } from '../lib.js';
 
 const FILTROS = ['area', 'familia', 'valor', 'grado', 'decada', 'estado'];
 
@@ -40,8 +40,7 @@ export function render(root, ctx, parts, q) {
   const mas = h('div', { class: 'btns', style: { justifyContent: 'center', marginTop: '18px' } });
 
   root.append(
-    h('h1', null, 'Explorar'),
-    h('p', { class: 'lead' }, `${terms.length} términos con el prefijo pos-. Busca por nombre, persona u obra, o filtra por área, familia, valor del prefijo, grado, década y estado de verificación.`),
+    cabeza(1, 'Explorar', `Los ${terms.length} términos de PostLab, de la posguerra a la posverdad. Busca por nombre, persona u obra, o filtra por lo que te interese. Cada uno tiene su ficha: cómo surgió, para qué sirve y qué tiene que ver con hoy.`),
     h('div', { class: 'search-big' }, input),
     filtros,
     h('div', { class: 'resbar' }, cuenta, h('div', { class: 'btns' }, orden, limpiar)),
@@ -88,7 +87,7 @@ export function render(root, ctx, parts, q) {
     cuenta.textContent = res.length === terms.length ? `${plural(res.length, 'término', 'términos')}` : `${plural(res.length, 'resultado', 'resultados')} de ${terms.length}`;
     lista.replaceChildren(...res.slice(0, visibles).map(termCard));
     if (!res.length) lista.replaceChildren(h('div', { class: 'empty', style: { gridColumn: '1 / -1' } },
-      h('p', null, 'No hay ningún término con esa búsqueda y esos filtros.'), h('p', null, limpiarCopia())));
+      h('p', null, 'Ningún post por aquí con esa búsqueda y esos filtros. Quizá todavía no lo ha inventado nadie: ', h('a', { href: '#/pensar/bautiza' }, 'puedes bautizarlo tú'), '.'), h('p', null, limpiarCopia())));
     mas.replaceChildren(...(res.length > visibles ? [h('button', { class: 'btn', type: 'button', onclick: () => { visibles += PAG; pintar(false); } },
       `Ver ${Math.min(PAG, res.length - visibles)} más`)] : []));
     const p = new URLSearchParams();

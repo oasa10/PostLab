@@ -1,0 +1,599 @@
+{
+ "ciclo": [
+  {
+   "id": "observar",
+   "n": "Observar",
+   "t": "Mira tu mundo con las gafas de lo post: titulares, conversaciones, decisiones, edificios, canciones. ¿Dónde aparece un «después»?"
+  },
+  {
+   "id": "pensar",
+   "n": "Pensar",
+   "t": "Antes de reaccionar, separa lo que sientes de lo que sabes. Pregunta con las cinco P: ¿después de qué?, ¿qué pierde autoridad?, ¿qué no se sigue?"
+  },
+  {
+   "id": "aplicar",
+   "n": "Aplicar",
+   "t": "Decide qué hacer con lo que has visto: una respuesta mejor en una conversación, una pregunta más precisa, un relato propio."
+  },
+  {
+   "id": "revisar",
+   "n": "Revisar",
+   "t": "Vuelve a lo que hiciste pasado un tiempo. ¿Lo harías igual? Lo que revisas se convierte en experiencia, y la experiencia, en mejor mirada."
+  }
+ ],
+ "actividades": [
+  {
+   "id": "termometro",
+   "n": "El termómetro",
+   "d": "Elige un término y tómate la temperatura: qué sientes, qué te sale hacer y qué piensas cuando te paras a pensar.",
+   "ejes": [
+    "ser",
+    "saber"
+   ],
+   "min": 5
+  },
+  {
+   "id": "cincop",
+   "n": "Laboratorio de las cinco P",
+   "d": "Desmonta un término, o una frase tuya, con las cinco preguntas. Luego compara tu análisis con el modelo.",
+   "ejes": [
+    "saber",
+    "hacer"
+   ],
+   "min": 8
+  },
+  {
+   "id": "caza",
+   "n": "Caza de posts",
+   "d": "Sal ahí fuera y caza tres posts en estado salvaje: en un titular, en una conversación, en un escaparate.",
+   "ejes": [
+    "hacer",
+    "saber"
+   ],
+   "min": 10
+  },
+  {
+   "id": "situaciones",
+   "n": "¿Y tú qué harías?",
+   "d": "Seis situaciones de la vida real en las que alguien da un salto. Elige tu respuesta; si te atreves, con el reloj en marcha.",
+   "ejes": [
+    "hacer",
+    "ser"
+   ],
+   "min": 8
+  },
+  {
+   "id": "relato",
+   "n": "Tu relato",
+   "d": "Escribe lo que crees, cámbiale la pregunta, añade lo que faltaba y cuenta tu época con tus palabras. Al final, compara tu antes y tu después.",
+   "ejes": [
+    "crear",
+    "ser"
+   ],
+   "min": 15
+  },
+  {
+   "id": "bautiza",
+   "n": "Bautiza el siguiente post",
+   "d": "¿Qué viene después de la posverdad? Inventa el próximo término, decide qué clase de «después» es y llévate su tarjeta.",
+   "ejes": [
+    "crear",
+    "hacer"
+   ],
+   "min": 5
+  }
+ ],
+ "termometro": {
+  "emociones": [
+   [
+    "curiosidad",
+    "Curiosidad"
+   ],
+   [
+    "entusiasmo",
+    "Entusiasmo"
+   ],
+   [
+    "inquietud",
+    "Inquietud"
+   ],
+   [
+    "rechazo",
+    "Rechazo"
+   ],
+   [
+    "confusion",
+    "Confusión"
+   ],
+   [
+    "indiferencia",
+    "Indiferencia"
+   ],
+   [
+    "ironia",
+    "Ganas de reír"
+   ],
+   [
+    "esperanza",
+    "Esperanza"
+   ]
+  ],
+  "acciones": [
+   [
+    "compartir",
+    "Compartirlo tal cual"
+   ],
+   [
+    "discutir",
+    "Discutirlo con alguien"
+   ],
+   [
+    "ignorar",
+    "Pasar de largo"
+   ],
+   [
+    "defender",
+    "Defenderlo"
+   ],
+   [
+    "atacar",
+    "Rebatirlo"
+   ],
+   [
+    "bromear",
+    "Hacer una broma"
+   ],
+   [
+    "buscar",
+    "Buscar más información"
+   ]
+  ],
+  "pensar": [
+   {
+    "k": "se",
+    "l": "¿Qué sé de verdad sobre esto?",
+    "ayuda": "Lo que podrías comprobar o explicar con una fuente. Si no sabes nada, también vale: es un dato."
+   },
+   {
+    "k": "supongo",
+    "l": "¿Qué estoy suponiendo sin comprobarlo?",
+    "ayuda": "Lo que das por hecho porque encaja con lo que ya pensabas."
+   },
+   {
+    "k": "haria",
+    "l": "Si pensara antes de actuar, ¿qué haría?",
+    "ayuda": "Una acción concreta y pequeña, que puedas hacer de verdad."
+   }
+  ]
+ },
+ "cincop": {
+  "frases": [
+   "Vivimos en una sociedad posindustrial.",
+   "La pandemia nos dejó en un mundo pospandémico.",
+   "Los jóvenes de hoy son posideológicos.",
+   "Esta exposición es puro arte posdigital."
+  ]
+ },
+ "caza": {
+  "lugares": [
+   [
+    "titular",
+    "Un titular"
+   ],
+   [
+    "redes",
+    "Una red social"
+   ],
+   [
+    "conversacion",
+    "Una conversación"
+   ],
+   [
+    "trabajo",
+    "El trabajo o la clase"
+   ],
+   [
+    "cultura",
+    "Un libro, una canción o una película"
+   ],
+   [
+    "calle",
+    "La calle: un edificio, un anuncio, un escaparate"
+   ],
+   [
+    "otro",
+    "Otro sitio"
+   ]
+  ],
+  "misiones": [
+   {
+    "n": "Primera presa",
+    "d": "Caza un post en cualquier sitio y anótalo."
+   },
+   {
+    "n": "Cambio de terreno",
+    "d": "Caza otro en un lugar distinto del primero."
+   },
+   {
+    "n": "Ojo fino",
+    "d": "Caza uno que dé un salto, o que lo esté pidiendo a gritos."
+   }
+  ],
+  "falsos": "No cuentan los falsos amigos: postureo, postal, póster, postura ni postre. Aunque el postre, todo hay que decirlo, siempre llega después."
+ },
+ "situaciones": [
+  {
+   "id": "cena",
+   "titulo": "La cena familiar",
+   "termino": "posverdad",
+   "salto": "S3",
+   "dialogo": [
+    [
+     "yano",
+     "Total, ya vivimos en la posverdad. Cada uno tiene su verdad y punto."
+    ],
+    [
+     "todavia",
+     "Pues yo creo que algún día volveremos a fiarnos de los datos. Algún día."
+    ]
+   ],
+   "pregunta": "Tu tío remata con un «¿a que sí?». ¿Qué respondes?",
+   "opciones": [
+    {
+     "t": "«Tienes razón, ya no se puede saber nada.»",
+     "ok": false,
+     "fb": "Es el salto S3: que haya muchas perspectivas no las iguala. «Posverdad» dice que los hechos pesan menos en el debate, no que hayan dejado de existir."
+    },
+    {
+     "t": "«Eso es una tontería.»",
+     "ok": false,
+     "fb": "Te ha salido en automático: sientes rechazo y actúas antes de pensar. Puede que tengas razón, pero la conversación se acaba ahí y nadie aprende nada."
+    },
+    {
+     "t": "«Que los hechos pesen menos no significa que no existan. ¿Miramos de dónde sale el dato?»",
+     "ok": true,
+     "fb": "Distingues el agotamiento (P4, los hechos pierden autoridad) del fin (P5, ya no hay hechos). Y conviertes la discusión en una comprobación compartida."
+    },
+    {
+     "t": "Cambias de tema hacia el postre.",
+     "ok": false,
+     "fb": "A veces es lo más sensato, sobre todo en una cena. Pero hoy renuncias a pensar juntos. (El postre, eso sí, siempre llega después.)"
+    }
+   ]
+  },
+  {
+   "id": "titular",
+   "titulo": "El titular",
+   "termino": "poscolonialismo",
+   "salto": "S1",
+   "dialogo": [
+    [
+     "yano",
+     "Lo dice el titular: «Bienvenidos al mundo poscolonial». O sea, que el colonialismo se acabó."
+    ],
+    [
+     "todavia",
+     "Hombre, se acabó lo que se acabó. Lo demás todavía no."
+    ]
+   ],
+   "pregunta": "Un compañero lo comparte en el grupo del trabajo. ¿Qué escribes?",
+   "opciones": [
+    {
+     "t": "Un pulgar arriba. Si lo dice un periódico, será verdad.",
+     "ok": false,
+     "fb": "Es el salto S1, del prefijo a la tesis. Y además confías en la autoridad del medio sin mirar qué dice exactamente."
+    },
+    {
+     "t": "«En la teoría poscolonial, el pos no significa que terminara: estudia lo que la colonia dejó. ¿Qué querrá decir el titular?»",
+     "ok": true,
+     "fb": "Aplicas la primera P (partida) y la tercera (pérdida): qué deja atrás el prefijo y qué no. Y lo haces preguntando, sin dar lecciones."
+    },
+    {
+     "t": "«El colonialismo sigue igual que hace dos siglos.»",
+     "ok": false,
+     "fb": "Es el salto contrario: niegas cualquier cambio. Hay independencias, fronteras y leyes nuevas; lo discutible es qué herencias siguen pesando."
+    }
+   ]
+  },
+  {
+   "id": "reunion",
+   "titulo": "La reunión de trabajo",
+   "termino": "sociedad-postindustrial",
+   "salto": "S1",
+   "dialogo": [
+    [
+     "yano",
+     "Somos una economía posindustrial: las fábricas ya no importan. Lo que importa es la marca."
+    ],
+    [
+     "todavia",
+     "Y el día de mañana, ni la marca: todo será inteligencia artificial."
+    ]
+   ],
+   "pregunta": "Tu jefa os pide opinión antes de cerrar el proveedor. ¿Qué aportas?",
+   "opciones": [
+    {
+     "t": "«Exacto, cerremos con el más barato y que fabrique quien sea.»",
+     "ok": false,
+     "fb": "Das por buena una tesis que el prefijo no autoriza. Que el empleo industrial pese menos en un país no significa que fabricar haya dejado de importar."
+    },
+    {
+     "t": "«Posindustrial describe dónde trabaja la mayoría, no que la industria desaparezca. ¿Dónde y cómo se fabrica lo nuestro, y qué pasa si falla?»",
+     "ok": true,
+     "fb": "Lees el prefijo como periodo (P1), no como final (P5), y lo conviertes en una pregunta práctica sobre la cadena de suministro."
+    },
+    {
+     "t": "No dices nada: no es tu departamento.",
+     "ok": false,
+     "fb": "Es una reacción frecuente cuando algo suena técnico. Pero tenías una pregunta útil y te la has quedado."
+    }
+   ]
+  },
+  {
+   "id": "clase",
+   "titulo": "El comentario de texto",
+   "termino": "posmodernidad-posmodernismo-filosofico",
+   "salto": "S3",
+   "dialogo": [
+    [
+     "yano",
+     "Profe, como estamos en la posmodernidad, cualquier interpretación del poema vale lo mismo, ¿no?"
+    ],
+    [
+     "todavia",
+     "Entonces el examen lo apruebo seguro."
+    ]
+   ],
+   "pregunta": "Eres quien da la clase. ¿Qué contestas?",
+   "opciones": [
+    {
+     "t": "«Claro, cada lectura es igual de válida.»",
+     "ok": false,
+     "fb": "Es el salto S3, de la mediación al «todo vale». Hay muchas lecturas posibles, pero unas se apoyan en el texto mejor que otras."
+    },
+    {
+     "t": "«Hay muchas lecturas, pero no todas valen igual: defiende la tuya con versos del poema.»",
+     "ok": true,
+     "fb": "Aceptas la pluralidad (lo que la posmodernidad sí aportó) sin caer en que todo vale. Y pasas la responsabilidad a las razones."
+    },
+    {
+     "t": "«Eso de la posmodernidad son tonterías de filósofos franceses.»",
+     "ok": false,
+     "fb": "Es un salto de origen (S2): descartas una idea por quién la dijo. Y te pierdes la parte que sí tiene razón."
+    }
+   ]
+  },
+  {
+   "id": "algoritmo",
+   "titulo": "El algoritmo que acierta",
+   "termino": "posthumanismo",
+   "salto": "S6",
+   "dialogo": [
+    [
+     "yano",
+     "El sistema acierta el 95 % de las veces. Ya no hace falta que lo revise una persona."
+    ],
+    [
+     "todavia",
+     "Y pronto ni harán falta personas para programarlo."
+    ]
+   ],
+   "pregunta": "En tu centro van a usar un programa para decidir a quién se atiende primero. ¿Qué pides?",
+   "opciones": [
+    {
+     "t": "«Si funciona, adelante: los números no mienten.»",
+     "ok": false,
+     "fb": "Es el salto S6, de la eficacia a la legitimidad. Que algo prediga bien no dice si decide con justicia, ni a quién perjudica el 5 % restante."
+    },
+    {
+     "t": "«Que funcione bien es necesario, no suficiente. ¿Quién revisa los errores y cómo se reclama?»",
+     "ok": true,
+     "fb": "Separas eficacia y justicia, y pides algo concreto: supervisión humana y vía de recurso. Es pensar antes de actuar con algo muy real."
+    },
+    {
+     "t": "«Nada de máquinas decidiendo sobre personas, nunca.»",
+     "ok": false,
+     "fb": "Es una reacción comprensible, pero automática. La pregunta útil no es «máquina sí o no», sino con qué garantías."
+    }
+   ]
+  },
+  {
+   "id": "rio",
+   "titulo": "El río de todos",
+   "termino": "poscrecimiento",
+   "salto": "S8",
+   "dialogo": [
+    [
+     "yano",
+     "Al río lo hemos contaminado entre todos, así que la limpieza la pagamos todos a partes iguales."
+    ],
+    [
+     "todavia",
+     "O mejor: que no lo pague nadie y que se limpie solo con el tiempo."
+    ]
+   ],
+   "pregunta": "Estás en la asamblea del pueblo y te toca hablar. ¿Qué propones?",
+   "opciones": [
+    {
+     "t": "«Me parece justo: a partes iguales.»",
+     "ok": false,
+     "fb": "Es el salto S8, de la causa a la culpa. Que todos seamos parte del problema no reparte por igual la obligación de arreglarlo."
+    },
+    {
+     "t": "«Todos contribuimos, pero no igual: que pague más quien más contaminó y quien más puede.»",
+     "ok": true,
+     "fb": "Repartes la responsabilidad según la contribución y la capacidad. Es la conclusión que sí se sigue."
+    },
+    {
+     "t": "«Que lo pague la fábrica y punto, los vecinos no tenemos nada que ver.»",
+     "ok": false,
+     "fb": "Es el salto contrario: si todos contribuimos, nadie queda fuera del todo. La proporción importa, en las dos direcciones."
+    }
+   ]
+  }
+ ],
+ "creencias": [
+  {
+   "id": "verdad",
+   "texto": "Hoy cada persona tiene su propia verdad.",
+   "termino": "posverdad"
+  },
+  {
+   "id": "relatos",
+   "texto": "Las grandes ideas que daban sentido a la historia, como el progreso, ya no convencen.",
+   "termino": "posmodernidad-posmodernismo-filosofico"
+  },
+  {
+   "id": "humano",
+   "texto": "La tecnología va a cambiar lo que significa ser humano.",
+   "termino": "posthumanismo"
+  },
+  {
+   "id": "colonia",
+   "texto": "El colonialismo es cosa del pasado.",
+   "termino": "poscolonialismo"
+  },
+  {
+   "id": "politica",
+   "texto": "La política ya no sirve para cambiar las cosas importantes.",
+   "termino": "pospolitica"
+  },
+  {
+   "id": "crecer",
+   "texto": "Para vivir mejor, la economía tiene que seguir creciendo.",
+   "termino": "poscrecimiento"
+  },
+  {
+   "id": "trabajo",
+   "texto": "El trabajo seguirá siendo el centro de nuestras vidas.",
+   "termino": "postrabajo"
+  },
+  {
+   "id": "futuro",
+   "texto": "Lo mejor de nuestra época está todavía por llegar.",
+   "termino": "post-posmodernismo"
+  }
+ ],
+ "relato": {
+  "intro": [
+   [
+    "yano",
+    "Ya no hay grandes relatos. Se acabaron."
+   ],
+   [
+    "todavia",
+    "Todavía no hemos escrito el nuestro."
+   ],
+   [
+    "tu",
+    "Pues vamos a ello."
+   ]
+  ],
+  "pasos": [
+   {
+    "k": "reencuadre",
+    "n": "Reencuadrar",
+    "q": "Elige la afirmación de la que estabas más seguro y cámbiale la pregunta. En lugar de «¿es verdad?», prueba con «¿para quién?, ¿desde cuándo?, ¿qué pierde autoridad?».",
+    "ej": "Ejemplo: en vez de «¿tiene cada uno su verdad?», «¿por qué hoy me fío menos de los datos que hace diez años?»."
+   },
+   {
+    "k": "contexto",
+    "n": "Recontextualizar",
+    "q": "Abre la ficha del término relacionado y apunta un dato o un contexto que no tenías en cuenta. ¿Qué faltaba en la foto?",
+    "ej": "Ejemplo: «No sabía que la palabra se usó por primera vez en 1992, mucho antes de las redes sociales»."
+   },
+   {
+    "k": "sentido",
+    "n": "Resignificar",
+    "q": "Con esa pieza nueva, ¿qué significa ahora para ti? ¿Qué harás distinto la próxima vez que te cruces con esa idea?",
+    "ej": "Ejemplo: «Antes me daba igual; ahora, antes de compartir algo, miraré quién lo dice y de dónde sale»."
+   }
+  ],
+  "campos": [
+   {
+    "k": "protagonista",
+    "l": "Protagonista",
+    "q": "¿Quién eres tú en esta época?",
+    "ej": "Alguien que llegó tarde a la posmodernidad y temprano a la inteligencia artificial."
+   },
+   {
+    "k": "guion",
+    "l": "Guion",
+    "q": "¿Qué está pasando a tu alrededor, contado con tus palabras?",
+    "ej": "Muchos «después» a la vez: de la verdad, del trabajo de siempre, del crecimiento sin límite."
+   },
+   {
+    "k": "objetivo",
+    "l": "Objetivo",
+    "q": "¿Hacia dónde quieres ir?",
+    "ej": "Entender antes de opinar, y opinar sin miedo cuando haya entendido."
+   }
+  ]
+ },
+ "bautiza": {
+  "bases": [
+   {
+    "base": "verdad",
+    "desde": "posverdad"
+   },
+   {
+    "base": "democracia",
+    "desde": "posdemocracia"
+   },
+   {
+    "base": "humanismo",
+    "desde": "posthumanismo"
+   },
+   {
+    "base": "modernidad",
+    "desde": "posmodernidad-posmodernismo-filosofico"
+   },
+   {
+    "base": "crecimiento",
+    "desde": "poscrecimiento"
+   },
+   {
+    "base": "trabajo",
+    "desde": "postrabajo"
+   },
+   {
+    "base": "capitalismo",
+    "desde": "poscapitalismo"
+   },
+   {
+    "base": "historia",
+    "desde": "posthistoria"
+   }
+  ],
+  "estrategias": [
+   {
+    "k": "apilar",
+    "n": "Apilar el prefijo",
+    "d": "Post-post: lo que viene después del después. Funciona, pero ya avisamos: a la tercera es parodia.",
+    "forma": "post-pos{b}"
+   },
+   {
+    "k": "relevo",
+    "n": "Pasar el relevo",
+    "d": "Cambiar de prefijo, como hicieron metamodernismo o hipermodernidad: lo habitual cuando un post se hace mayor.",
+    "forma": "{p}{b}"
+   },
+   {
+    "k": "nuevo",
+    "n": "Nombre nuevo",
+    "d": "Ni post ni prefijo: un nombre que diga lo que llega y no lo que se va. Lo más difícil y lo más valiente.",
+    "forma": "{libre}"
+   }
+  ],
+  "prefijos": [
+   "meta",
+   "hiper",
+   "alter",
+   "trans",
+   "neo",
+   "inter",
+   "re"
+  ],
+  "consejo": "Si tu término necesita tres guiones para sostenerse, quizá sea una parodia. Si no, enhorabuena: acabas de hacer lo que hicieron Lyotard, Bell o Keyes, pero sin editorial."
+ }
+}

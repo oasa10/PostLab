@@ -2,7 +2,7 @@ import cytoscape from '../../vendor/cytoscape-3.34.3.esm.min.js';
 import { h, anio, chipValor, famTag, famColor, cssVar, FAM_ANILLO, corta, plural } from '../lib.js';
 
 export function render(root, ctx, parts, q) {
-  document.title = 'Mapa · PostLab';
+  document.title = 'Mapa post-relacional · PostLab';
   const { terms, rels, byId, vecinos } = ctx;
   const familias = FAM_ANILLO.filter(f => terms.some(t => t.familia === f));
   const grado = id => vecinos.get(id)?.size || 0;
@@ -27,8 +27,8 @@ export function render(root, ctx, parts, q) {
   const panel = h('div', { class: 'card' });
 
   root.append(
-    h('h1', null, 'Mapa'),
-    h('p', { class: 'lead' }, `Cada punto es un término y cada línea, una conexión (${rels.length} en total). Los términos se agrupan por familia, según aquello a lo que se aplica el prefijo. Las líneas oscuras son puentes entre familias: los que más explican.`),
+    h('h2', { class: 'vis-h' }, 'Mapa post-relacional'),
+    h('p', { class: 'vis-lead' }, `Cada punto es un término y cada línea, una conexión (${rels.length} en total). Se agrupan por familias, como en una boda: cada cual con los suyos. Las líneas oscuras son los puentes entre familias, y suelen ser lo más interesante de la fiesta.`),
     h('div', { class: 'map-tools' }, buscar, bPuentes, bReset),
     leyenda,
     h('div', { class: 'map-wrap' }, cyEl, h('div', { class: 'map-panel' }, panel)),
@@ -37,7 +37,7 @@ export function render(root, ctx, parts, q) {
   function panelInicio() {
     panel.replaceChildren(
       h('h2', { style: { marginTop: 0, fontSize: '1.1rem' } }, 'Cómo leer el mapa'),
-      h('p', { class: 'small' }, 'Pulsa un punto para ver el término y sus vecinos. Pulsa una familia en la leyenda para destacarla. Arrastra y pellizca para moverte.'),
+      h('p', { class: 'small' }, 'Pulsa un punto para ver el término y sus vecinos. Pulsa una familia en la leyenda para destacarla. Arrastra y pellizca para moverte: el mapa no muerde.'),
       h('h3', { style: { fontSize: '1rem' } }, 'Puentes más transitados'),
       topPares.length ? h('div', { class: 'table-wrap' }, h('table', null,
         h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'Familias'), h('th', { scope: 'col', class: 'num' }, 'Conexiones'))),
@@ -126,12 +126,12 @@ export function render(root, ctx, parts, q) {
     cy.animate({ center: { eles: n }, zoom: Math.max(cy.zoom(), 1.1) }, { duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 350 });
     buscar.value = id;
     panelTermino(t);
-    history.replaceState(null, '', `#/mapa?t=${encodeURIComponent(id)}`);
+    history.replaceState(null, '', `#/visualizar/mapa?t=${encodeURIComponent(id)}`);
   }
   function limpiar() {
     cy.elements().removeClass('foco vecino tenue');
     aplicarFiltros(); buscar.value = ''; panelInicio();
-    history.replaceState(null, '', '#/mapa');
+    history.replaceState(null, '', '#/visualizar/mapa');
   }
 
   function pintarLeyenda() {

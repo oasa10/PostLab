@@ -1,4 +1,15 @@
-import { h, VALORES, CODIGOS, FASES, anio, tip, tipTerm, valColor, marcaEstado, plural } from '../lib.js';
+import { h, VALORES, CODIGOS, FASES, anio, tip, tipTerm, valColor, marcaEstado, plural, cabeza, inline } from '../lib.js';
+import * as cuaderno from '../cuaderno.js';
+
+// Viaje guiado: seis paradas con lo que pasaba en cada una
+const ETAPAS = [
+  { n: 'Precursores', a: 1700, b: 1899, d: [1695, 1905], t: 'Durante dos siglos el prefijo aparece de tarde en tarde y casi siempre para poner fecha: lo que vino después de un filósofo, de un imperio o de un estilo.' },
+  { n: 'Primeros avisos', a: 1900, b: 1965, d: [1898, 1968], t: 'Dos guerras mundiales y las vanguardias. El «pos» empieza a nombrar épocas enteras, como la posguerra, y corrientes que se alejan de sus maestros.' },
+  { n: 'Eclosión', a: 1966, b: 1979, d: [1963, 1982], t: 'La teoría francesa, la crisis del petróleo y el final del optimismo de posguerra ponen el prefijo de moda. En 1979 Lyotard publica *La condición posmoderna*.' },
+  { n: 'Taquicardia', a: 1980, b: 1994, d: [1978, 1996], t: 'La caída del Muro, el fin de la Guerra Fría y la globalización. Lo post sale de la universidad y llega a la arquitectura, la teología y la política internacional.' },
+  { n: 'Diversificación', a: 1995, b: 2009, d: [1993, 2011], t: 'Internet, la globalización y el 11-S. El prefijo se multiplica, se apila (post-posmodernismo) y empieza a reírse de sí mismo.' },
+  { n: 'Ahora', a: 2010, b: 2026, d: [2007, 2028], t: 'La crisis de 2008, las redes sociales, la emergencia climática y la inteligencia artificial. Lo post se vuelve político y cotidiano. Y, a veces, pura parodia.' },
+];
 
 const VISTAS = [
   { k: 'todo', l: 'Todo', d: [1695, 2030] },
@@ -8,7 +19,7 @@ const VISTAS = [
 ];
 
 export function render(root, ctx, parts, q) {
-  document.title = 'Cronología · PostLab';
+  document.title = 'Viajar · PostLab';
   const d3 = window.d3;
   const foco = q.get('t') ? ctx.byId.get(q.get('t')) : null;
   const datos = ctx.cronologico.filter(t => t.anio >= 1700);
@@ -19,10 +30,36 @@ export function render(root, ctx, parts, q) {
   const botones = VISTAS.map(v => h('button', { class: 'btn small', type: 'button', 'aria-pressed': 'false', onclick: () => irA(v.d, v.k) }, v.l));
   const verLista = h('button', { class: 'btn small', type: 'button', 'aria-pressed': 'false', onclick: () => alternarLista() }, 'Ver como lista');
   const caja = h('div', { class: 'viz' });
+  // Viaje guiado
+  const vEtapa = h('div', { class: 'etapa', 'aria-hidden': 'true' }, '◷');
+  const vTexto = h('div', null, h('b', null, '¿Te subes al viaje guiado?'), h('div', { class: 'small' }, 'Seis paradas, de 1700 a hoy, con lo que estaba pasando en cada una. Tú decides cuándo seguir.'));
+  const vBtns = h('div', { class: 'btns' });
+  const viaje = h('div', { class: 'viaje', 'aria-live': 'polite' }, vEtapa, vTexto, vBtns);
+  const parada = i => {
+    const e = ETAPAS[i];
+    const ts = datos.filter(t => t.anio >= e.a && t.anio <= e.b).sort((p, q2) => (ctx.vecinos.get(q2.id)?.size || 0) - (ctx.vecinos.get(p.id)?.size || 0));
+    vEtapa.textContent = `${e.a}–${i === ETAPAS.length - 1 ? 'hoy' : e.b}`;
+    vTexto.replaceChildren(h('b', null, `Parada ${i + 1} de ${ETAPAS.length} · ${e.n}`), h('div', null, inline(e.t)),
+      h('div', { class: 'small', style: { marginTop: '4px' } }, `Aquí nacen ${plural(ts.length, 'término', 'términos')}. Los más conectados: `,
+        ts.slice(0, 3).map((t, k) => [k ? (k === 2 ? ' y ' : ', ') : '', h('a', { href: `#/termino/${encodeURIComponent(t.id)}` }, t.lema)]), '.'));
+    vBtns.replaceChildren(
+      i > 0 ? h('button', { class: 'btn small', type: 'button', onclick: () => parada(i - 1) }, '← Anterior') : null,
+      i < ETAPAS.length - 1 ? h('button', { class: 'btn small primary', type: 'button', onclick: () => parada(i + 1) }, 'Siguiente →')
+        : h('button', { class: 'btn small primary', type: 'button', onclick: fin }, 'Bajar del tren'));
+    aplicar(e.d);
+    if (i === ETAPAS.length - 1) cuaderno.vista('viaje');
+  };
+  const fin = () => {
+    vEtapa.textContent = '✓';
+    vTexto.replaceChildren(h('b', null, 'Has llegado al presente.'), h('div', { class: 'small' }, 'Trescientos años en seis paradas. Ahora te toca a ti: ¿qué «pos» vendrá después?'));
+    vBtns.replaceChildren(h('button', { class: 'btn small', type: 'button', onclick: () => parada(0) }, 'Repetir'), h('a', { class: 'btn small primary', href: '#/pensar/bautiza' }, 'Bautiza el siguiente post'));
+    irA(VISTAS[0].d, 'todo');
+  };
+  vBtns.append(h('button', { class: 'btn small primary', type: 'button', onclick: () => parada(0) }, 'Empezar el viaje'));
   const lista = h('div', { hidden: true });
   root.append(
-    h('h1', null, 'Cronología'),
-    h('p', { class: 'lead' }, `${plural(datos.length, 'término', 'términos')} de 1700 a hoy, cada uno en el año de la obra o el hito que lo fija. Cada fila es un valor del prefijo. Arrastra para moverte, usa la rueda o los dedos para acercarte, o elige una fase.`),
+    cabeza(1, 'Viajar', `Una máquina del tiempo con ${plural(datos.length, 'parada', 'paradas')}, de 1700 a hoy: cada término está en el año de la obra o el hito que lo fija, y cada fila es un tipo de «después». Arrastra para moverte, acércate con la rueda o los dedos, o súbete al viaje guiado.`),
+    viaje,
     h('div', { class: 'tl-tools' }, botones, h('span', { style: { flex: 1 } }), verLista),
     h('div', { class: 'legend', 'aria-hidden': 'true' }, CODIGOS.map(c => h('span', null, h('i', { style: { '--c': `var(--v-${c})` } }), `${c} ${VALORES[c].nombre}`)),
       h('span', null, h('i', { style: { '--c': 'var(--ink)', borderRadius: '1px', transform: 'rotate(45deg)', width: '8px', height: '8px' } }), 'Hito')),
@@ -30,8 +67,8 @@ export function render(root, ctx, parts, q) {
     antiguos.length || sinFecha.length ? h('p', { class: 'small muted' },
       antiguos.length ? [`${plural(antiguos.length, 'término fecha', 'términos fechan')} periodos anteriores a 1700 (`, antiguos.map((t, i) => [i ? ', ' : '', h('a', { href: `#/termino/${encodeURIComponent(t.id)}` }, t.lema)]), '). '] : '',
       sinFecha.length ? `${plural(sinFecha.length, 'término no tiene', 'términos no tienen')} fecha fiable y no aparecen aquí.` : '') : null,
-    h('h2', null, 'Hitos'),
-    h('p', { class: 'muted' }, 'Momentos que marcan la historia de lo post. Pulsa un término para ver su ficha.'),
+    h('h2', null, 'Los hitos del camino'),
+    h('p', { class: 'muted' }, 'Momentos que marcan la historia de lo post, cada uno con su fuente. Pulsa un término para ver su ficha.'),
     h('ul', { class: 'hitos-list' }, hitos.map(x => h('li', null,
       h('span', { class: 'y' }, x.anioFin && x.anioFin !== x.anio ? `${anio(x.anio)}–${String(x.anioFin).slice(-2)}` : anio(x.anio)),
       h('div', null, x.hito, ' ', marcaEstado(x.estado),

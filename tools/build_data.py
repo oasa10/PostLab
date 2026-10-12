@@ -87,3 +87,13 @@ json.dump(terms, open(os.path.join(OUT, 'terminos.json'), 'w', encoding='utf-8')
 json.dump([{'o': r['origen'], 'd': r['destino'], 't': r['tipo']} for r in rels], open(os.path.join(OUT, 'relaciones.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 json.dump(hitos, open(os.path.join(OUT, 'hitos.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print(len(terms), 'términos ·', len(rels), 'relaciones ·', len(hitos), 'hitos publicados ·', sin_fuente, 'hitos sin fuente (no se publican)')
+
+# Contenido largo de las fichas: contexto, ejemplos, implicaciones, ¿sabías que? y pregunta
+contenido = []
+for r in csv.DictReader(open(os.path.join(CSV, 'contenido.csv'), encoding='utf-8')):
+    if r['id'] not in ids:
+        continue
+    ejemplos = [{'titulo': r[f'ejemplo{i}_titulo'], 'texto': r[f'ejemplo{i}_texto']} for i in range(1, 6) if r.get(f'ejemplo{i}_titulo')]
+    contenido.append({'id': r['id'], 'contexto': r['contexto'], 'ejemplos': ejemplos, 'implicaciones': r['implicaciones'], 'sabias_que': r['sabias_que'], 'pregunta': r['pregunta']})
+json.dump(contenido, open(os.path.join(OUT, 'contenido.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+print(len(contenido), 'fichas con contenido largo')

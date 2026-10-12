@@ -182,3 +182,86 @@ export function tintaSobre(hex) {
   const L = 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2];
   return (1.05 / (L + 0.05)) >= ((L + 0.05) / 0.0277) ? '#fff' : '#14202A';
 }
+
+// Cabecera de página con su nivel
+export const NIVELES = { 1: 'Nivel 1 · Enterarte', 2: 'Nivel 2 · Implicarte' };
+export function cabeza(nivel, titulo, lead, ...extra) {
+  return h('header', { class: 'page-head' }, nivel ? h('p', { class: 'nivel' }, NIVELES[nivel]) : null, h('h1', null, titulo),
+    lead ? h('p', { class: 'lead' }, lead) : null, ...extra);
+}
+
+// Recuadros didácticos: sabias, atencion, aclaracion, recuerda, piensa, profundizar
+const TITULOS = { sabias: '¿Sabías que…?', atencion: 'Atención', aclaracion: 'Aclaración', recuerda: 'Para recordar', piensa: 'Piénsalo', profundizar: 'Para profundizar' };
+export function recuadro(tipo, titulo, ...kids) {
+  return h('aside', { class: `callout ${tipo}` }, h('b', { class: 'ct' }, titulo || TITULOS[tipo]), h('div', null, ...kids));
+}
+
+// Cuadros de diálogo entre Ya No (que cree que todo terminó) y Todavía No (que espera lo que viene)
+export const PERSONAJES = {
+  yano: { nombre: 'Ya No', av: 'YN', c: 'var(--e-saber)' },
+  todavia: { nombre: 'Todavía No', av: 'TN', c: 'var(--e-crear)' },
+  tu: { nombre: 'Tú', av: 'TÚ', c: 'var(--n2)' },
+};
+export function dialogo(lineas, anima = true) {
+  return h('div', { class: `dialogo${anima ? ' anima' : ''}` }, lineas.map(([quien, texto], i) => {
+    const p = PERSONAJES[quien] || { nombre: quien, av: quien.slice(0, 2).toUpperCase(), c: 'var(--muted)' };
+    return h('div', { class: `burbuja${i % 2 ? ' der' : ''}`, style: { animationDelay: `${i * 0.35}s` } },
+      h('span', { class: 'av', style: { '--c': p.c }, 'aria-hidden': 'true' }, p.av), h('div', { class: 'txt' }, h('b', null, p.nombre), texto));
+  }));
+}
+
+// Pasos de una actividad
+export function pasos(nombres, actual) {
+  const out = [];
+  nombres.forEach((n, i) => {
+    if (i) out.push(h('span', { class: 'sep', 'aria-hidden': 'true' }));
+    out.push(h('span', { class: i < actual ? 'hecho' : i === actual ? 'aqui' : '' }, h('i', null, i < actual ? '✓' : i + 1), n));
+  });
+  return h('div', { class: 'pasos', 'aria-label': `Paso ${actual + 1} de ${nombres.length}: ${nombres[actual] || 'hecho'}` }, out);
+}
+
+// Botones que se activan y desactivan
+export function toggles(opciones, { multiple = false, alCambiar, valor = multiple ? [] : null } = {}) {
+  let sel = multiple ? new Set(valor) : valor;
+  const wrap = h('div', { class: 'toggles', role: 'group' });
+  const btns = opciones.map(([v, l]) => {
+    const b = h('button', { class: 'toggle', type: 'button', 'aria-pressed': String(multiple ? sel.has(v) : sel === v) }, l);
+    b.addEventListener('click', () => {
+      if (multiple) { sel.has(v) ? sel.delete(v) : sel.add(v); } else sel = sel === v ? null : v;
+      btns.forEach((x, k) => x.setAttribute('aria-pressed', String(multiple ? sel.has(opciones[k][0]) : sel === opciones[k][0])));
+      alCambiar?.(multiple ? [...sel] : sel);
+    });
+    return b;
+  });
+  wrap.append(...btns);
+  wrap.valor = () => (multiple ? [...sel] : sel);
+  return wrap;
+}
+
+// Descargar un texto como archivo, sin servidor
+export function descargar(nombre, texto, tipo = 'text/plain') {
+  const url = URL.createObjectURL(new Blob([texto], { type: `${tipo};charset=utf-8` }));
+  const a = h('a', { href: url, download: nombre });
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+export function fecha(iso) { try { return new Date(iso).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return ''; } }
+
+// Texto con *cursiva* y párrafos separados por una línea en blanco
+export function inline(texto) {
+  const out = [];
+  String(texto || '').split(/(\*[^*\n]+\*)/g).forEach(trozo => {
+    if (/^\*[^*\n]+\*$/.test(trozo)) out.push(h('i', null, trozo.slice(1, -1))); else if (trozo) out.push(trozo);
+  });
+  return out;
+}
+export function parrafos(texto) {
+  return String(texto || '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean).map(p => h('p', null, inline(p)));
+}
+
+// Sustituye el contenido de un elemento, saltándose los huecos (null, undefined, false)
+export function poner(el, ...kids) {
+  el.replaceChildren(...kids.flat(Infinity).filter(k => k !== null && k !== undefined && k !== false));
+  return el;
+}
