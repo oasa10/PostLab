@@ -64,7 +64,7 @@ export function render(root, ctx, parts, q) {
     W = Math.max(320, caja.clientWidth - 28);
     const movil = W < 600;
     M = { l: movil ? 34 : 128, r: 12 };
-    LANE = movil ? 46 : 54; TOP = 50;
+    LANE = movil ? 46 : 54; TOP = 64;
     Hh = TOP + carriles.length * LANE + 28;
     svg = d3.select(caja).append('svg').attr('viewBox', `0 0 ${W} ${Hh}`).attr('role', 'img')
       .attr('aria-label', `Cronología de ${datos.length} términos entre 1700 y ${datos.at(-1).anio}, en filas por valor del prefijo, con las tres fases sombreadas. Hay una versión en lista.`);
@@ -85,7 +85,7 @@ export function render(root, ctx, parts, q) {
       g.append('text').attr('x', 15).attr('dy', '0.35em').attr('class', 'lbl-strong').text(c === '—' ? 'Sin valor' : c);
       if (!movil && c !== '—') g.append('text').attr('x', 38).attr('dy', '0.35em').attr('class', 'lbl').text(VALORES[c].nombre);
     });
-    svg.append('text').attr('x', 4).attr('y', 22).attr('class', 'lbl').style('fill', 'var(--muted)').text(movil ? 'Hitos' : 'Hitos ◆');
+    svg.append('text').attr('x', 4).attr('y', 31).attr('class', 'lbl').style('fill', 'var(--muted)').text(movil ? 'Hitos' : 'Hitos ◆');
 
     zx = xBase.copy();
     function pintar() {
@@ -103,7 +103,14 @@ export function render(root, ctx, parts, q) {
       const ticks = Math.max(3, Math.floor((W - M.l) / 80));
       ejes.call(d3.axisBottom(x).ticks(ticks).tickFormat(d3.format('d')).tickSizeOuter(0));
       rejilla.selectAll('line').data(x.ticks(ticks)).join('line').attr('x1', d => x(d)).attr('x2', d => x(d)).attr('y1', TOP).attr('y2', Hh - 24);
-      // hitos
+      // hitos: en tres filas, cada uno en la primera fila donde no pisa al anterior
+      const fin = [-1e9, -1e9, -1e9], fila = new Map();
+      for (const d of hitos) {
+        const x0 = x(d.anio), x1 = d.anioFin && d.anioFin > d.anio ? x(d.anioFin) : x0;
+        let k = fin.findIndex(f => x0 - f >= 11);
+        if (k < 0) k = fin.indexOf(Math.min(...fin));
+        fin[k] = x1; fila.set(d, k);
+      }
       capaHitos.selectAll('g.h').data(hitos).join(enter => {
         const g = enter.append('g').attr('class', 'h').style('cursor', 'help');
         g.append('line').attr('stroke', 'var(--ink)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
@@ -112,7 +119,7 @@ export function render(root, ctx, parts, q) {
         g.on('mousemove', (e, d) => tip.show([h('b', null, d.anioFin && d.anioFin !== d.anio ? `${d.anio}–${d.anioFin}` : String(d.anio)), h('div', null, d.hito)], e.clientX, e.clientY))
           .on('mouseleave', () => tip.hide());
         return g;
-      }).attr('transform', (d, i) => `translate(${x(d.anio)},${22 + (i % 2) * 12})`)
+      }).attr('transform', d => `translate(${x(d.anio)},${14 + fila.get(d) * 13})`)
         .select('line').attr('x1', 0).attr('x2', d => d.anioFin && d.anioFin > d.anio ? x(d.anioFin) - x(d.anio) : 0).attr('y1', 0).attr('y2', 0);
       // términos: apilado sin solapes dentro de cada carril
       const r = movil ? 4 : 5, paso = r * 2 + 1.5;
