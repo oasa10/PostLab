@@ -12,6 +12,12 @@
   <meta property="og:description" content="Fichas, viajes en el tiempo, mapas, juegos y retos para pensar con todo lo post.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icono-180.png">
+  <meta property="og:image" content="https://oasa10.github.io/PostLab/assets/img/postlab-tarjeta.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PostLab: medio círculo lleno y medio punteado. Ya no, todavía no.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/postlab.css">
@@ -26,7 +32,11 @@
   <a class="skip" href="#app">Saltar al contenido</a>
   <header class="top">
     <div class="wrap">
-      <a class="brand" href="#/" aria-label="PostLab, inicio">Post<b>Lab</b></a>
+      <a class="brand" href="#/" aria-label="PostLab, inicio"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path class="lleno" d="M20 5A15 15 0 0 0 20 35Z"/><g class="puntos"><circle cx="27.50" cy="7.01" r="2.1" style="--i:0"/><circle cx="32.99" cy="12.50" r="2.1" style="--i:1"/><circle cx="35.00" cy="20.00" r="2.1" style="--i:2"/><circle cx="32.99" cy="27.50" r="2.1" style="--i:3"/><circle cx="27.50" cy="32.99" r="2.1" style="--i:4"/></g></svg><span>Post<b>Lab</b></span></a>
+      <a class="inicio-btn" href="#/" title="Volver a la página de inicio">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9v11h4.5v-6h4v6h4.5V9"/></svg>
+        <span>Inicio</span>
+      </a>
       <nav class="nav" aria-label="Secciones">
         <div class="grupo g1" role="group" aria-label="Nivel 1: enterarte">
           <span class="glabel" aria-hidden="true">Enterarte</span>
@@ -57,6 +67,7 @@
     <div class="wrap">
       <span><b>PostLab</b> · Consulta, juega y aprende con todo lo post · 2026</span>
       <span><a href="#/conocer">Conocer PostLab</a> · Datos y textos: <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license">CC BY 4.0</a> · Código: MIT · Sin cookies ni rastreo</span>
+      <button class="tema-pie" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg> Modo claro u oscuro</button>
     </div>
   </footer>
   <div class="toasts" id="toasts" aria-live="polite"></div>

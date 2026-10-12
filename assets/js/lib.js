@@ -265,3 +265,6 @@ export function poner(el, ...kids) {
   el.replaceChildren(...kids.flat(Infinity).filter(k => k !== null && k !== undefined && k !== false));
   return el;
 }
+
+// El logo: medio círculo lleno (lo que ya no) y medio solo punteado (lo que todavía no)
+export const LOGO = '<svg class="logo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path class="lleno" d="M20 5A15 15 0 0 0 20 35Z"/><g class="puntos"><circle cx="27.50" cy="7.01" r="2.1" style="--i:0"/><circle cx="32.99" cy="12.50" r="2.1" style="--i:1"/><circle cx="35.00" cy="20.00" r="2.1" style="--i:2"/><circle cx="32.99" cy="27.50" r="2.1" style="--i:3"/><circle cx="27.50" cy="32.99" r="2.1" style="--i:4"/></g></svg>';

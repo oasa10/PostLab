@@ -63,7 +63,7 @@ async function ir() {
     return;
   }
   const activo = NAV[nombre] || nombre;
-  for (const a of document.querySelectorAll('.nav a, .cuaderno-btn')) {
+  for (const a of document.querySelectorAll('.nav a, .cuaderno-btn, .inicio-btn')) {
     const sec = a.getAttribute('href').slice(2);
     if (sec === activo) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
@@ -93,8 +93,7 @@ function noEncontrado(root) {
 }
 
 function tema() {
-  const btn = document.getElementById('tema');
-  btn.addEventListener('click', () => {
+  const cambiar = () => {
     const oscuro = document.documentElement.dataset.theme
       ? document.documentElement.dataset.theme === 'dark'
       : matchMedia('(prefers-color-scheme: dark)').matches;
@@ -102,7 +101,8 @@ function tema() {
     document.documentElement.dataset.theme = nuevo;
     storage('tema', nuevo);
     if (actual?.retema) actual.retema(); else ir();
-  });
+  };
+  for (const btn of document.querySelectorAll('#tema, .tema-pie')) btn.addEventListener('click', cambiar);
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (!document.documentElement.dataset.theme) { if (actual?.retema) actual.retema(); else ir(); } });
 }
 

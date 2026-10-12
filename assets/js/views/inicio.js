@@ -1,4 +1,4 @@
-import { h, poner, VALORES, CODIGOS, plural, tip, tipTerm, valColor, anio, recuadro, dialogo, inline } from '../lib.js';
+import { h, poner, VALORES, CODIGOS, plural, tip, tipTerm, valColor, anio, recuadro, dialogo, inline, LOGO } from '../lib.js';
 import * as cuaderno from '../cuaderno.js';
 import { EJES, ORDEN_EJES, PELDANOS } from '../cuaderno.js';
 
@@ -19,7 +19,7 @@ export function render(root, ctx) {
     h('section', { class: 'hero' },
       h('div', null,
         h('p', { class: 'eyebrow' }, 'Ya no, todavía no'),
-        h('h1', { html: 'Post<b>Lab</b>' }),
+        h('h1', { class: 'marca', html: `${LOGO}<span>Post<b>Lab</b></span>` }),
         h('p', { class: 'sub' }, 'Consulta, juega y aprende con todo lo post'),
         h('p', { class: 'lead' }, `Posmodernidad, posverdad, post-punk, poscolonialismo… Cuando algo deja de convencer y lo que viene aún no tiene nombre, le ponemos un «pos» delante. PostLab reúne ${terms.length} de esos «después», con su fecha, sus fuentes y lo que significan hoy, para que los consultes, juegues con ellos y los uses para pensar tu época.`),
         form,

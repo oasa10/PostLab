@@ -1,4 +1,4 @@
-import { h, plural, cabeza, recuadro } from '../lib.js';
+import { h, plural, cabeza, recuadro, LOGO } from '../lib.js';
 import { EJES, ORDEN_EJES } from '../cuaderno.js';
 import { URL_BASE } from './ficha.js';
 
@@ -10,6 +10,11 @@ export function render(root, ctx) {
   root.append(h('div', { style: { maxWidth: '760px' } },
     cabeza(0, 'Conocer PostLab', 'PostLab es un laboratorio abierto de lo post: los términos que llevan el prefijo pos- o post-, desde la posguerra hasta la posverdad, contados de forma clara y con sus fuentes a la vista.'),
     h('p', null, 'Está pensado para cualquier persona con curiosidad, para estudiantes y docentes de bachillerato y universidad, y para periodistas. No hace falta saber filosofía: hace falta querer entender un poco mejor la época en que vivimos.'),
+
+    h('h2', null, 'El logo'),
+    h('div', { class: 'logo-explica' },
+      h('div', { class: 'logo-grande', html: LOGO }),
+      h('p', null, 'Es la tesis de PostLab en un dibujo: ', h('b', null, 'ya no, todavía no'), '. La mitad llena es lo que ya no convence: está completa, pero se ha cerrado. La mitad punteada es lo que todavía no existe: se adivina la forma, pero falta trazarla. Y el borde recto entre las dos es el sitio exacto del prefijo, ese «después» que sabe de dónde viene y aún no sabe adónde va.')),
 
     h('h2', null, 'Dos niveles'),
     h('p', null, h('b', { style: { color: 'var(--n1)' } }, 'Enterarte'), ' (Explorar, Viajar y Visualizar) es el nivel de la información: lees las fichas, recorres la historia y miras los datos. ',
