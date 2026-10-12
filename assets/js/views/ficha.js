@@ -7,7 +7,7 @@ export const ESTATUTOS = {
   'agrupación': 'Agrupación: etiqueta retrospectiva para un periodo o un conjunto.',
 };
 const TIPO_ANIO = { obra: 'año de la obra que fija el término', hito: 'año del hito que fija el término', periodo: 'inicio del periodo' };
-export const URL_BASE = 'https://oasa10.github.io/postlab/';
+export const URL_BASE = 'https://oasa10.github.io/PostLab/';
 
 export function render(root, ctx, parts) {
   const t = ctx.byId.get(parts[0]);
@@ -72,7 +72,7 @@ export function render(root, ctx, parts) {
           h('p', null, h('b', null, est.nombre), ' · ', est.ayuda),
           t.fuentes.length ? h('ul', { style: { paddingLeft: '18px', margin: '0 0 8px' } }, t.fuentes.map(f => h('li', null,
             f.url ? h('a', { href: f.url, rel: 'noopener', target: '_blank' }, f.titulo || f.url) : f.titulo))) : h('p', { class: 'muted small' }, 'Sin fuente registrada.'),
-          h('p', { class: 'small muted', style: { margin: 0 } }, '¿Ves un error? ', h('a', { href: `https://github.com/oasa10/postlab/issues/new?title=${encodeURIComponent('Error en la ficha: ' + t.lema)}`, rel: 'noopener', target: '_blank' }, 'Avísanos'))),
+          h('p', { class: 'small muted', style: { margin: 0 } }, '¿Ves un error? ', h('a', { href: `https://github.com/oasa10/PostLab/issues/new?title=${encodeURIComponent('Error en la ficha: ' + t.lema)}`, rel: 'noopener', target: '_blank' }, 'Avísanos'))),
         h('div', { class: 'card' },
           h('h2', null, 'En PostLab'),
           h('div', { class: 'btns' },

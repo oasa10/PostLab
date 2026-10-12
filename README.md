@@ -4,7 +4,7 @@
 
 PostLab es un repositorio abierto de términos formados con el prefijo *pos-* o *post-*: posmodernidad, posverdad, post-punk, poscolonialismo, posguerra… Cada término tiene su ficha con el año y la obra que lo fijan, el valor del prefijo, su familia, sus conexiones, sus fuentes y su estado de verificación.
 
-Web: https://oasa10.github.io/postlab/
+Web: https://oasa10.github.io/PostLab/
 
 ## Qué se puede hacer
 
@@ -52,7 +52,7 @@ Es un sitio estático (HTML, CSS y JavaScript sin compilar), servido con GitHub 
 
 ## Errores y propuestas
 
-Abre una incidencia en https://github.com/oasa10/postlab/issues. Si propones una corrección, añade una fuente.
+Abre una incidencia en https://github.com/oasa10/PostLab/issues. Si propones una corrección, añade una fuente.
 
 ## Licencias
 

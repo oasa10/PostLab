@@ -29,7 +29,7 @@ export function render(root, ctx) {
     h('p', { class: 'small muted', style: { marginTop: '8px' } }, 'Los años son los de la obra o el hito que fija cada término, no los de su primer uso, que se indica aparte cuando se conoce. Las cifras de Tendencias describen esta selección de términos, no la frecuencia real de uso de cada palabra.'),
 
     h('h2', null, '¿Has visto un error?'),
-    h('p', null, 'Seguro que los hay. Puedes avisar abriendo una incidencia en ', h('a', { href: 'https://github.com/oasa10/postlab/issues', rel: 'noopener', target: '_blank' }, 'el repositorio de GitHub'),
+    h('p', null, 'Seguro que los hay. Puedes avisar abriendo una incidencia en ', h('a', { href: 'https://github.com/oasa10/PostLab/issues', rel: 'noopener', target: '_blank' }, 'el repositorio de GitHub'),
       ' (cada ficha tiene su enlace «Avísanos»). Si propones una corrección, añade una fuente.'),
 
     h('h2', null, 'Descarga los datos'),
