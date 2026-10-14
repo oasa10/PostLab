@@ -3,7 +3,10 @@
    Uso:
      const ep = Episodio.crear({ sitio: 'brainbox', nombre: 'BrainBox', episodios: [...] });
      ep.portada(el); ep.abrir(el, id[, { grupo: true }]); ep.vuelta(el, idMision); ep.lista(el); ep.cuaderno(el);
-   El formato de cada episodio está en LEEME.md. Todo se guarda solo en el dispositivo (localStorage). */
+   Opcional, la pregunta de llegada (Método 1.2, apartado 3.4): con cfg.llegada, quien llega «con la cabeza a mil»
+   recibe una versión corta del episodio (ep.corto: una pregunta y una acción pequeña).
+   El formato de cada episodio está en LEEME.md. Todo se guarda solo en el dispositivo (localStorage), en la clave
+   «sitio:episodios» (o cfg.clave), separada del cuaderno de la web. */
 (function () {
   'use strict';
 
@@ -112,7 +115,20 @@
     const C = Object.assign({ nombre: 'Episodio', porDentro: false, grupo: true, demo: false, unoAlDia: true, minutos: 7 }, cfg);
     const EP = C.episodios || [];
     const POR_ID = {}; EP.forEach(e => { POR_ID[e.id] = e; });
-    const datos = almacen(C.sitio + ':cuaderno', { v: 1, palabras: {}, misiones: [], retornos: [], historias: [], racha: 0, nuevos: {} });
+    // El cuaderno del episodio va en su propia clave (sitio:episodios), aparte del cuaderno de la web.
+    // Antes iba en sitio:cuaderno, que en PostLab y NeuroLab es también la clave del cuaderno de la web:
+    // si ahí hay datos del episodio y la clave nueva está vacía, se copian una vez (sin borrar nada).
+    const CAMPOS = ['palabras', 'misiones', 'retornos', 'historias', 'racha', 'nuevos'];
+    const CLAVE = C.clave || (C.sitio + ':episodios');
+    try {
+      const viejo = JSON.parse(localStorage.getItem(C.sitio + ':cuaderno'));
+      if (CLAVE !== C.sitio + ':cuaderno' && localStorage.getItem(CLAVE) === null && viejo && typeof viejo === 'object' && viejo.palabras && typeof viejo.palabras === 'object') {
+        const nuevo = { v: 1 };
+        CAMPOS.forEach(k => { if (viejo[k] !== undefined) nuevo[k] = viejo[k]; });
+        localStorage.setItem(CLAVE, JSON.stringify(nuevo));
+      }
+    } catch (e) { /* sin almacenamiento: el episodio funciona igual */ }
+    const datos = almacen(CLAVE, { v: 1, palabras: {}, misiones: [], retornos: [], historias: [], racha: 0, nuevos: {} });
     const ajustes = almacen(C.sitio + ':ajustes-episodio', { sonido: true, reloj: true, dentro: !!C.porDentroInicial, grupo: false, demo: !!C.demoInicial });
     let prefs = ajustes.leer();
     const guardarPrefs = () => ajustes.guardar(prefs);
@@ -536,7 +552,61 @@
         return;
       }
       const R = { el, ep, i: 0, resp: {}, votos: {}, grupo, enfocar: false };
+      // La pregunta de llegada, si la web la usa: con la cabeza a mil, el episodio se acorta
+      const L = C.llegada;
+      if (L && !grupo && !(op && op.completo)) {
+        const k = L.hoy ? L.hoy() : null;
+        if (!k) { llegada(el, R); return; }
+        if (k === L.corta && ep.corto) { corto(el, ep); return; }
+      }
       pintar(R);
+    }
+    function marco(el, ep, etiqueta) {
+      el.innerHTML = '';
+      el.classList.add('ep');
+      el.classList.remove('ep-grupo');
+      const top = h('div', { class: 'ep-top' });
+      top.appendChild(h('div', { class: 'ep-top-l' }, esc(C.nombre) + ' · ' + esc(etiqueta)));
+      top.appendChild(h('div', { class: 'ep-top-r' }, esc(ep.palabra)));
+      const cab = h('div', { class: 'ep-cab' }); cab.appendChild(top); el.appendChild(cab);
+      const cont = h('div', { class: 'ep-cuerpo' }); el.appendChild(cont);
+      return cont;
+    }
+    function llegada(el, R) {
+      const L = C.llegada, c = marco(el, R.ep, 'antes de empezar');
+      c.appendChild(h('p', { class: 'ep-frase' }, esc(L.pregunta || '¿Cómo llegas hoy?')));
+      if (L.ayuda) c.appendChild(h('p', { class: 'ep-nota' }, esc(L.ayuda)));
+      const g = h('div', { class: 'ep-ops' });
+      (L.opciones || []).forEach(o => {
+        g.appendChild(btn('<b>' + esc(o.t) + '</b>' + (o.s ? '<span>' + esc(o.s) + '</span>' : ''), 'ep-op ep-mis', () => {
+          if (L.elegir) L.elegir(o.id);
+          if (o.id === L.corta && R.ep.corto) corto(el, R.ep); else pintar(R);
+        }));
+      });
+      c.appendChild(g);
+      c.appendChild(h('p', { class: 'ep-nota' }, 'Describe cómo llegas hoy, no cómo eres. Puede cambiar mañana.'));
+    }
+    function corto(el, ep) {
+      const K = ep.corto, c = marco(el, ep, 'versión corta');
+      c.appendChild(h('div', { class: 'ep-rotulo' }, '<span class="ep-n">1</span><span>Una sola pregunta</span>'));
+      c.appendChild(h('p', { class: 'ep-frase ep-leer' }, fmt(K.pregunta)));
+      c.appendChild(h('p', { class: 'ep-nota' }, 'No hace falta contestarla aquí. Piénsala un momento, sin prisa.'));
+      c.appendChild(h('div', { class: 'ep-rotulo' }, '<span class="ep-n">2</span><span>Una acción pequeña</span>'));
+      c.appendChild(h('div', { class: 'ep-hecho ep-leer' }, fmt(K.accion)));
+      const eco = h('p', { class: 'ep-res', 'aria-live': 'polite' });
+      const p = h('div', { class: 'ep-pie' });
+      const fin = t => { p.innerHTML = ''; eco.innerHTML = t; p.appendChild(btn('Ver el episodio completo', 'ep-btn ep-sec', () => abrir(el, ep.id, { completo: true }))); p.appendChild(btn('Terminar', 'ep-btn ep-pri', () => { VOZ.parar(); if (C.alSalir) C.alSalir(ep); else portada(el); })); };
+      p.appendChild(btn('Ahora no', 'ep-btn ep-sec', () => fin('Vale. Con haber parado un momento ya basta por hoy. El episodio completo te espera cuando quieras.')));
+      p.appendChild(btn('La apunto en mi cuaderno', 'ep-btn ep-pri', () => {
+        const s = datos.leer();
+        s.misiones = s.misiones.filter(m => !(m.ep === ep.id && m.estado === 'pendiente'));
+        const m = { id: ep.id + '-' + Date.now(), ep: ep.id, palabra: ep.palabra, texto: K.accion, creada: hoy(), vuelta: sumaDias(3), estado: 'pendiente', corta: true };
+        s.misiones.push(m); datos.guardar(s); pitido(prefs, 'bien');
+        fin('Apuntada. Tu vuelta, el ' + esc(fechaLarga(m.vuelta)) + ': te preguntaremos cómo fue. El episodio completo te espera cuando tengas más calma.');
+      }));
+      c.appendChild(eco);
+      if (C.llegada && C.llegada.cuidado) c.appendChild(h('p', { class: 'ep-nota ep-cuidado' }, C.llegada.cuidado));
+      c.appendChild(p);
     }
     function vuelta(el, idMision) {
       const s = st();

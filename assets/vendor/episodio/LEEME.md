@@ -1,6 +1,6 @@
 # Episodio en siete tiempos · motor común
 
-Motor sin dependencias y sin servidor que usan las webs del proyecto (BrainBox, PostLab, NeuroLab…). Funciona también dentro de un HTML de doble clic. Todo se guarda solo en el dispositivo (`localStorage`, claves `<sitio>:cuaderno` y `<sitio>:ajustes-episodio`).
+Motor sin dependencias y sin servidor que usan las webs del proyecto (BrainBox, PostLab, NeuroLab…). Funciona también dentro de un HTML de doble clic. Todo se guarda solo en el dispositivo (`localStorage`, claves `<sitio>:episodios` —o `cfg.clave`— y `<sitio>:ajustes-episodio`). La clave del cuaderno del episodio va aparte de la del cuaderno de la web; si encuentra datos del episodio en la antigua `<sitio>:cuaderno`, los copia una vez a la nueva sin borrar nada.
 
 ## Uso
 
@@ -19,6 +19,8 @@ Motor sin dependencias y sin servidor que usan las webs del proyecto (BrainBox, 
 
 En modo grupo quien guía puede abrir cualquier episodio, aunque no sea el del día, y no se guarda nada personal.
 
+**La pregunta de llegada (opcional).** Con `llegada: { pregunta, ayuda, opciones: [{ id, t, s }], corta: 'C', hoy: () => id | null, elegir: id => {}, cuidado: '<html>' }`, antes del episodio se pregunta cómo llega la persona (si `hoy()` aún no lo sabe). Si elige la opción `corta` y el episodio tiene `corto`, recibe la versión corta: una pregunta y una acción pequeña, que puede apuntar en su cuaderno con vuelta a tres días, y un botón para ver el episodio completo. `cuidado` es una línea fija al pie de esa versión (por ejemplo, el 024 y el 112). En modo grupo no se pregunta.
+
 ## Formato de un episodio
 
 | Campo | Qué es |
@@ -34,5 +36,6 @@ En modo grupo quien guía puede abrir cualquier episodio, aunque no sea el del d
 | `historia` | `pensaba` (por id del choque), `hice` (por id del reflejo, más `tiempo`) y `ahora`, con `{mision}` |
 | `vuelta` | `siguiente`: el id del episodio que se abre después |
 | `saber_mas` | Lo técnico, plegado en «Saber más» |
+| `corto` | Opcional: `pregunta` y `accion` de la versión corta (ver la pregunta de llegada) |
 
 Los textos admiten `**negrita**` y `*cursiva*`. Cada web puede añadir sus propios campos (PostLab: `valor`, `termino` e `historia_humana`).
