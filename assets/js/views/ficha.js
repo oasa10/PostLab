@@ -1,5 +1,6 @@
-import { h, VALORES, ESTADOS, CINCO_P, FASES, anio, chipValor, famTag, marcaEstado, recuadro, parrafos, inline, toggles, tip, tipTerm, valColor } from '../lib.js';
+import { h, poner, VALORES, ESTADOS, CINCO_P, FASES, anio, chipValor, famTag, marcaEstado, recuadro, parrafos, inline, toggles, tip, tipTerm, valColor, imgValor, botonEscuchar } from '../lib.js';
 import * as cuaderno from '../cuaderno.js';
+import { deTermino } from '../episodio.js';
 
 export const GRADOS = { 1: 'Primero (post)', 2: 'Segundo (post-post)', 3: 'Tercero (post-post-post)' };
 export const ESTATUTOS = {
@@ -9,9 +10,11 @@ export const ESTATUTOS = {
 };
 const TIPO_ANIO = { obra: 'año de la obra que fija el término', hito: 'año del hito que fija el término', periodo: 'inicio del periodo' };
 export const URL_BASE = 'https://oasa10.github.io/PostLab/';
+// Autoría para «Cómo citar»: el origen es el Método BrainBox, que no se explica aquí
+export const AUTORIA = 'Salazar, Osman (2026)';
 export const EMOCIONES = [['curiosidad', 'Curiosidad'], ['entusiasmo', 'Entusiasmo'], ['inquietud', 'Inquietud'], ['rechazo', 'Rechazo'], ['confusion', 'Confusión'], ['indiferencia', 'Indiferencia']];
 
-export function render(root, ctx, parts) {
+export function render(root, ctx, parts, q) {
   const t = ctx.byId.get(parts[0]);
   if (!t) {
     document.title = 'Término no encontrado · PostLab';
@@ -64,16 +67,27 @@ export function render(root, ctx, parts) {
       .filter(([id]) => id !== 's-cincop' || cincoP)
       .map(([id, l]) => h('button', { type: 'button', onclick: () => document.getElementById(id)?.scrollIntoView({ behavior: suave(), block: 'start' }) }, l)));
   const conLinea = t.anio !== null && t.anio >= 1700;
+  // Primero una persona, después la definición (W13): la historia humana sale del episodio de la palabra
+  const historia = h('div');
+  const art = h('article');
+  // Escuchar la ficha (W8): lo que se ve, de arriba abajo, sin los datos de la tabla
+  const escuchar = botonEscuchar(() => [...art.querySelectorAll('h1, .historia-humana p, .nucleo, #s-porque .prosa, #s-paraque li, #s-ahora .prosa')]
+    .map(n => n.innerText.trim()).filter(Boolean).join('. ').replace(/\.\s*\./g, '.'), 'Escuchar la ficha');
+  const tras = q && q.get('tras') === 'episodio';
   const linea = conLinea ? h('figure', { class: 'mini-tl' }) : null;
 
   root.append(
     h('nav', { class: 'crumbs', 'aria-label': 'Ruta' }, h('a', { href: '#/explorar' }, 'Explorar'), ' › ', h('a', { href: `#/explorar?familia=${encodeURIComponent(t.familia)}` }, t.familia)),
     h('div', { class: 'ficha' },
-      h('article', null,
+      poner(art,
+        tras ? recuadro('recuerda', 'Episodio terminado', `Esta es la ficha completa de «${t.lema}»: lo que hay detrás de la palabra, con sus fuentes. Tu misión y tu historia están en `, h('a', { href: '#/cuaderno' }, 'tu cuaderno'), '.') : null,
         h('p', { class: 'nivel' }, 'Nivel 1 · Enterarte'),
-        h('h1', null, t.lema),
+        h('div', { class: 'ficha-titulo' },
+          h('h1', null, t.lema),
+          t.valor.length ? h('div', { class: 'ficha-imgs', title: t.valor.map(v => `${v} · ${VALORES[v].nombre}: «${VALORES[v].llana}»`).join(' / ') }, t.valor.map(v => imgValor(v, { grande: true }))) : null),
         t.variantes.length ? h('p', { class: 'vars' }, 'También: ', t.variantes.join(' · ')) : null,
-        h('div', { class: 'chips' }, t.valor.map(v => chipValor(v)), marcaEstado(t.estado)),
+        h('div', { class: 'chips' }, t.valor.map(v => chipValor(v)), marcaEstado(t.estado), escuchar),
+        historia,
         t.nucleo ? h('p', { class: 'nucleo', style: { '--c': v0 ? `var(--v-${v0})` : 'var(--accent)' } }, t.nucleo) : null,
         indice,
         t.estado === 'dudosa' ? recuadro('atencion', 'Ficha dudosa', 'Las fuentes se contradicen o no hemos encontrado una que confirme el año o la obra. Tómala con cautela: por eso no sale en los juegos.') : null,
@@ -107,8 +121,16 @@ export function render(root, ctx, parts) {
           h('p', { class: 'small', style: { margin: '12px 0 0' } }, h('b', null, 'Nivel 2: '), h('a', { href: `#/pensar/cincop?t=${encodeURIComponent(t.id)}` }, 'analízalo tú en el laboratorio de las cinco P'), '.')),
         h('div', { class: 'card' },
           h('h2', null, 'Cómo citar esta ficha'),
-          h('p', { class: 'cite' }, `«${t.lema}». En PostLab. Consulta, juega y aprende con todo lo post (2026). ${url} [consulta: ${hoy}].`)))),
+          h('p', { class: 'cite' }, `${AUTORIA}. «${t.lema}». En PostLab. Consulta, juega y aprende con todo lo post. Con el Método BrainBox. ${url} [consulta: ${hoy}].`)))),
   );
+
+  deTermino(ctx, t.id).then(ep => {
+    if (!ep || !historia.isConnected) return;
+    historia.replaceChildren(h('aside', { class: 'historia-humana', style: { '--c': `var(--v-${ep.valor})` } },
+      h('b', { class: 'ct' }, 'Una historia'),
+      h('p', null, inline(ep.historia_humana)),
+      tras ? null : h('a', { class: 'btn small', href: `#/episodio/${encodeURIComponent(ep.id)}` }, '▶ Vívelo en un episodio de siete minutos')));
+  }).catch(() => {});
 
   if (linea) lineaTiempo(linea, t, conexiones);
 

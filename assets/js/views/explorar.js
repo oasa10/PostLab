@@ -20,7 +20,7 @@ export function render(root, ctx, parts, q) {
   };
   const etiquetas = { area: 'Área', familia: 'Familia', valor: 'Valor del prefijo', grado: 'Grado', decada: 'Década', estado: 'Verificación' };
 
-  const input = h('input', { type: 'search', value: estado.q, placeholder: 'Busca un término, una persona, una obra o una idea', 'aria-label': 'Buscar términos', autocomplete: 'off' });
+  const input = h('input', { type: 'search', value: estado.q, placeholder: 'Busca un término, una persona, una obra o una idea', 'aria-label': 'Buscar términos', autocomplete: 'off', enterkeyhint: 'search' });
   const selects = {};
   const filtros = h('div', { class: 'filters' }, FILTROS.map(f => {
     const s = h('select', { 'aria-label': etiquetas[f] }, opts[f].map(([v, l]) => h('option', { value: v, selected: v === estado[f] }, l)));
@@ -32,18 +32,25 @@ export function render(root, ctx, parts, q) {
     [['', 'Orden: relevancia o alfabético'], ['anio', 'Orden: del más antiguo al más reciente'], ['-anio', 'Orden: del más reciente al más antiguo'], ['lema', 'Orden: alfabético']]
       .map(([v, l]) => h('option', { value: v, selected: v === estado.orden }, l)));
   orden.addEventListener('change', () => { estado.orden = orden.value; pintar(); });
-  const cuenta = h('span', { 'aria-live': 'polite' });
+  const cuenta = h('span', { class: 'cuenta', 'aria-live': 'polite' });
+  const nFiltros = h('span', { class: 'n-filtros' });
+  const suave = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
+  // Al buscar (W11): se cierra el teclado y la pantalla baja al resultado
+  const alResultado = () => { input.blur(); resbar.scrollIntoView({ behavior: suave(), block: 'start' }); };
   const limpiar = h('button', { class: 'btn small', type: 'button', onclick: () => {
     estado.q = ''; input.value = ''; for (const f of FILTROS) { estado[f] = ''; selects[f].value = ''; } pintar(); input.focus();
   } }, 'Quitar filtros');
   const lista = h('div', { class: 'results' });
   const mas = h('div', { class: 'btns', style: { justifyContent: 'center', marginTop: '18px' } });
 
+  const plegable = h('details', { class: 'plegable-filtros' },
+    h('summary', null, h('span', { 'aria-hidden': 'true' }, '⚙ '), 'Filtros y orden', nFiltros),
+    filtros, h('div', { class: 'btns', style: { marginTop: '10px' } }, orden, limpiar));
+  const resbar = h('div', { class: 'resbar' }, plegable);
   root.append(
     cabeza(1, 'Explorar', `Los ${terms.length} términos de PostLab, de la posguerra a la posverdad. Busca por nombre, persona u obra, o filtra por lo que te interese. Cada uno tiene su ficha: cómo surgió, para qué sirve y qué tiene que ver con hoy.`),
-    h('div', { class: 'search-big' }, input),
-    filtros,
-    h('div', { class: 'resbar' }, cuenta, h('div', { class: 'btns' }, orden, limpiar)),
+    h('form', { class: 'search-big buscador', role: 'search', onsubmit: e => { e.preventDefault(); clearTimeout(t0); estado.q = input.value.trim(); pintar(); alResultado(); } }, input, cuenta),
+    resbar,
     lista, mas);
 
   let t0;
@@ -85,6 +92,8 @@ export function render(root, ctx, parts, q) {
     else if (estado.orden === '-anio') res.sort((a, b) => (b.anio ?? -99999) - (a.anio ?? -99999));
     else if (estado.orden === 'lema' || estado.q.length < 2) res.sort((a, b) => a.lema.localeCompare(b.lema, 'es'));
     cuenta.textContent = res.length === terms.length ? `${plural(res.length, 'término', 'términos')}` : `${plural(res.length, 'resultado', 'resultados')} de ${terms.length}`;
+    const activos = FILTROS.filter(f => estado[f]).length;
+    nFiltros.textContent = activos ? ` · ${activos} ${activos === 1 ? 'activo' : 'activos'}` : '';
     lista.replaceChildren(...res.slice(0, visibles).map(termCard));
     if (!res.length) lista.replaceChildren(h('div', { class: 'empty', style: { gridColumn: '1 / -1' } },
       h('p', null, 'Ningún post por aquí con esa búsqueda y esos filtros. Quizá todavía no lo ha inventado nadie: ', h('a', { href: '#/pensar/bautiza' }, 'puedes bautizarlo tú'), '.'), h('p', null, limpiarCopia())));
@@ -99,5 +108,8 @@ export function render(root, ctx, parts, q) {
   }
   function limpiarCopia() { return h('button', { class: 'btn small', type: 'button', onclick: () => limpiar.click() }, 'Quitar filtros'); }
   pintar();
-  if (estado.q || !matchMedia('(pointer: coarse)').matches) input.focus({ preventScroll: true });
+  const tactil = matchMedia('(pointer: coarse)').matches;
+  if (FILTROS.some(f => estado[f]) && !tactil) plegable.open = true;
+  if (estado.q && tactil) requestAnimationFrame(alResultado);
+  else if (!tactil) input.focus({ preventScroll: true });
 }

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PostLab · Consulta, juega y aprende con todo lo post</title>
-  <meta name="description" content="Casi doscientas palabras que empiezan por «después»: posmodernidad, posverdad, post-punk, poscolonialismo… Para enterarte (explorar, viajar en el tiempo, visualizar) y para implicarte (aprender, jugar, pensar y aplicar).">
+  <title>PostLab · Las palabras para nombrar lo que cambia</title>
+  <meta name="description" content="El mundo cambia antes de que entendamos qué cambia. PostLab te da las palabras para nombrarlo: un episodio de siete minutos al día y casi doscientas palabras que empiezan por «después», con sus fuentes.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#FBFAF6" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#11171C" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="PostLab · Consulta, juega y aprende con todo lo post">
-  <meta property="og:description" content="Fichas, viajes en el tiempo, mapas, juegos y retos para pensar con todo lo post.">
+  <meta property="og:title" content="PostLab · Las palabras para nombrar lo que cambia">
+  <meta property="og:description" content="El mundo cambia antes de que entendamos qué cambia. PostLab te da las palabras para nombrarlo.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/img/icono-180.png">
@@ -20,12 +20,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/vendor/episodio/episodio.css">
   <link rel="stylesheet" href="assets/css/postlab.css">
   <script>
     // Tema elegido por quien visita (solo en su navegador)
     try { var t = localStorage.getItem('postlab:tema'); if (t === '"light"' || t === '"dark"') document.documentElement.dataset.theme = JSON.parse(t); } catch (e) {}
   </script>
   <script src="assets/vendor/d3-7.9.0.min.js" defer></script>
+  <script src="assets/vendor/episodio/episodio.js" defer></script>
   <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
@@ -65,8 +67,8 @@
   </main>
   <footer class="foot">
     <div class="wrap">
-      <span><b>PostLab</b> · Consulta, juega y aprende con todo lo post · 2026</span>
-      <span><a href="#/conocer">Conocer PostLab</a> · Datos y textos: <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license">CC BY 4.0</a> · Código: MIT · Sin cookies ni rastreo</span>
+      <span><b>PostLab 2.1</b> · Consulta, juega y aprende con todo lo post · 2026</span>
+      <span><a href="#/conocer">Conocer PostLab</a> · <a href="#/clase">Para clases y grupos</a> · Datos y textos: <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license">CC BY 4.0</a> · Código: MIT · Sin cookies ni rastreo</span>
       <button class="tema-pie" type="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg> Modo claro u oscuro</button>
     </div>
   </footer>

@@ -1,0 +1,3872 @@
+[
+ {
+  "id": "posverdad",
+  "palabra": "Posverdad",
+  "resumen": "Lo cierto sigue ahí, pero ya no decide el debate.",
+  "valor": "P4",
+  "termino": "posverdad",
+  "riesgo": false,
+  "historia_humana": "En 2016, una vecina de cualquier ciudad británica ve pasar un autobús con una promesa pintada: 350 millones de libras a la semana para la sanidad. La autoridad estadística la llama potencialmente engañosa, y la cifra sigue corriendo de boca en boca. A eso se le llama posverdad.",
+  "choque": {
+   "frase": "«La verdad ya no le importa a nadie.»",
+   "opciones": [
+    {
+     "id": "indigna",
+     "e": "😠",
+     "t": "Me indigna"
+    },
+    {
+     "id": "convence",
+     "e": "🤝",
+     "t": "Me convence"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te llega el titular del autobús del brexit: «350 millones de libras a la semana para la sanidad». ¿Lo compartes?",
+   "opciones": [
+    {
+     "id": "comparto",
+     "t": "Lo comparto"
+    },
+    {
+     "id": "miro",
+     "t": "Primero miro quién lo dice"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La autoridad estadística británica calificó de **potencialmente engañosa** la cifra del autobús, y siguió circulando. Ese mismo año, 2016, Oxford eligió «post-truth» palabra del año.",
+   "fuente": "Wikipedia (en), «Post-truth politics»",
+   "url": "https://en.wikipedia.org/wiki/Post-truth_politics",
+   "busca": "Lo cierto no desaparece: **deja de decidir**. La posverdad no es que se mienta más, sino que el dato pesa menos que lo que sentimos.",
+   "saltos": [
+    {
+     "t": "Compartí porque me encajaba",
+     "p": "Una cifra que confirma lo que ya piensas corre más que una que lo complica. El salto es no mirar quién la da."
+    },
+    {
+     "t": "Pensé que, si era falso, alguien lo quitaría",
+     "p": "La cifra del autobús siguió circulando después del aviso oficial. Un desmentido casi siempre llega tarde."
+    },
+    {
+     "t": "No salté: miré primero",
+     "p": "Bien visto. Parar unos segundos ya rompe la cadena. El paso siguiente es mirar la fuente."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién escribió «post-truth» en el sentido de hoy, en 1992?",
+     "o": [
+      "Ralph Keyes",
+      "Steve Tesich",
+      "El Diccionario Oxford"
+     ],
+     "ok": 1,
+     "por": "El dramaturgo Steve Tesich, en un ensayo para la revista *The Nation*. Keyes llegó después, en 2004."
+    },
+    {
+     "p": "¿Qué hizo Ralph Keyes en 2004?",
+     "o": [
+      "Publicó *The Post-Truth Era*",
+      "Eligió la palabra del año",
+      "Inventó la palabra"
+     ],
+     "ok": 0,
+     "por": "Su libro la convirtió en diagnóstico: el engaño se había vuelto tan corriente que ya apenas escandalizaba."
+    },
+    {
+     "p": "¿Qué clase de «después» dice el «pos» de posverdad?",
+     "o": [
+      "Que la verdad ha muerto",
+      "Que hay que ir contra la verdad",
+      "Lo que queda de la verdad: sigue ahí, sin autoridad"
+     ],
+     "ok": 2,
+     "por": "Es agotamiento (P4): la verdad no ha desaparecido, pero ha perdido el poder de zanjar el debate."
+    }
+   ],
+   "sabias": "Steve Tesich, que escribió «post-truth» en 1992, había ganado antes el Óscar al mejor guion original por *Breaking Away* (1979), una película sobre ciclismo."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mirar quién da la cifra",
+     "t": "Esta semana, antes de compartir una cifra, mira quién la da y de dónde sale.",
+     "historia": "mirar quién da cada cifra antes de compartirla"
+    },
+    {
+     "corta": "Una noticia, dos fuentes",
+     "t": "Elige una noticia que te encaje mucho y búscala en otro medio antes de comentarla.",
+     "historia": "buscar en otro medio la próxima noticia que te encaje demasiado"
+    }
+   ],
+   "retorno": "el día de la vuelta, piensa si miraste quién daba la cifra y qué encontraste."
+  },
+  "historia": {
+   "pensaba": {
+    "indigna": "Entraste con la frase atravesada: para ti, la verdad sí importa.",
+    "convence": "Entraste pensando que la verdad ya no importa.",
+    "igual": "Entraste sin darle mucha importancia a la verdad."
+   },
+   "hice": {
+    "comparto": "Cuando te tocó decidir, compartiste sin mirar.",
+    "miro": "Cuando te tocó decidir, paraste a mirar quién lo decía.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que lo cierto puede dejar de decidir, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posfotografia"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). No dice que la verdad haya terminado, sino que sigue ahí sin autoridad: lo que queda de ella. **Obra o hito que la fija:** Ralph Keyes, The Post-Truth Era: Dishonesty and Deception in Contemporary Life (2004). **Primer uso:** 1992, Steve Tesich, ensayo en The Nation sobre el escándalo Irán-Contra y la guerra del Golfo. **Figuras:** Steve Tesich y Ralph Keyes. **Se conecta con:** Posfactual, Post-posverdad y Poscrítica. **Fuentes de la ficha:** Catálogo ABIE (Universidad de Navarra), Keyes, The Post-Truth Era (St. Martin's Press, 2004); Daily Maverick, «Oxford Dictionaries name post-truth word of the year» (2016). **Nota:** Oxford Dictionaries la eligió palabra del año en 2016."
+ },
+ {
+  "id": "pospandemia",
+  "palabra": "Pospandemia",
+  "resumen": "El tiempo que sigue a la emergencia de la COVID-19, y que en buena parte es hoy.",
+  "valor": "P1",
+  "termino": "pospandemia",
+  "riesgo": true,
+  "historia_humana": "En 2021, una trabajadora firma un papel nuevo con su empresa: dos días a la semana trabajará desde casa, voluntario y por escrito, como pide la nueva ley del trabajo a distancia. La emergencia se va apagando, pero esa costumbre se queda. Ese tiempo de salida se llama pospandemia.",
+  "choque": {
+   "frase": "«Lo de la pandemia ya pasó. Ya está.»",
+   "opciones": [
+    {
+     "id": "paso",
+     "e": "🙌",
+     "t": "Pasó, sí"
+    },
+    {
+     "id": "nodel",
+     "e": "🤔",
+     "t": "No del todo"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te ofrecen seguir trabajando dos días a la semana desde casa, con acuerdo por escrito. Piénsalo con calma. ¿Qué eliges?",
+   "opciones": [
+    {
+     "id": "casa",
+     "t": "Sigo desde casa"
+    },
+    {
+     "id": "oficina",
+     "t": "Vuelvo a la oficina"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La pandemia no terminó un día concreto. La OMS levantó la emergencia internacional el 5 de mayo de 2023, más de tres años después de declararla, y avisó de que **el virus seguía circulando**.",
+   "fuente": "OMS, declaración del 5 de mayo de 2023 sobre la 15.ª reunión del Comité de Emergencias (COVID-19)",
+   "url": "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic",
+   "busca": "Aquí «pos» solo ordena en el tiempo: **después de** la emergencia. Pero ese después trae cosas que se quedan, como el teletrabajo.",
+   "saltos": [
+    {
+     "t": "Creí que todo volvió a ser como antes",
+     "p": "Muchas costumbres de aquellos años se quedaron. En España, el teletrabajo pasó a ser ley en 2021: voluntario y por escrito."
+    },
+    {
+     "t": "Pensé que «pos» quiere decir «se acabó»",
+     "p": "En pospandemia, «pos» ordena en el tiempo. No dice que el virus desapareciera: dice que salimos de la emergencia."
+    },
+    {
+     "t": "No salté: miré lo que se quedó",
+     "p": "Bien visto. Lo que empezaste entonces y sigue en tu vida es justo lo que nombra la palabra."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué fecha marca el comienzo de la pospandemia en la ficha?",
+     "o": [
+      "Marzo de 2020",
+      "5 de mayo de 2023",
+      "Enero de 2022"
+     ],
+     "ok": 1,
+     "por": "Ese día la OMS dio por terminada la emergencia de salud pública de importancia internacional."
+    },
+    {
+     "p": "¿Qué valor tiene aquí el prefijo?",
+     "o": [
+      "Cronológico: después de",
+      "Ruptura: contra",
+      "Fin: después del final"
+     ],
+     "ok": 0,
+     "por": "Es P1: ordena en el tiempo, sin juzgar lo que había antes."
+    },
+    {
+     "p": "¿Con qué otra palabra de PostLab se conecta?",
+     "o": [
+      "Posverdad",
+      "Posmodernidad",
+      "Era posantibiótica"
+     ],
+     "ok": 2,
+     "por": "Las dos hablan de salud global: una, de lo que sigue a la pandemia; la otra, de un futuro con antibióticos que fallan."
+    }
+   ],
+   "sabias": "La FundéuRAE eligió «confinamiento» palabra del año en 2020 y «vacuna» en 2021. «Pospandemia», en cambio, todavía no está en el diccionario académico."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Lo que se quedó",
+     "t": "Apunta una costumbre que empezaste en la pandemia y sigue en tu vida, y otra que dejaste en cuanto pudiste.",
+     "historia": "apuntar qué costumbre de la pandemia sigue en tu vida y cuál dejaste"
+    },
+    {
+     "corta": "Preguntar en casa",
+     "t": "Pregunta a alguien mayor qué cambió para siempre en su trabajo o en sus estudios después de 2020.",
+     "historia": "preguntar a alguien mayor qué cambió para siempre después de 2020"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste o qué te contaron, y si te sorprendió."
+  },
+  "historia": {
+   "pensaba": {
+    "paso": "Entraste pensando que la pandemia ya es pasado.",
+    "nodel": "Entraste con la duda de si la pandemia acabó del todo.",
+    "igual": "Entraste sin darle muchas vueltas a la pandemia."
+   },
+   "hice": {
+    "casa": "Cuando te tocó decidir, elegiste seguir desde casa.",
+    "oficina": "Cuando te tocó decidir, elegiste volver a la oficina.",
+    "tiempo": "Cuando te tocó decidir, lo dejaste en el aire."
+   },
+   "ahora": "Ahora sabes que el «después» trae cosas que se quedan, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "era-posantibiotica"
+  },
+  "saber_mas": "**Valor del prefijo:** P1, cronológico («después de»). Tiempo que sigue al fin de la emergencia sanitaria. **Obra o hito que la fija:** La OMS da por terminada la emergencia de salud pública de importancia internacional por la COVID-19 (5 de mayo de 2023). **Se conecta con:** Poscrisis. **Fuentes de la ficha:** OMS, declaración del 5 de mayo de 2023 sobre la 15.ª reunión del Comité de Emergencias (COVID-19). **Nota:** Fecha discutible: la pandemia se declaró en 2020 y la OMS levantó la emergencia internacional en mayo de 2023. El DLE no recoge la palabra."
+ },
+ {
+  "id": "posfotografia",
+  "palabra": "Posfotografía",
+  "resumen": "Sigue habiendo fotos, pero ya no garantizan que algo estuvo delante de la cámara.",
+  "valor": "P1",
+  "termino": "postfotografia",
+  "riesgo": false,
+  "historia_humana": "En 2023, millones de personas ven en el móvil al papa Francisco con un plumífero blanco de diseño. Parece una foto, pero ninguna cámara la ha hecho: es una imagen generada con IA que circula como real. Eso es la posfotografía.",
+  "choque": {
+   "frase": "«Si hay foto, es que pasó.»",
+   "opciones": [
+    {
+     "id": "claro",
+     "e": "🤝",
+     "t": "Claro que sí"
+    },
+    {
+     "id": "duda",
+     "e": "🤨",
+     "t": "Lo dudo"
+    },
+    {
+     "id": "depende",
+     "e": "😐",
+     "t": "Depende"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te llega una foto del papa con un plumífero blanco de diseño. Es buenísima. ¿La reenvías?",
+   "opciones": [
+    {
+     "id": "reenvio",
+     "t": "La reenvío"
+    },
+    {
+     "id": "miro",
+     "t": "Miro de dónde sale"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La foto del papa se hizo con IA, sin cámara. Y el aviso es viejo: en 1992, William J. Mitchell ya habló de una «**era posfotográfica**», en la que una foto no garantiza nada.",
+   "fuente": "Canadian Centre for Architecture, catálogo: Mitchell, *The Reconfigured Eye* (MIT Press, 1992)",
+   "url": "https://www.cca.qc.ca/en/search/details/library/publication/25711675",
+   "busca": "Seguimos haciendo fotos, pero la toma ya no prueba que algo estuvo **delante de la cámara**. La pregunta ya no es si está retocada, sino cuánto y quién lo dice.",
+   "saltos": [
+    {
+     "t": "Si parecía una foto, la creí",
+     "p": "Durante siglo y medio, la foto química hizo de testigo. Con la imagen digital, parecer una foto ya no es una prueba."
+    },
+    {
+     "t": "La reenvié porque era una broma",
+     "p": "Una broma que circula como real deja de ser broma. Mirar de dónde sale cuesta unos segundos."
+    },
+    {
+     "t": "No salté: busqué el origen",
+     "p": "Bien visto. Autor, fecha y contexto: eso es lo que hoy necesita una foto para valer como prueba."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién habló de «era posfotográfica» en 1992?",
+     "o": [
+      "Joan Fontcuberta",
+      "William J. Mitchell",
+      "John Knoll"
+     ],
+     "ok": 1,
+     "por": "Mitchell, en *The Reconfigured Eye*. Fontcuberta llevó la palabra al español con *La furia de las imágenes* (2016)."
+    },
+    {
+     "p": "¿Qué dos valores del prefijo tiene posfotografía?",
+     "o": [
+      "«Después de» y «lo que queda de»",
+      "«Contra» y «más allá»",
+      "«Hijo de» y «después del final»"
+     ],
+     "ok": 0,
+     "por": "Viene después de la foto química (P1) y nombra lo que queda de ella: fotos sin garantía de verdad (P4)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posideología",
+      "Posgénero",
+      "Posverdad"
+     ],
+     "ok": 2,
+     "por": "Imágenes que parecen pruebas y no lo son: el terreno donde los hechos pierden peso."
+    }
+   ],
+   "sabias": "La primera imagen retocada con lo que sería Photoshop fue una foto de vacaciones: *Jennifer in Paradise* (1987), la novia de uno de sus creadores en una playa de Bora Bora."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tu última foto",
+     "t": "Mira tu última foto del móvil y averigua qué le añadió el teléfono: filtros, mezcla de tomas, borrados.",
+     "historia": "averiguar qué le añadió el teléfono a tu última foto"
+    },
+    {
+     "corta": "El origen antes de reenviar",
+     "t": "Antes de reenviar una imagen llamativa esta semana, busca quién la hizo y cuándo.",
+     "historia": "buscar quién hizo una imagen y cuándo antes de reenviarla"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué descubriste sobre esa imagen y si cambió lo que pensabas de ella."
+  },
+  "historia": {
+   "pensaba": {
+    "claro": "Entraste pensando que una foto es una prueba.",
+    "duda": "Entraste dudando de que una foto pruebe nada.",
+    "depende": "Entraste pensando que depende de la foto."
+   },
+   "hice": {
+    "reenvio": "Cuando te tocó decidir, reenviaste la imagen.",
+    "miro": "Cuando te tocó decidir, buscaste de dónde salía.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que una foto ya no garantiza nada, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdigital"
+  },
+  "saber_mas": "**Valores del prefijo:** P1, cronológico («después de») y P4, agotamiento («lo que queda de»). Sitúa la imagen después del soporte químico y señala lo que queda de la fotografía: sigue habiendo fotos, pero sin la garantía de verdad que tenían. **Obra o hito que la fija:** William J. Mitchell, The Reconfigured Eye: Visual Truth in the Post-Photographic Era (1992). **Figuras:** William J. Mitchell y Joan Fontcuberta. **Se conecta con:** Posverdad, Posdigital y Arte posinternet. **Fuentes de la ficha:** Canadian Centre for Architecture, catálogo: Mitchell, The reconfigured eye (MIT Press, 1992); Galaxia Gutenberg, Fontcuberta, La furia de las imágenes. Notas sobre la postfotografía (2016), primeras páginas. **Nota:** Fontcuberta difundió el término en español con La furia de las imágenes (2016): la imagen que fluye en el espacio híbrido de la sociabilidad digital."
+ },
+ {
+  "id": "poshumano",
+  "palabra": "Poshumano",
+  "resumen": "La idea de que la especie humana es una etapa que la técnica dejará atrás.",
+  "valor": "P5",
+  "termino": "posthumano-era-postbiologica",
+  "riesgo": false,
+  "historia_humana": "En los años ochenta, Hans Moravec, investigador de robótica en la Universidad Carnegie Mellon, ve entrar los ordenadores en las casas y saca una conclusión audaz: los robots serán nuestros herederos. En 1988 lo cuenta en *Mind Children*. Ese futuro imaginado se llama poshumano.",
+  "choque": {
+   "frase": "«Las máquinas acabarán sustituyéndonos.»",
+   "opciones": [
+    {
+     "id": "miedo",
+     "e": "😨",
+     "t": "Me da miedo"
+    },
+    {
+     "id": "ojala",
+     "e": "🤩",
+     "t": "Ojalá"
+    },
+    {
+     "id": "nocreo",
+     "e": "🤨",
+     "t": "No me lo creo"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te ofrecen un implante que duplica tu memoria. Dicen que es seguro. ¿Te lo pones?",
+   "opciones": [
+    {
+     "id": "acepto",
+     "t": "Me lo pongo"
+    },
+    {
+     "id": "paso",
+     "t": "Paso"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "No es una idea de ahora. En 1988, el robotista Hans Moravec publicó *Mind Children* («hijos de la mente»): imaginaba **robots como herederos** de la especie humana.",
+   "fuente": "Carnegie Mellon Robotics Institute, *Mind Children* (Harvard University Press, 1988)",
+   "url": "https://publications.ri.cmu.edu/mind-children-the-future-of-robot-and-human-intelligence",
+   "busca": "Aquí «pos» dice **después del final**: la especie actual sería una etapa cerrada. Es una apuesta sobre el futuro, no un hecho.",
+   "saltos": [
+    {
+     "t": "Lo acepté sin preguntar",
+     "p": "Ampliar una capacidad suele tener un precio. La pregunta útil es qué dejas de ser a cambio y quién decide."
+    },
+    {
+     "t": "Pensé que es ciencia ficción",
+     "p": "Empezó en revistas y listas de correo, pero hoy se discute en empresas de IA y en parlamentos."
+    },
+    {
+     "t": "No salté: dudé",
+     "p": "Bien visto. Entre la utopía y la alarma, dudar deja sitio a la pregunta de quién decide hacia dónde vamos."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué libro fija la palabra en la ficha?",
+     "o": [
+      "*Superinteligencia*, de Bostrom",
+      "*Mind Children*, de Moravec",
+      "*La singularidad está cerca*, de Kurzweil"
+     ],
+     "ok": 1,
+     "por": "Moravec lo publicó en 1988. Los otros dos son de 2014 y de 2005."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en poshumano?",
+     "o": [
+      "«Lo que queda de»",
+      "«Hijo de»",
+      "«Después del final»"
+     ],
+     "ok": 2,
+     "por": "Es P5: da la especie actual por terminada, superada por formas de vida técnicas."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab está conectada?",
+     "o": [
+      "Posgénero",
+      "Posfranquismo",
+      "Posextractivismo"
+     ],
+     "ok": 0,
+     "por": "Poshumano imagina superar los límites del cuerpo; posgénero, la división por sexo. En las dos, la técnica deja atrás algo que parecía fijo."
+    }
+   ],
+   "sabias": "En *Mind Children*, Moravec describió la paradoja que lleva su nombre: a un ordenador le cuesta poco jugar a las damas como un adulto y mucho moverse como un bebé de un año."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Qué darías a cambio",
+     "t": "Escribe qué capacidad tuya ampliarías con la técnica y qué no estarías dispuesto a perder.",
+     "historia": "escribir qué ampliarías con la técnica y qué no quieres perder"
+    },
+    {
+     "corta": "Una noticia de IA",
+     "t": "Busca una noticia sobre IA o implantes y fíjate en quién decide y quién no aparece.",
+     "historia": "fijarte en quién decide en la próxima noticia sobre IA o implantes"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué escribiste o qué viste en la noticia, y si cambiarías tu respuesta del Choque."
+  },
+  "historia": {
+   "pensaba": {
+    "miedo": "Entraste con miedo a que las máquinas nos sustituyan.",
+    "ojala": "Entraste con ganas de que la técnica nos lleve más lejos.",
+    "nocreo": "Entraste sin creerte que las máquinas vayan a sustituirnos."
+   },
+   "hice": {
+    "acepto": "Cuando te tocó decidir, aceptaste el implante.",
+    "paso": "Cuando te tocó decidir, dijiste que no.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que lo poshumano es una apuesta y no un hecho, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posgenero"
+  },
+  "saber_mas": "**Ojo con la homonimia:** este «poshumano» es el transhumanista (Moravec, Bostrom), distinto del poshumanismo crítico (Braidotti, Hayles). **Valor del prefijo:** P5, fin («después del final»). Imagina la especie actual como una etapa ya terminada, superada por formas de vida técnicas. **Obra o hito que la fija:** Hans Moravec, Mind Children: The Future of Robot and Human Intelligence (1988). **Figuras:** Hans Moravec, Max More y Nick Bostrom. **Se conecta con:** Poshumanismo y Posgénero. **Fuentes de la ficha:** Carnegie Mellon Robotics Institute, Mind Children (Harvard University Press, 1988). **Nota:** Vertiente transhumanista, distinta del poshumanismo crítico. Las fuentes consultadas confirman obra y año, no la página donde aparece «postbiológico»."
+ },
+ {
+  "id": "posdemocracia",
+  "palabra": "Posdemocracia",
+  "resumen": "Elecciones y parlamentos siguen en pie, pero las decisiones importantes se toman en otra parte.",
+  "valor": "P4",
+  "termino": "posdemocracia",
+  "riesgo": false,
+  "historia_humana": "En 2015, una votante griega dice no a las condiciones de un rescate, como más del 60 % de su país. Días después, su Gobierno acepta un acuerdo aún más duro. Cuando el voto sigue ahí pero pesa poco, se habla de posdemocracia.",
+  "choque": {
+   "frase": "«Votes lo que votes, deciden los de siempre.»",
+   "opciones": [
+    {
+     "id": "verdad",
+     "e": "🤝",
+     "t": "Es verdad"
+    },
+    {
+     "id": "exagera",
+     "e": "🤨",
+     "t": "Exagera"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Votas en un referéndum y gana tu opción. Días después, el Gobierno firma lo contrario. ¿Votarás la próxima vez?",
+   "opciones": [
+    {
+     "id": "voto",
+     "t": "Sí, votaré"
+    },
+    {
+     "id": "novoto",
+     "t": "No, ¿para qué?"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Para Colin Crouch, el problema no es que falten elecciones: las hay. Es que la gente queda como **público** de campañas, mientras se decide entre gobiernos y grandes empresas (*Post-Democracy*, 2004).",
+   "fuente": "Wiley / Polity, *Post-Democracy* (Colin Crouch, agosto de 2004)",
+   "url": "https://gov.wiley.com/WileyCDA/WileyTitle/productCd-0745633153,descCd-reviews.html",
+   "busca": "Es lo que queda de la democracia: instituciones en pie, sin la **participación** que les daba sentido. Por eso las respuestas que se ensayan piden más participación, no menos.",
+   "saltos": [
+    {
+     "t": "Pensé que votar no sirve",
+     "p": "Crouch describe instituciones que funcionan pero ya no entusiasman. Retirarse deja más sitio a quien ya decide."
+    },
+    {
+     "t": "Creí que eso pasa en otros países",
+     "p": "Crouch habla de las democracias más antiguas: caía la participación, los partidos perdían afiliados y las campañas parecían marketing."
+    },
+    {
+     "t": "No salté: seguiré votando",
+     "p": "Bien visto. Votar es la base; la pregunta de Crouch es qué más hace falta para que las decisiones vuelvan a la gente."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién publicó *Post-Democracy* en 2004?",
+     "o": [
+      "Jacques Rancière",
+      "Colin Crouch",
+      "Daniel Bell"
+     ],
+     "ok": 1,
+     "por": "El sociólogo británico Colin Crouch. Rancière había usado «posdemocracia» antes, en 1995, con otro sentido."
+    },
+    {
+     "p": "¿Qué dice el prefijo de posdemocracia?",
+     "o": [
+      "Lo que queda de la democracia",
+      "Que la democracia ha terminado",
+      "Que hay que ir contra la democracia"
+     ],
+     "ok": 0,
+     "por": "Es agotamiento (P4): las instituciones siguen en pie, pero vaciadas de participación."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab está conectada?",
+     "o": [
+      "Posimpresionismo",
+      "Pospandemia",
+      "Posideología"
+     ],
+     "ok": 2,
+     "por": "Las dos hablan de una política que se vuelve gestión: posideología lo anunció en 1960."
+    }
+   ],
+   "sabias": "Casi una década antes que Crouch, el filósofo Jacques Rancière habló de «posdemocracia» en *La Mésentente* (1995): una democracia que gestiona el consenso y se olvida del pueblo."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Dónde se decidió",
+     "t": "Elige una decisión que te afecte, en tu barrio o en tu centro, y averigua dónde se tomó y quién votó.",
+     "historia": "averiguar dónde se tomó una decisión que te afecta"
+    },
+    {
+     "corta": "Un espacio para participar",
+     "t": "Busca un espacio de participación cerca de ti, como unos presupuestos participativos, y mira cómo funciona.",
+     "historia": "buscar un espacio de participación cerca de ti y ver cómo funciona"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué averiguaste y si te sentiste más cerca o más lejos de esa decisión."
+  },
+  "historia": {
+   "pensaba": {
+    "verdad": "Entraste pensando que, votes lo que votes, deciden otros.",
+    "exagera": "Entraste pensando que eso es exagerar.",
+    "igual": "Entraste sin darle importancia a quién decide."
+   },
+   "hice": {
+    "voto": "Cuando te tocó decidir, elegiste seguir votando.",
+    "novoto": "Cuando te tocó decidir, elegiste dejar de votar.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que una democracia puede seguir en pie y vaciarse, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posideologia"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). Las instituciones siguen en pie, pero sin la participación que les daba sentido: es lo que queda de ellas. **Obra o hito que la fija:** Colin Crouch, Post-Democracy (2004). **Primer uso:** 1995, Jacques Rancière, La Mésentente: «post-démocratie». **Figuras:** Colin Crouch y Jacques Rancière. **Se conecta con:** Pospolítica, Posverdad, Posfascismo y Posideología. **Fuentes de la ficha:** Wiley / Polity, Post-Democracy (Colin Crouch, agosto de 2004); P. Kaczorowski, «Jacques Rancière o postdemokracji», Studia Polityczne (2022). **Nota:** Crouch adelantó la tesis en el folleto Coping with Post-Democracy (Fabian Society, 2000)."
+ },
+ {
+  "id": "posmodernidad",
+  "palabra": "Posmodernidad",
+  "resumen": "Las grandes historias que daban sentido, como el progreso, siguen ahí pero ya no convencen.",
+  "valor": "P2",
+  "termino": "posmodernidad-posmodernismo-filosofico",
+  "riesgo": false,
+  "historia_humana": "A finales de los setenta, el filósofo Jean-François Lyotard recibe un encargo del Gobierno de Quebec: un informe sobre el saber en los países más desarrollados. Su diagnóstico cabe en una frase: las grandes historias, como la del progreso, ya no convencen. Lo llamó condición posmoderna.",
+  "choque": {
+   "frase": "«Ya no hay grandes ideas en las que creer.»",
+   "opciones": [
+    {
+     "id": "pena",
+     "e": "😔",
+     "t": "Qué pena"
+    },
+    {
+     "id": "mejor",
+     "e": "😌",
+     "t": "Mejor así"
+    },
+    {
+     "id": "mentira",
+     "e": "🤨",
+     "t": "No es verdad"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Lees un artículo lleno de palabras difíciles en una revista seria. No entiendes nada. ¿Qué piensas?",
+   "opciones": [
+    {
+     "id": "profundo",
+     "t": "Será muy profundo"
+    },
+    {
+     "id": "raro",
+     "t": "Me huele raro"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La palabra se hizo filosofía con **un informe por encargo**: Lyotard escribió *La condition postmoderne* (1979) para el Consejo de Universidades de Quebec. Su tesis cabe en una línea: los grandes relatos ya no convencen.",
+   "fuente": "Stanford Encyclopedia of Philosophy, «Jean François Lyotard»",
+   "url": "https://plato.stanford.edu/entries/lyotard/",
+   "busca": "Posmodernidad dice que los grandes relatos, como el progreso, **pierden crédito**, y que el saber pasa a medirse por si funciona. No es jerga: es una idea clara.",
+   "saltos": [
+    {
+     "t": "Me fié de las palabras difíciles",
+     "p": "En 1996, el escándalo Sokal: un físico coló en una revista una parodia llena de jerga posmoderna. Oscuro no siempre es profundo."
+    },
+    {
+     "t": "Lo descarté todo por difícil",
+     "p": "La idea de fondo es sencilla y se puede discutir sin jerga: el progreso o la emancipación ya no convencen a todos."
+    },
+    {
+     "t": "No salté: sospeché y lo comprobé",
+     "p": "Bien visto. Si una idea no cabe en palabras claras, pedir que te la expliquen es el mejor filtro."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué año publicó Lyotard *La condition postmoderne*?",
+     "o": [
+      "1968",
+      "1979",
+      "1989"
+     ],
+     "ok": 1,
+     "por": "En 1979, como informe sobre el saber para el Consejo de Universidades de Quebec."
+    },
+    {
+     "p": "¿Qué dos valores del prefijo tiene posmodernidad?",
+     "o": [
+      "Ruptura y agotamiento",
+      "Cronológico y derivación",
+      "Fin y radicalización"
+     ],
+     "ok": 0,
+     "por": "Rompe con los supuestos del saber moderno (P2) y ve que los grandes relatos siguen ahí, pero sin crédito (P4)."
+    },
+    {
+     "p": "¿Qué palabra de PostLab viene después de posmodernidad?",
+     "o": [
+      "Posfranquismo",
+      "Posdesarrollo",
+      "Post-posmodernismo"
+     ],
+     "ok": 2,
+     "por": "Post-posmodernismo da por agotada la ironía posmoderna y busca sinceridad: un «pos» encima de otro."
+    }
+   ],
+   "sabias": "Uno de los primeros usos documentados de «postmodernismo» es español: Federico de Onís lo empleó en 1934, en una antología de poesía, para la reacción que siguió al modernismo de Rubén Darío."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tu gran relato",
+     "t": "Apunta un gran relato que guía tus decisiones, como el progreso o la tecnología, y pregúntate si lo has examinado.",
+     "historia": "apuntar un gran relato que guía tus decisiones y examinarlo"
+    },
+    {
+     "corta": "Lo que deja fuera",
+     "t": "Cuando veas una explicación que lo aclara todo de golpe, apunta qué deja fuera.",
+     "historia": "apuntar qué deja fuera la próxima explicación que lo aclare todo"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué relato apuntaste y si sigue convenciéndote igual."
+  },
+  "historia": {
+   "pensaba": {
+    "pena": "Entraste con pena por las grandes ideas perdidas.",
+    "mejor": "Entraste pensando que mejor sin grandes ideas.",
+    "mentira": "Entraste pensando que las grandes ideas siguen vivas."
+   },
+   "hice": {
+    "profundo": "Cuando te tocó decidir, te fiaste de las palabras difíciles.",
+    "raro": "Cuando te tocó decidir, sospechaste.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que los grandes relatos pierden crédito sin desaparecer, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posproduccion"
+  },
+  "saber_mas": "**Valores del prefijo:** P2, ruptura («contra») y P4, agotamiento («lo que queda de»). Rompe con los supuestos que legitimaban el saber moderno y constata que esos grandes relatos siguen ahí, pero sin crédito. **Obra o hito que la fija:** Jean-François Lyotard, La condition postmoderne: rapport sur le savoir (1979). **Figuras:** Jean-François Lyotard, Rudolf Pannwitz y Arnold Toynbee. **Se conecta con:** Posestructuralismo, Poshistoria, Post-posmodernismo, Posmodernidad sociológica, Posmodernismo literario y Arquitectura posmoderna. **Fuentes de la ficha:** Stanford Encyclopedia of Philosophy, «Jean François Lyotard». **Nota:** Los usos anteriores que cita el diccionario (Pannwitz, 1917; Toynbee) no se han comprobado con fuente."
+ },
+ {
+  "id": "posproduccion",
+  "palabra": "Posproducción",
+  "resumen": "Crear ya no es fabricar desde cero: es elegir, recortar y mezclar lo que ya existe.",
+  "valor": "P3",
+  "termino": "postproduccion",
+  "riesgo": false,
+  "historia_humana": "En 2004, el productor Danger Mouse mezcla las voces del *Black Album* de Jay-Z con trozos del *White Album* de los Beatles. La discográfica intenta frenarlo, y el disco circula igual por internet. Crear montando lo que ya existe: eso es posproducción.",
+  "choque": {
+   "frase": "«Eso no es crear, es copiar.»",
+   "opciones": [
+    {
+     "id": "acuerdo",
+     "e": "🤝",
+     "t": "Estoy de acuerdo"
+    },
+    {
+     "id": "nada",
+     "e": "🤨",
+     "t": "Para nada"
+    },
+    {
+     "id": "depende",
+     "e": "😐",
+     "t": "Depende"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un músico mezcla las voces de un disco de rap con trozos de los Beatles. ¿Es una obra nueva?",
+   "opciones": [
+    {
+     "id": "nueva",
+     "t": "Sí, es nueva"
+    },
+    {
+     "id": "copia",
+     "t": "No, es una copia"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 2002, el crítico Nicolas Bourriaud lo vio como **una forma de crear**: muchos artistas ya no fabricaban objetos, sino que montaban lo existente, como en la posproducción del cine. Su libro: *Postproduction*.",
+   "fuente": "Artexte, registro de catálogo: *Postproduction* (Lukas & Sternberg, Nueva York, 2002)",
+   "url": "https://e-artexte.ca/14872",
+   "busca": "El «pos» lleva al límite la apropiación: el artista **reprograma** lo ya hecho, como un pinchadiscos que mezcla temas ajenos.",
+   "saltos": [
+    {
+     "t": "Pensé que mezclar es copiar",
+     "p": "Copiar repite; montar cambia el sentido. *24 Hour Psycho* ralentiza una película entera hasta durar un día: sin rodar nada, es otra experiencia."
+    },
+    {
+     "t": "Creí que todo vale",
+     "p": "La pregunta sigue abierta: ¿dónde termina la cita y empieza la copia? Los pleitos contra empresas de IA son, en parte, ese debate."
+    },
+    {
+     "t": "No salté: vi algo nuevo",
+     "p": "Bien visto. Aunque la discográfica intentó frenar aquel disco: lo nuevo y lo legal no siempre coinciden."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién publicó *Postproduction* en 2002?",
+     "o": [
+      "Nicolas Bourriaud",
+      "Marcel Duchamp",
+      "Christian Marclay"
+     ],
+     "ok": 0,
+     "por": "El crítico y comisario francés Nicolas Bourriaud. Duchamp es un antecedente: el urinario de 1917."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posproducción?",
+     "o": [
+      "«Contra»",
+      "«Más allá, desde dentro»",
+      "«Después del final»"
+     ],
+     "ok": 1,
+     "por": "Es radicalización (P3): lleva la apropiación y el *ready-made* hasta su límite."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Pospandemia",
+      "Posdemocracia",
+      "Post-posmodernismo"
+     ],
+     "ok": 2,
+     "por": "Las dos piensan qué viene después de la cultura de la cita y el pastiche."
+    }
+   ],
+   "sabias": "En 1999, Pierre Huyghe y Philippe Parreno compraron los derechos de AnnLee, un personaje secundario de manga, y lo prestaron a otros artistas. En 2002 le cedieron los derechos a ella misma."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Qué es tuyo",
+     "t": "En lo próximo que publiques o compartas, separa qué creaste tú y qué tomaste de otros.",
+     "historia": "separar qué es tuyo y qué es de otros en lo próximo que compartas"
+    },
+    {
+     "corta": "Decir de quién es",
+     "t": "Si usas esta semana un sonido, una imagen o un texto ajeno, di de quién es.",
+     "historia": "decir de quién es lo ajeno que uses esta semana"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira cuánto era tuyo y cuánto mezcla, y si lo dijiste."
+  },
+  "historia": {
+   "pensaba": {
+    "acuerdo": "Entraste pensando que mezclar es copiar.",
+    "nada": "Entraste pensando que mezclar también es crear.",
+    "depende": "Entraste pensando que depende de cómo se mezcle."
+   },
+   "hice": {
+    "nueva": "Cuando te tocó decidir, viste una obra nueva.",
+    "copia": "Cuando te tocó decidir, viste una copia.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que montar lo ya hecho puede ser crear, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "post-posmodernismo"
+  },
+  "saber_mas": "**Valor del prefijo:** P3, radicalización («más allá, desde dentro»). Lleva al límite la apropiación y el ready-made: el artista ya no fabrica, reprograma lo ya hecho, como en la fase de montaje del cine. **Obra o hito que la fija:** Nicolas Bourriaud, Postproduction. Culture as Screenplay: How Art Reprograms the World (2002). **Figuras:** Nicolas Bourriaud. **Se conecta con:** Post-posmodernismo, Arte posconceptual, Arte posinternet y Posmodernidad. **Fuentes de la ficha:** Artexte, registro de catálogo: Postproduction (Lukas & Sternberg, Nueva York, 2002). **Nota:** El diccionario cita como continuación la «altermodernidad» (Tate Triennial, 2009); ese dato no se ha comprobado en esta revisión."
+ },
+ {
+  "id": "posfranquismo",
+  "palabra": "Posfranquismo",
+  "resumen": "El tiempo que arranca con la muerte de Franco en 1975 y el desmontaje de su régimen.",
+  "valor": "P1",
+  "termino": "posfranquismo",
+  "riesgo": true,
+  "historia_humana": "En diciembre de 1976, una vecina de cualquier pueblo de España vota en referéndum una ley aprobada por las propias Cortes de Franco: abre la puerta al sufragio universal. Gana por amplísima mayoría. Ese tiempo de desmontar el régimen se llama posfranquismo.",
+  "choque": {
+   "frase": "«Lo de Franco ya es historia antigua.»",
+   "opciones": [
+    {
+     "id": "pasado",
+     "e": "🤝",
+     "t": "Sí, ya pasó"
+    },
+    {
+     "id": "presente",
+     "e": "🤨",
+     "t": "No tanto"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Es diciembre de 1976. En un referéndum te preguntan si apruebas una ley que abre la puerta a elecciones libres. Tómate tu tiempo. ¿Qué votas?",
+   "opciones": [
+    {
+     "id": "si",
+     "t": "Voto sí"
+    },
+    {
+     "id": "no",
+     "t": "Voto no"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La democracia entró por la puerta de una ley franquista: en 1976, **las propias Cortes de Franco** aprobaron la Ley para la Reforma Política, que abría el paso a su propia desaparición.",
+   "fuente": "Britannica, Francisco Franco",
+   "url": "https://www.britannica.com/biography/Francisco-Franco",
+   "busca": "Aquí «pos» ordena en el tiempo: **después de** un régimen ya terminado. Lo llamativo es cómo terminó: se cambió todo desde su propia ley.",
+   "saltos": [
+    {
+     "t": "Creí que la dictadura cayó de golpe",
+     "p": "No hubo un día de ruptura. Hubo pasos: la ley de 1976, las elecciones de 1977, la Constitución de 1978."
+    },
+    {
+     "t": "Pensé que no tiene que ver conmigo",
+     "p": "En 2019, los restos de Franco salieron del Valle de los Caídos: cuarenta y cuatro años después, aún había asuntos pendientes."
+    },
+    {
+     "t": "No salté: pensé en lo que vino después",
+     "p": "Bien visto. La palabra sirve también para lo que perduró: calles, leyes y debates que siguen hoy."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Con qué hecho arranca el posfranquismo?",
+     "o": [
+      "La Constitución de 1978",
+      "Las elecciones de 1977",
+      "La muerte de Franco en 1975"
+     ],
+     "ok": 2,
+     "por": "Franco murió el 20 de noviembre de 1975. Las elecciones y la Constitución vinieron después."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posfranquismo?",
+     "o": [
+      "Cronológico: después de",
+      "Agotamiento: lo que queda de",
+      "Derivación: hijo de"
+     ],
+     "ok": 0,
+     "por": "Es P1: nombra el periodo que sigue al fin de un régimen concreto, ya terminado."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posfotografía",
+      "Posfascismo",
+      "Posproducción"
+     ],
+     "ok": 1,
+     "por": "Posfascismo nombra lo que queda del fascismo histórico cuando se compite en elecciones."
+    }
+   ],
+   "sabias": "Las primeras elecciones generales libres desde 1936 fueron el 15 de junio de 1977. El Partido Comunista, legalizado en abril, ya pudo presentarse."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mirar tu barrio",
+     "t": "Busca en tu barrio o tu pueblo una calle, placa o costumbre que hable de aquellos años y averigua su historia.",
+     "historia": "buscar en tu barrio una huella de aquellos años y averiguar su historia"
+    },
+    {
+     "corta": "Preguntar en casa",
+     "t": "Pregunta a alguien mayor qué recuerda de 1975 a 1978 y de las primeras elecciones.",
+     "historia": "preguntar a alguien mayor qué recuerda de las primeras elecciones"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué encontraste o qué te contaron, y qué te sorprendió."
+  },
+  "historia": {
+   "pensaba": {
+    "pasado": "Entraste pensando que lo de Franco es historia antigua.",
+    "presente": "Entraste pensando que aquello aún pesa hoy.",
+    "igual": "Entraste sin darle mucha importancia a aquellos años."
+   },
+   "hice": {
+    "si": "Cuando te tocó decidir, votaste sí a la reforma.",
+    "no": "Cuando te tocó decidir, votaste no a la reforma.",
+    "tiempo": "Cuando te tocó decidir, no llegaste a votar."
+   },
+   "ahora": "Ahora sabes que el después de una dictadura se hace por pasos, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posfascismo"
+  },
+  "saber_mas": "**Valor del prefijo:** P1, cronológico («después de»). Periodo que sigue al fin de un régimen concreto, ya terminado. **Obra o hito que la fija:** Muerte de Francisco Franco (20 de noviembre de 1975). **Se conecta con:** Posdictadura. **Fuentes de la ficha:** RAE, Diccionario de la lengua española, «posfranquismo»; Britannica, Francisco Franco."
+ },
+ {
+  "id": "sociedad-posemocional",
+  "palabra": "Sociedad posemocional",
+  "resumen": "Las emociones no desaparecen: se fabrican y se consumen, pero rara vez llevan a actuar.",
+  "valor": "P4",
+  "termino": "sociedad-postemocional",
+  "riesgo": false,
+  "historia_humana": "En 2012, un chaval ve en el móvil un vídeo de denuncia que le pone la piel de gallina, como a cien millones de personas más, y lo comparte. El día convocado para salir a la calle, apenas va nadie. Esa emoción que no llega a acto es la sociedad posemocional.",
+  "choque": {
+   "frase": "«Con un “me gusta” ya ayudas.»",
+   "opciones": [
+    {
+     "id": "ayuda",
+     "e": "👍",
+     "t": "Algo ayuda"
+    },
+    {
+     "id": "nada",
+     "e": "🙄",
+     "t": "No ayuda nada"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un vídeo de denuncia te emociona y ya lleva millones de visitas. Convocan una protesta el sábado. ¿Qué haces?",
+   "opciones": [
+    {
+     "id": "comparto",
+     "t": "Lo comparto"
+    },
+    {
+     "id": "voy",
+     "t": "Voy a la protesta"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "El vídeo *Kony 2012* superó los cien millones de visitas en pocos días, pero la jornada de movilización que convocó después **tuvo muy poco seguimiento**. Stjepan Meštrović ya había descrito esa grieta en *Postemotional Society* (1997).",
+   "fuente": "Catálogo de la Biblioteca del College of the Holy Cross: Meštrović, *Postemotional Society* (Sage, 1997)",
+   "url": "https://library.holycross.edu/Record/b1366009/Details",
+   "busca": "Es lo que queda de la emoción: abunda, pero **vaciada** de su fuerza para mover. Sentir y compartir no es lo mismo que hacer.",
+   "saltos": [
+    {
+     "t": "Compartir me pareció suficiente",
+     "p": "Compartir es el gesto más barato. La pregunta de Meštrović es cuánta emoción se convierte en actos: donar, votar, cambiar hábitos."
+    },
+    {
+     "t": "Pensé que nadie hace nada",
+     "p": "No siempre. El reto del cubo de agua helada (2014) sí recaudó fondos para la ELA: a veces la emoción sí mueve."
+    },
+    {
+     "t": "No salté: fui a la protesta",
+     "p": "Bien visto. Pasar del clic al acto es justo lo que la sociedad posemocional pone difícil."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién escribió *Postemotional Society* (1997)?",
+     "o": [
+      "Stjepan Meštrović",
+      "David Riesman",
+      "Arlie Hochschild"
+     ],
+     "ok": 0,
+     "por": "El sociólogo Stjepan Meštrović. Riesman le escribió el prólogo."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo aquí?",
+     "o": [
+      "«Lo que queda de»: emociones vaciadas",
+      "«Contra» las emociones",
+      "«Después del final» de las emociones"
+     ],
+     "ok": 0,
+     "por": "Es agotamiento (P4): las emociones sobreviven fabricadas y sin fuerza para mover."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posgénero",
+      "Arquitectura posmoderna",
+      "Posfactual"
+     ],
+     "ok": 2,
+     "por": "En las dos manda la emoción: en posfactual, por encima de los datos; aquí, sin llegar a la acción."
+    }
+   ],
+   "sabias": "*La muchedumbre solitaria* (1950), de la que parte Meštrović, se atribuye casi siempre solo a David Riesman, pero la firmaron tres autores: Riesman, Nathan Glazer y Reuel Denney."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Del clic al acto",
+     "t": "La próxima vez que algo te indigne o te emocione en redes, haz una cosa concreta además de reaccionar.",
+     "historia": "hacer algo concreto, además de reaccionar, con lo próximo que te emocione en redes"
+    },
+    {
+     "corta": "Contar tus reacciones",
+     "t": "Durante un día, cuenta cuántas veces reaccionas a algo y cuántas haces algo después.",
+     "historia": "contar durante un día cuántas veces reaccionas y cuántas haces algo después"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué hiciste además de reaccionar y si mereció la pena."
+  },
+  "historia": {
+   "pensaba": {
+    "ayuda": "Entraste pensando que un «me gusta» ya ayuda.",
+    "nada": "Entraste pensando que un «me gusta» no sirve de nada.",
+    "igual": "Entraste sin darle importancia a los «me gusta»."
+   },
+   "hice": {
+    "comparto": "Cuando te tocó decidir, lo compartiste.",
+    "voy": "Cuando te tocó decidir, elegiste ir a la protesta.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que sentir no es lo mismo que actuar, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posfactual"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). Las emociones no desaparecen: sobreviven fabricadas y vaciadas de su capacidad de mover a la acción. **Obra o hito que la fija:** Stjepan Meštrović, Postemotional Society (1997). **Figuras:** Stjepan Meštrović. **Se conecta con:** Posverdad, Posfactual y Posmodernidad sociológica. **Fuentes de la ficha:** Catálogo de la Biblioteca del College of the Holy Cross: Meštrović, Postemotional Society (Sage, 1997); Sociological Research Online, reseña de Postemotional Society (1999). **Nota:** El libro lleva prólogo de David Riesman."
+ },
+ {
+  "id": "posdigital",
+  "palabra": "Posdigital",
+  "resumen": "Lo digital ya no es novedad: es el fondo de todo, como la electricidad.",
+  "valor": "P1",
+  "termino": "postdigital",
+  "riesgo": false,
+  "historia_humana": "En 1995, el grupo alemán Oval pinta con rotulador la cara de unos discos compactos para que el lector salte, y convierte esos errores en música. Cuando lo digital deja de sorprender, lo interesante está en sus fallos. A eso se le llamó posdigital.",
+  "choque": {
+   "frase": "«Lo analógico está muerto.»",
+   "opciones": [
+    {
+     "id": "muerto",
+     "e": "👍",
+     "t": "Pues sí"
+    },
+    {
+     "id": "vivo",
+     "e": "📀",
+     "t": "Para nada"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu disco favorito sale en vinilo. Ya lo tienes en el móvil. ¿Te lo compras?",
+   "opciones": [
+    {
+     "id": "compro",
+     "t": "Me lo compro"
+    },
+    {
+     "id": "paso",
+     "t": "No, ya lo tengo"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La revolución digital se dio por terminada en 1998, y no por fracasar: Nicholas Negroponte escribió en *Wired* que **había ganado**. En 2000, Kim Cascone llamó «posdigital» a la música hecha con sus fallos.",
+   "fuente": "Nicholas Negroponte, columnas en *Wired* (MIT Media Lab): «Beyond Digital», *Wired* 6.12, diciembre de 1998",
+   "url": "https://web.media.mit.edu/~nicholas/Wired/",
+   "busca": "Posdigital no es volver atrás: es que lo digital ya **no sorprende**, y lo analógico vuelve sin nostalgia, mezclado con lo informático.",
+   "saltos": [
+    {
+     "t": "Pensé que el vinilo es nostalgia",
+     "p": "En 2020, en Estados Unidos, los vinilos superaron en ingresos a los CD por primera vez desde los ochenta, y conviven con el streaming."
+    },
+    {
+     "t": "Creí que una cosa excluye la otra",
+     "p": "Lo posdigital mezcla lo analógico y lo digital sin jerarquía. Ya no «entramos en internet»: nunca salimos."
+    },
+    {
+     "t": "No salté: elegí con calma",
+     "p": "Bien visto. Comprar o no es lo de menos: lo posdigital es poder elegir entre los dos sin que uno anule al otro."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién usó «posdigital» en 2000, hablando de música?",
+     "o": [
+      "Kim Cascone",
+      "Nicholas Negroponte",
+      "Florian Cramer"
+     ],
+     "ok": 0,
+     "por": "El compositor Kim Cascone, en *Computer Music Journal*. Negroponte le dio la idea en 1998."
+    },
+    {
+     "p": "¿Qué dos valores tiene el prefijo en posdigital?",
+     "o": [
+      "Fin y derivación",
+      "Cronológico y ruptura",
+      "Radicalización y agotamiento"
+     ],
+     "ok": 1,
+     "por": "Viene después de que lo digital fuera novedad (P1) y se aparta del entusiasmo tecnológico anterior (P2)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posfranquismo",
+      "Posmodernidad",
+      "Era pos-Moore"
+     ],
+     "ok": 2,
+     "por": "Los chips ya no mejoran solos cada dos años: otra señal de que lo digital dejó de ser una carrera de novedades."
+    }
+   ],
+   "sabias": "El artículo de Negroponte que inspiró a Cascone empezaba sin rodeos: «Face it – the Digital Revolution is over». Lo publicó en 1998, tres meses después de que se fundara Google."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Un objeto analógico",
+     "t": "Usa un día un objeto analógico que tengas, como una libreta, una cámara o un reloj, y apunta qué te da que no te da el móvil.",
+     "historia": "usar un objeto analógico un día y apuntar qué te da"
+    },
+    {
+     "corta": "Un rato sin pantallas",
+     "t": "Elige un rato concreto de la semana sin pantallas y fíjate en qué echas de menos y en qué no.",
+     "historia": "pasar un rato concreto sin pantallas y fijarte en qué echas de menos"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste y si lo repetirías."
+  },
+  "historia": {
+   "pensaba": {
+    "muerto": "Entraste pensando que lo analógico está muerto.",
+    "vivo": "Entraste pensando que lo analógico sigue vivo.",
+    "igual": "Entraste sin darle vueltas a lo analógico."
+   },
+   "hice": {
+    "compro": "Cuando te tocó decidir, te compraste el vinilo.",
+    "paso": "Cuando te tocó decidir, te quedaste con la versión del móvil.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que lo digital ya es el fondo de todo, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "era-pos-moore"
+  },
+  "saber_mas": "**Valores del prefijo:** P1, cronológico («después de») y P2, ruptura («contra»). Sitúa la obra después de que lo informático dejara de ser novedad y se aparta del entusiasmo tecnológico de la etapa anterior. **Obra o hito que la fija:** Kim Cascone, «The Aesthetics of Failure: 'Post-Digital' Tendencies in Contemporary Computer Music» (2000). **Figuras:** Kim Cascone, Nicholas Negroponte y Florian Cramer. **Se conecta con:** Arte posinternet, Pospoesía, Era posmedia, Poscine y POSTPOSTPOST. **Fuentes de la ficha:** Geoff Cox, «Prehistories of the Post-Digital», APRJA 3(1), 2014 (fecha a Cascone en Computer Music Journal, invierno de 2000); Nicholas Negroponte, columnas en Wired (MIT Media Lab): «Beyond Digital», Wired 6.12, diciembre de 1998. **Nota:** Cascone parte de «Beyond Digital» de Negroponte (1998), que daba por terminada la revolución digital. Wikipedia en inglés fecha el artículo en 2002, pero el volumen 24(4) es de 2000."
+ },
+ {
+  "id": "posextractivismo",
+  "palabra": "Posextractivismo",
+  "resumen": "Salir poco a poco de economías que viven de exportar minerales, petróleo y monocultivos.",
+  "valor": "P2",
+  "termino": "posextractivismo",
+  "riesgo": false,
+  "historia_humana": "En 2023, una votante ecuatoriana decide en una consulta popular qué hacer con el petróleo del bloque 43, dentro del parque Yasuní. Gana dejarlo sin explotar. Salir de vivir de las materias primas, paso a paso, se llama posextractivismo.",
+  "choque": {
+   "frase": "«Sin minas no hay coches eléctricos. Y punto.»",
+   "opciones": [
+    {
+     "id": "claro",
+     "e": "🤝",
+     "t": "Claro"
+    },
+    {
+     "id": "nosolo",
+     "e": "🤔",
+     "t": "No solo eso"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu país vota si deja bajo tierra el petróleo de un parque amazónico. Es renunciar a mucho dinero. ¿Qué votas?",
+   "opciones": [
+    {
+     "id": "dejar",
+     "t": "Dejarlo bajo tierra"
+    },
+    {
+     "id": "sacar",
+     "t": "Sacarlo"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La propuesta no es cerrar todas las minas. *Transiciones* (Perú, 2011) planteaba salir **por etapas**: de un extractivismo «depredador» a uno «sensato» y, al final, a una extracción «indispensable».",
+   "fuente": "Alayza y Gudynas (eds.), *Transiciones. Postextractivismo y alternativas al extractivismo en el Perú* (RedGE/CEPES, Lima, 2011)",
+   "url": "https://www.lampadia.com/assets/uploads_documentos/9d96c-transiciones-postextractivismo-y-alternativas-al-extractivismo-en-el-peru.pdf",
+   "busca": "El «pos» rompe con un modelo: vivir de **exportar materias primas**. No pide prohibir, sino depender menos y cumplir umbrales sociales y ambientales.",
+   "saltos": [
+    {
+     "t": "Elegí el dinero sin pensar en el agua",
+     "p": "Las protestas contra la mina Conga (Perú, 2011) fueron por el riesgo para lagunas y fuentes de agua. Ese coste también cuenta."
+    },
+    {
+     "t": "Pensé que es todo o nada",
+     "p": "La propuesta es por etapas, y se puede desandar: El Salvador prohibió la minería metálica en 2017 y levantó la prohibición en 2024."
+    },
+    {
+     "t": "No salté: pensé en quién paga",
+     "p": "Bien visto. Preguntar quién gana y quién paga cada extracción es el centro del posextractivismo."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué libro de 2011 fija la palabra?",
+     "o": [
+      "*The Development Dictionary*",
+      "*Encountering Development*",
+      "*Transiciones*, de Alayza y Gudynas"
+     ],
+     "ok": 2,
+     "por": "Se editó en Lima en 2011. Los otros dos son de 1992 y 1995, y tratan del posdesarrollo."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Ruptura: «contra»",
+      "Cronológico: «después de»",
+      "Derivación: «hijo de»"
+     ],
+     "ok": 0,
+     "por": "Es P2: propone salir del modelo primario-exportador y de sus supuestos, no solo gestionarlo mejor."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posverdad",
+      "Posdesarrollo",
+      "Posmodernidad"
+     ],
+     "ok": 1,
+     "por": "Posdesarrollo duda de la idea misma de desarrollo; el posextractivismo baja esa duda a minas, pozos y monocultivos."
+    }
+   ],
+   "sabias": "Ecuador fue en 2008 el primer país del mundo en reconocer derechos a la naturaleza en su Constitución, que además incorporó el *sumak kawsay* o buen vivir."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Los metales de tu móvil",
+     "t": "Averigua de qué metales está hecho tu móvil y de qué países suelen salir.",
+     "historia": "averiguar de qué metales está hecho tu móvil y de dónde salen"
+    },
+    {
+     "corta": "Alargar la vida",
+     "t": "Elige un aparato que pensabas cambiar y busca cómo repararlo o alargarle la vida.",
+     "historia": "buscar cómo reparar o alargar la vida de un aparato que pensabas cambiar"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué averiguaste o qué reparaste, y si cambió cómo miras tus aparatos."
+  },
+  "historia": {
+   "pensaba": {
+    "claro": "Entraste pensando que sin minas no hay transición.",
+    "nosolo": "Entraste pensando que no todo es sacar minerales.",
+    "igual": "Entraste sin pensar de dónde salen los minerales."
+   },
+   "hice": {
+    "dejar": "Cuando te tocó decidir, votaste dejarlo bajo tierra.",
+    "sacar": "Cuando te tocó decidir, votaste sacarlo.",
+    "tiempo": "Cuando te tocó decidir, no llegaste a votar."
+   },
+   "ahora": "Ahora sabes que salir del extractivismo se plantea por etapas, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdesarrollo"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). Propone salir del modelo primario-exportador y de sus supuestos, no solo gestionarlo mejor. **Obra o hito que la fija:** Alejandra Alayza y Eduardo Gudynas (eds.), Transiciones. Postextractivismo y alternativas al extractivismo en el Perú (2011). **Figuras:** Eduardo Gudynas, Alejandra Alayza, Alberto Acosta y Maristella Svampa. **Se conecta con:** Posdesarrollo, Poscrecimiento y Posneoliberalismo. **Fuentes de la ficha:** Alayza y Gudynas (eds.), Transiciones. Postextractivismo y alternativas al extractivismo en el Perú (RedGE/CEPES, Lima, 1.ª ed. abril de 2011). **Nota:** Propuesta desarrollada por Gudynas y el equipo del CLAES; las transiciones no implican prohibir toda actividad extractiva."
+ },
+ {
+  "id": "era-posantibiotica",
+  "palabra": "Era posantibiótica",
+  "resumen": "Un futuro temido en que los antibióticos pierden fuerza y una infección corriente vuelve a ser peligrosa.",
+  "valor": "P4",
+  "termino": "era-posantibiotica",
+  "riesgo": true,
+  "historia_humana": "En 1945, Alexander Fleming recoge el Nobel por la penicilina y aprovecha su discurso para avisar: tomarla en dosis insuficientes puede enseñar a los microbios a resistirla. En 2014, la OMS pone nombre a ese riesgo: era posantibiótica.",
+  "choque": {
+   "frase": "«Para el catarro, un antibiótico y listo.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "💊",
+     "t": "Claro"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "No sirve"
+    },
+    {
+     "id": "nose",
+     "e": "🤷",
+     "t": "No lo sé"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tienes una granja. Un pienso con antibiótico hace que los animales engorden antes y ganes más. Piénsalo con calma. ¿Lo usas?",
+   "opciones": [
+    {
+     "id": "uso",
+     "t": "Lo uso"
+    },
+    {
+     "id": "nouso",
+     "t": "No lo uso"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 2014, al presentar su primer informe mundial sobre resistencias, la OMS avisó: una era en que infecciones comunes y heridas leves vuelvan a poner la vida en peligro **no es una fantasía**, sino una posibilidad real.",
+   "fuente": "OMS, nota de prensa del 30 de abril de 2014 sobre su primer informe mundial de resistencia a los antibióticos",
+   "url": "https://www.who.int/southeastasia/news/detail/30-04-2014-who-s-first-global-report-on-antibiotic-resistance-reveals-serious-worldwide-threat-to-public-health",
+   "busca": "Los antibióticos siguen ahí, pero **pierden eficacia** cada vez que se usan sin necesidad, en personas o en granjas. Es lo que queda de ellos si no se cuidan.",
+   "saltos": [
+    {
+     "t": "Pensé en ganar tiempo y dinero",
+     "p": "En 2006, la Unión Europea prohibió usar antibióticos para engordar ganado: las granjas también crían resistencias que llegan a las personas."
+    },
+    {
+     "t": "Creí que siempre habrá otro antibiótico",
+     "p": "Desde los años ochenta apenas se han descubierto familias nuevas: desarrollarlos es caro y poco rentable."
+    },
+    {
+     "t": "No salté: no lo usé",
+     "p": "Bien visto. Usarlos solo cuando hacen falta es la manera de que sigan funcionando."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué organismo avisó en 2014 de una era posantibiótica?",
+     "o": [
+      "La OMS",
+      "La Unión Europea",
+      "El Gobierno británico"
+     ],
+     "ok": 0,
+     "por": "La Organización Mundial de la Salud, al presentar su primer informe mundial de vigilancia de la resistencia."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "«Después de»",
+      "«Lo que queda de»",
+      "«Hijo de»"
+     ],
+     "ok": 1,
+     "por": "Es agotamiento (P4): los antibióticos siguen ahí, pero pierden eficacia."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posdigital",
+      "Posfeminismo",
+      "Pospandemia"
+     ],
+     "ok": 2,
+     "por": "Las dos tratan de salud global y de lo frágil que es lo que dábamos por seguro."
+    }
+   ],
+   "sabias": "Fleming lo vio venir: en su discurso del Nobel, en 1945, avisó de que tomar penicilina en dosis insuficientes podía enseñar a los microbios a resistirla."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Revisar el botiquín",
+     "t": "Mira si en casa hay antibióticos sobrantes y pregunta a un profesional sanitario qué hacer con ellos.",
+     "historia": "revisar si en casa hay antibióticos sobrantes y preguntar qué hacer con ellos"
+    },
+    {
+     "corta": "Contarlo en casa",
+     "t": "Explica a alguien de casa por qué un antibiótico no sirve para un resfriado, que lo causa un virus.",
+     "historia": "explicar en casa por qué un antibiótico no sirve para un resfriado"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué encontraste o qué te respondieron, y si alguien cambió de idea."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que el antibiótico vale para el catarro.",
+    "no": "Entraste sabiendo que el antibiótico no vale para el catarro.",
+    "nose": "Entraste con la duda de para qué sirve un antibiótico."
+   },
+   "hice": {
+    "uso": "Cuando te tocó decidir, usaste el pienso con antibiótico.",
+    "nouso": "Cuando te tocó decidir, no lo usaste.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que los antibióticos se gastan si se usan mal, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "pospandemia"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). Los antibióticos siguen ahí, pero pierden eficacia: lo que queda de ellos. **Obra o hito que la fija:** OMS, Antimicrobial Resistance: Global Report on Surveillance (2014). **Figuras:** Keiji Fukuda y Organización Mundial de la Salud. **Se conecta con:** Pospandemia. **Fuentes de la ficha:** OMS, nota de prensa del 30 de abril de 2014 sobre su primer informe mundial de resistencia a los antibióticos. **Nota:** La advertencia la formuló Keiji Fukuda, subdirector general de la OMS, al presentar el informe; este no fija el primer uso de la expresión."
+ },
+ {
+  "id": "posideologia",
+  "palabra": "Posideología",
+  "resumen": "La tesis de que las grandes doctrinas políticas se han acabado y la política es ya gestión técnica.",
+  "valor": "P5",
+  "termino": "postideologia-fin-de-las-ideologias",
+  "riesgo": false,
+  "historia_humana": "En 1955, el pensador francés Raymond Aron cierra su libro *El opio de los intelectuales* con una pregunta: ¿se está acabando la era de las ideologías? Cinco años después, Daniel Bell pone título a esa idea. Se la conoce como posideología o fin de las ideologías.",
+  "choque": {
+   "frase": "«Yo no soy ni de izquierdas ni de derechas.»",
+   "opciones": [
+    {
+     "id": "yo",
+     "e": "🙋",
+     "t": "Yo tampoco"
+    },
+    {
+     "id": "sospecho",
+     "e": "🤨",
+     "t": "Sospecho"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Alguien propone que gobiernen solo expertos, sin partidos: «esto no es ideología, es sentido común». ¿Te convence?",
+   "opciones": [
+    {
+     "id": "convence",
+     "t": "Me convence"
+    },
+    {
+     "id": "pregunto",
+     "t": "Pregunto qué ideas trae"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Sonar «sin ideología» no es nuevo: Daniel Bell tituló *The End of Ideology* en 1960. Ocho años después, Mayo del 68 **desmintió** que las grandes ideas ya no movieran a la gente.",
+   "fuente": "Biblioteca del CASBS (Stanford): Bell, *The End of Ideology* (Free Press, 1960)",
+   "url": "https://casbs.stanford.edu/end-ideology-exhaustion-political-ideas-fifties",
+   "busca": "El «pos» da por **terminada** la época de las grandes doctrinas. Sirve como sospecha: cuando algo se presenta como sentido común, conviene preguntar qué ideas da por supuestas.",
+   "saltos": [
+    {
+     "t": "Me convenció el «sentido común»",
+     "p": "*El crepúsculo de las ideologías* (1965) usó esta tesis para defender, en la España de Franco, un gobierno de expertos sin partidos."
+    },
+    {
+     "t": "Pensé que es cosa del pasado",
+     "p": "La tesis vuelve cada pocos años: con Fukuyama en 1989 y con quien hoy se presenta como «ni de izquierdas ni de derechas»."
+    },
+    {
+     "t": "No salté: pregunté qué ideas traía",
+     "p": "Bien visto. Esa pregunta es lo más útil del concepto."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué año se publicó *The End of Ideology*, de Daniel Bell?",
+     "o": [
+      "1945",
+      "1960",
+      "1989"
+     ],
+     "ok": 1,
+     "por": "En 1960. El debate venía de 1955, con Raymond Aron."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posideología?",
+     "o": [
+      "Fin: «después del final»",
+      "Agotamiento: «lo que queda de»",
+      "Cronológico: «después de»"
+     ],
+     "ok": 0,
+     "por": "Es P5: da por cerrada la época de las grandes doctrinas, no solo su debilitamiento."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posproducción",
+      "Posdemocracia",
+      "Posgénero"
+     ],
+     "ok": 1,
+     "por": "Posdemocracia describe una política gestionada entre élites, con la ciudadanía como público."
+    }
+   ],
+   "sabias": "Daniel Bell aparece dos veces en la familia pos-: tras anunciar el fin de las ideologías, en 1973 popularizó la «sociedad posindustrial»."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Cazar el «sentido común»",
+     "t": "Cuando oigas «esto no es ideología, es sentido común», apunta qué ideas da por supuestas.",
+     "historia": "apuntar qué ideas da por supuestas el próximo «sentido común» que oigas"
+    },
+    {
+     "corta": "Ni de unos ni de otros",
+     "t": "Busca un mensaje que diga no ser «ni de izquierdas ni de derechas» y anota qué propone en concreto.",
+     "historia": "anotar qué propone en concreto un mensaje que dice no tener ideología"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué anotaste y qué ideas había debajo."
+  },
+  "historia": {
+   "pensaba": {
+    "yo": "Entraste diciendo que no eres de izquierdas ni de derechas.",
+    "sospecho": "Entraste sospechando de quien dice no tener ideología.",
+    "igual": "Entraste sin darle importancia a las ideologías."
+   },
+   "hice": {
+    "convence": "Cuando te tocó decidir, te convenció el «sentido común».",
+    "pregunto": "Cuando te tocó decidir, preguntaste qué ideas traía.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que el fin de las ideologías también es una idea, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdemocracia"
+  },
+  "saber_mas": "**Valor del prefijo:** P5, fin («después del final»). Da por cerrada la época de las grandes doctrinas, no solo su debilitamiento. **Obra o hito que la fija:** Daniel Bell, The End of Ideology: On the Exhaustion of Political Ideas in the Fifties (1960). **Figuras:** Daniel Bell, Seymour M. Lipset y Raymond Aron. **Se conecta con:** Pospolítica, Poshistoria, Sociedad posindustrial y Posdemocracia. **Fuentes de la ficha:** Biblioteca del CASBS (Stanford): Bell, The End of Ideology (Free Press, 1960); I. Stewart, «The End of Ideology», en Raymond Aron and Liberal Thought in the Twentieth Century (Cambridge UP, 2019). **Nota:** El debate venía de 1955, con Raymond Aron y el Congreso por la Libertad de la Cultura; Bell le dio título."
+ },
+ {
+  "id": "posimpresionismo",
+  "palabra": "Posimpresionismo",
+  "resumen": "Pintores que aprendieron del impresionismo y lo llevaron más lejos, cada uno por su camino.",
+  "valor": "P3",
+  "termino": "postimpresionismo",
+  "riesgo": false,
+  "historia_humana": "En 1910, el crítico Roger Fry cuelga en una galería de Londres cuadros de Cézanne, Gauguin y Van Gogh. Parte de la prensa habla de locura y de broma, y el escándalo atrae visitantes. Fry necesitaba un nombre y eligió el más neutro posible: posimpresionismo.",
+  "choque": {
+   "frase": "«Van Gogh pintaba como un niño.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "😅",
+     "t": "Un poco sí"
+    },
+    {
+     "id": "no",
+     "e": "😠",
+     "t": "¡Qué va!"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Londres, 1910. Una exposición de Cézanne, Gauguin y Van Gogh. La prensa habla de locura. ¿Entras?",
+   "opciones": [
+    {
+     "id": "entro",
+     "t": "Entro a mirar"
+    },
+    {
+     "id": "salto",
+     "t": "Me la salto"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "El nombre se puso en Londres en 1910, para cuadros de veinte años antes. Roger Fry eligió la etiqueta más neutra posible: «post», **los que vinieron después** del impresionismo.",
+   "fuente": "Tate, Art Terms: Post-impressionism",
+   "url": "https://www.tate.org.uk/art/art-terms/p/post-impressionism",
+   "busca": "Fue el primer «post» para un movimiento artístico. Y no copiaban: partían del impresionismo y lo **llevaban más allá** desde dentro, con estructura, color y emoción.",
+   "saltos": [
+    {
+     "t": "Hice caso a la prensa",
+     "p": "Buena parte de la prensa se burló en 1910. Hoy esos pintores llenan museos y exposiciones inmersivas."
+    },
+    {
+     "t": "Pensé que «post» significa ruptura",
+     "p": "Fry solo quería decir «después de». Pero estos pintores radicalizaban el impresionismo desde dentro: por eso es P3."
+    },
+    {
+     "t": "No salté: entré a mirar",
+     "p": "Bien visto. Mirar antes de juzgar es lo que pedía una pintura que expresa lo que se siente, no solo lo que se ve."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién organizó la exposición de 1910 en Londres?",
+     "o": [
+      "Roger Fry",
+      "Virginia Woolf",
+      "Claude Monet"
+     ],
+     "ok": 0,
+     "por": "El crítico y pintor Roger Fry, en las Grafton Galleries: «Manet and the Post-Impressionists»."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posimpresionismo?",
+     "o": [
+      "Ruptura: «contra»",
+      "Fin: «después del final»",
+      "Radicalización: «más allá, desde dentro»"
+     ],
+     "ok": 2,
+     "por": "Parten del impresionismo y lo desarrollan desde dentro, en direcciones distintas."
+    },
+    {
+     "p": "¿Qué palabra de PostLab se conecta con posimpresionismo?",
+     "o": [
+      "Abstracción pospictórica",
+      "Posverdad",
+      "Poscolonialismo"
+     ],
+     "ok": 0,
+     "por": "Otro «pos» de la pintura, de 1964: una abstracción que abandona el gesto por el color limpio."
+    }
+   ],
+   "sabias": "Virginia Woolf, amiga de Fry, escribió en 1924 que «en diciembre de 1910, o por esas fechas, cambió el carácter humano»; muchos lo leen como un guiño a aquella exposición."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mirar un cuadro",
+     "t": "Busca *La noche estrellada* de Van Gogh y mírala un minuto entero: apunta qué sientes, no qué ves.",
+     "historia": "mirar un cuadro de Van Gogh un minuto y apuntar qué sientes"
+    },
+    {
+     "corta": "Una etiqueta «de después»",
+     "t": "Busca en tu vida algo que se nombre solo como «lo de después» y piensa qué esconde esa etiqueta.",
+     "historia": "buscar algo que se nombre como «lo de después» y pensar qué esconde"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste y si el «después» decía algo más."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que Van Gogh pintaba como un niño.",
+    "no": "Entraste defendiendo a Van Gogh.",
+    "igual": "Entraste sin darle importancia a Van Gogh."
+   },
+   "hice": {
+    "entro": "Cuando te tocó decidir, entraste a mirar.",
+    "salto": "Cuando te tocó decidir, te saltaste la exposición.",
+    "tiempo": "Cuando te tocó decidir, te quedaste en la puerta."
+   },
+   "ahora": "Ahora sabes que «post» puede querer decir «más allá, desde dentro», y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "abstraccion-pospictorica"
+  },
+  "saber_mas": "**Valor del prefijo:** P3, radicalización («más allá, desde dentro»). Sus pintores parten del impresionismo y lo desarrollan en direcciones distintas, desde dentro. **Obra o hito que la fija:** Exposición «Manet and the Post-Impressionists», Grafton Galleries, Londres (1910). **Primer uso:** 1906, Roger Fry, uso oral; primera aparición impresa: Frank Rutter, Art News, 15 de octubre de 1910. **Figuras:** Roger Fry, Paul Cézanne, Paul Gauguin y Vincent van Gogh. **Se conecta con:** Abstracción pospictórica y Posminimalismo. **Fuentes de la ficha:** Tate, Art Terms: Post-impressionism; Wikipedia (en), Post-Impressionism. **Nota:** Primer rótulo «post» para un movimiento artístico. Fry explicó que el nombre solo indicaba su posición en el tiempo respecto al impresionismo."
+ },
+ {
+  "id": "criptografia-poscuantica",
+  "palabra": "Criptografía poscuántica",
+  "resumen": "Cifrados que funcionan en ordenadores normales, pero hechos para resistir a los ordenadores cuánticos del futuro.",
+  "valor": "P1",
+  "termino": "criptografia-postcuantica",
+  "riesgo": false,
+  "historia_humana": "En 1994, el matemático Peter Shor demuestra que un ordenador cuántico bastante grande rompería en poco tiempo el cifrado que protege pagos y correos. Nadie tiene esa máquina, pero la amenaza queda escrita. Los cifrados pensados para resistirla se llaman criptografía poscuántica.",
+  "choque": {
+   "frase": "«Mis mensajes no le interesan a nadie.»",
+   "opciones": [
+    {
+     "id": "nadie",
+     "e": "🤷",
+     "t": "A nadie"
+    },
+    {
+     "id": "alguien",
+     "e": "👀",
+     "t": "A alguien sí"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu app de mensajería pide actualizarse para protegerte de ordenadores que aún no existen. ¿Actualizas?",
+   "opciones": [
+    {
+     "id": "actualizo",
+     "t": "Actualizo ya"
+    },
+    {
+     "id": "luego",
+     "t": "Luego"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "El peligro empieza hoy: se pueden **guardar ahora** datos cifrados para leerlos cuando exista la máquina («cosechar ahora, descifrar después»). Por eso el NIST aprobó en agosto de 2024 los primeros estándares.",
+   "fuente": "NIST, aprobación de FIPS 203, 204 y 205 (13 de agosto de 2024)",
+   "url": "https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved",
+   "busca": "Aquí «pos» ordena en el tiempo: cifrados pensados para **después de** que lleguen ordenadores cuánticos capaces de romper los de hoy.",
+   "saltos": [
+    {
+     "t": "Lo dejé para luego",
+     "p": "Las actualizaciones traen protecciones nuevas. Signal y iMessage se blindaron así en 2023 y 2024."
+    },
+    {
+     "t": "Pensé que mis datos no valen nada",
+     "p": "Los datos de vida larga, como los historiales médicos, son los más expuestos a quien los guarde hoy."
+    },
+    {
+     "t": "No salté: actualicé",
+     "p": "Bien visto. Con el navegador o la mensajería al día, es probable que ya uses criptografía poscuántica sin saberlo."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué pasó en 2006 en Lovaina?",
+     "o": [
+      "Se construyó el primer ordenador cuántico",
+      "Se celebró el primer taller PQCrypto",
+      "Se aprobó el primer estándar"
+     ],
+     "ok": 1,
+     "por": "El taller de la KU Leuven dio al campo una cita propia. Los estándares llegaron en 2024."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo aquí?",
+     "o": [
+      "Cronológico: «después de»",
+      "Ruptura: «contra»",
+      "Agotamiento: «lo que queda de»"
+     ],
+     "ok": 0,
+     "por": "Es P1: se define para el tiempo posterior a la llegada de ordenadores cuánticos capaces de romper el cifrado actual."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posdemocracia",
+      "Posfeminismo",
+      "Era pos-Moore"
+     ],
+     "ok": 2,
+     "por": "Las dos miran el futuro de los chips: el clásico, que ya no mejora solo, y el cuántico, que aún no ha llegado."
+    }
+   ],
+   "sabias": "En 2022, SIKE, uno de los candidatos del concurso del NIST, fue roto en torno a una hora con un ordenador corriente de un solo núcleo."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Actualizar",
+     "t": "Revisa si tu navegador y tu app de mensajería están actualizados, y actualízalos.",
+     "historia": "revisar que tu navegador y tu mensajería estén actualizados"
+    },
+    {
+     "corta": "Secreto a veinte años",
+     "t": "Apunta qué información tuya debería seguir siendo secreta dentro de veinte años y quién la guarda hoy.",
+     "historia": "apuntar qué información tuya debe seguir en secreto dentro de veinte años"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué actualizaste o qué apuntaste, y si te sorprendió."
+  },
+  "historia": {
+   "pensaba": {
+    "nadie": "Entraste pensando que tus mensajes no le interesan a nadie.",
+    "alguien": "Entraste pensando que a alguien sí le interesan.",
+    "igual": "Entraste sin darle importancia a tus mensajes."
+   },
+   "hice": {
+    "actualizo": "Cuando te tocó decidir, actualizaste.",
+    "luego": "Cuando te tocó decidir, lo dejaste para luego.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que lo que se guarda hoy se puede leer mañana, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "era-pos-moore"
+  },
+  "saber_mas": "**Valor del prefijo:** P1, cronológico («después de»). Se define para el tiempo posterior a la llegada de ordenadores cuánticos capaces de romper el cifrado actual. **Obra o hito que la fija:** Primer taller internacional PQCrypto, KU Leuven, 23-26 de mayo de 2006. **Figuras:** Daniel J. Bernstein, Johannes Buchmann, Tanja Lange y NIST. **Se conecta con:** Era pos-Moore. **Fuentes de la ficha:** Web oficial de PQCrypto 2006 (programa y comité); NIST, aprobación de FIPS 203, 204 y 205 (13 de agosto de 2024). **Nota:** NIST aprobó el 13 de agosto de 2024 los primeros estándares (FIPS 203, 204 y 205). No se ha fijado con fuente quién acuñó la expresión."
+ },
+ {
+  "id": "posfactual",
+  "palabra": "Posfactual",
+  "resumen": "Un debate en el que los datos siguen ahí, pero pesan menos que el enfado y las emociones.",
+  "valor": "P4",
+  "termino": "postfactual",
+  "riesgo": false,
+  "historia_humana": "En 2016, tras un mal resultado electoral en Berlín, la canciller Angela Merkel comenta que, según se dice, la gente ya no atiende a los hechos y sigue solo sus sentimientos. Ese diciembre, «postfaktisch», posfactual, es la palabra del año en Alemania.",
+  "choque": {
+   "frase": "«Estoy harto de expertos.»",
+   "opciones": [
+    {
+     "id": "yo",
+     "e": "🙋",
+     "t": "Yo también"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "Yo no"
+    },
+    {
+     "id": "depende",
+     "e": "😐",
+     "t": "Depende"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Dos fuentes dan cifras distintas sobre lo mismo. Una te da la razón. ¿Con cuál te quedas?",
+   "opciones": [
+    {
+     "id": "mia",
+     "t": "Con la que me da la razón"
+    },
+    {
+     "id": "fiable",
+     "t": "Miro cuál es más fiable"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 2016, la Sociedad de la Lengua Alemana eligió «postfaktisch» palabra del año, **por delante de «Brexit»**: señalaba debates guiados cada vez más por emociones que por hechos.",
+   "fuente": "GfdS, «Wort des Jahres 2016»",
+   "url": "https://gfds.de/wort-des-jahres-2016/",
+   "busca": "Lo posfactual no exige mentir: basta con que los datos **dejen de decidir**. Siguen ahí, pero la discusión se gana con el enfado.",
+   "saltos": [
+    {
+     "t": "Me quedé con la que me daba la razón",
+     "p": "Ya en 2008, Farhad Manjoo describió una sociedad en la que cada grupo elige los hechos que encajan con lo que piensa."
+    },
+    {
+     "t": "Pensé que todos los datos valen igual",
+     "p": "Rebajar un dato a «una opinión más» es el paso posfactual. Lo fiable se puede comprobar: quién lo mide y cómo."
+    },
+    {
+     "t": "No salté: miré cuál era más fiable",
+     "p": "Bien visto. Valorar el dato aburrido, el que no confirma nada, es lo más difícil y lo más útil."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién eligió «postfaktisch» palabra del año 2016?",
+     "o": [
+      "La RAE",
+      "La Sociedad de la Lengua Alemana",
+      "El Diccionario Oxford"
+     ],
+     "ok": 1,
+     "por": "La Gesellschaft für deutsche Sprache. Oxford eligió ese año «post-truth», su gemela inglesa."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posfactual?",
+     "o": [
+      "«Contra» los hechos",
+      "«Después del final» de los hechos",
+      "«Lo que queda de» los hechos"
+     ],
+     "ok": 2,
+     "por": "Es agotamiento (P4): los hechos no desaparecen, pero dejan de decidir el debate."
+    },
+    {
+     "p": "¿De qué palabra inglesa es calco, según la GfdS?",
+     "o": [
+      "Post-truth",
+      "Fake news",
+      "Brexit"
+     ],
+     "ok": 0,
+     "por": "La GfdS la presenta como calco de «post-truth», posverdad, con la que está conectada en PostLab."
+    }
+   ],
+   "sabias": "«Lügenpresse» («prensa mentirosa»), el grito de Pegida contra los medios, ya lo había usado la propaganda nazi; por eso fue elegida «antipalabra» alemana de 2014."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Un dato aburrido",
+     "t": "Busca un dato sobre algo que te importe que no confirme lo que ya pensabas, y quédate con él un día.",
+     "historia": "buscar un dato que no confirme lo que ya pensabas"
+    },
+    {
+     "corta": "Cambiar de opinión",
+     "t": "Recuerda la última vez que un dato te hizo cambiar de opinión y cuéntaselo a alguien.",
+     "historia": "contarle a alguien la última vez que un dato te hizo cambiar de opinión"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué dato encontraste o recordaste, y qué te movió."
+  },
+  "historia": {
+   "pensaba": {
+    "yo": "Entraste harto de expertos.",
+    "no": "Entraste confiando en los expertos.",
+    "depende": "Entraste pensando que depende del experto."
+   },
+   "hice": {
+    "mia": "Cuando te tocó decidir, te quedaste con la cifra que te daba la razón.",
+    "fiable": "Cuando te tocó decidir, miraste cuál era más fiable.",
+    "tiempo": "Cuando te tocó decidir, se te fue el tiempo."
+   },
+   "ahora": "Ahora sabes que un dato puede seguir ahí y no decidir nada, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posverdad"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). Los hechos no desaparecen, pero dejan de decidir el debate: queda su cáscara. **Obra o hito que la fija:** La Gesellschaft für deutsche Sprache elige «postfaktisch» palabra del año 2016. **Figuras:** Gesellschaft für deutsche Sprache. **Se conecta con:** Posverdad y Post-posverdad. **Fuentes de la ficha:** GfdS, «Wort des Jahres 2016». **Nota:** La GfdS lo presenta como calco del inglés post-truth."
+ },
+ {
+  "id": "posfeminismo",
+  "palabra": "Posfeminismo",
+  "resumen": "Una cultura que da la igualdad por conseguida y convierte la emancipación en algo que se compra.",
+  "valor": "P4",
+  "termino": "posfeminismo",
+  "riesgo": false,
+  "historia_humana": "En 1982, la periodista Susan Bolotin publica en el *New York Times Magazine* un reportaje sobre jóvenes que disfrutan de lo que logró el feminismo, pero no quieren llamarse feministas. Las llama «generación posfeminista». Hoy la palabra nombra una cultura que da la igualdad por hecha.",
+  "choque": {
+   "frase": "«La igualdad ya está conseguida.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "🤝",
+     "t": "Sí, ya está"
+    },
+    {
+     "id": "no",
+     "e": "😠",
+     "t": "Ni de lejos"
+    },
+    {
+     "id": "casi",
+     "e": "🤔",
+     "t": "Casi"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu grupo favorito vende camisetas con el lema «El poder de las chicas». ¿Te compras una?",
+   "opciones": [
+    {
+     "id": "compro",
+     "t": "Me la compro"
+    },
+    {
+     "id": "paso",
+     "t": "Paso"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La palabra es más vieja de lo que parece: en 1919, la revista *Judy* de Nueva York ya decía «JUDY is a post-feminist». Hoy, Rosalind Gill la usa para criticar una cultura que **vende el feminismo como estilo**.",
+   "fuente": "Gotham Center for New York City History, «Judy: A Magazine, Greenwich Village, 1919»",
+   "url": "https://www.gothamcenter.org/blog/judymagazine-zy4la-6h6h4-tlwga-allfs-5gpbn-p8hkk-gewm2-86weg-453lp-rtg9j-b4nt8-f2n45-2s22f-kmea4-5jtmm-a2l5n-ljflg-bbjh6-82t6p-w9slx",
+   "busca": "Es lo que queda del feminismo cuando se da por cumplido: la emancipación se vuelve **elección individual**, consumo y cuidado de la imagen, no reivindicación colectiva.",
+   "saltos": [
+    {
+     "t": "Me compré el lema",
+     "p": "Un lema alegre y vendible puede centrarse en la actitud personal y dejar fuera lo colectivo. Eso es lo que señala la crítica posfeminista."
+    },
+    {
+     "t": "Pensé que el feminismo ya no hace falta",
+     "p": "Desde 2017, con el #MeToo y las huelgas del 8M en España, el feminismo volvió a la calle y a la política."
+    },
+    {
+     "t": "No salté: pasé del lema",
+     "p": "Bien visto. Preguntar qué cambia de verdad si compras algo es justo la pregunta que hace el término."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién escribió «Postfeminist Media Culture» (2007)?",
+     "o": [
+      "Susan Faludi",
+      "Helen Fielding",
+      "Rosalind Gill"
+     ],
+     "ok": 2,
+     "por": "La socióloga Rosalind Gill: describió el posfeminismo como una sensibilidad."
+    },
+    {
+     "p": "¿Qué valores tiene el prefijo en posfeminismo?",
+     "o": [
+      "Sobre todo agotamiento; también ruptura",
+      "Solo cronológico",
+      "Fin y derivación"
+     ],
+     "ok": 0,
+     "por": "Sobre todo describe un feminismo dado por cumplido y vaciado (P4); en menor medida, corrientes que rompen con la segunda ola (P2)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posextractivismo",
+      "Posgénero",
+      "Posfranquismo"
+     ],
+     "ok": 1,
+     "por": "Posgénero propone dejar atrás la división entre lo masculino y lo femenino."
+    }
+   ],
+   "sabias": "En 1998, la revista *Time* preguntó en portada «¿Ha muerto el feminismo?» con cuatro rostros: Susan B. Anthony, Betty Friedan, Gloria Steinem… y Ally McBeal, un personaje de ficción."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mirar un anuncio",
+     "t": "Busca un anuncio que hable de «empoderamiento» y apunta qué cambiaría de verdad si compraras lo que vende.",
+     "historia": "apuntar qué cambiaría de verdad si compraras lo que vende un anuncio de «empoderamiento»"
+    },
+    {
+     "corta": "Preguntar a otra generación",
+     "t": "Pregunta a alguien de otra generación si cree que la igualdad ya está conseguida, y por qué.",
+     "historia": "preguntar a alguien de otra generación si la igualdad ya está conseguida"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste o qué te respondieron, y si coincide con tu respuesta del Choque."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que la igualdad ya está conseguida.",
+    "no": "Entraste pensando que la igualdad queda lejos.",
+    "casi": "Entraste pensando que la igualdad está casi conseguida."
+   },
+   "hice": {
+    "compro": "Cuando te tocó decidir, te compraste el lema.",
+    "paso": "Cuando te tocó decidir, pasaste del lema.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que un lema puede vaciar lo que nombra, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posgenero"
+  },
+  "saber_mas": "**Valores del prefijo:** P4, agotamiento («lo que queda de») y P2, ruptura («contra»). Sobre todo describe una cultura que da el feminismo por cumplido y lo deja vacío; en menor medida, corrientes que rompen con la segunda ola. **Obra o hito que la fija:** Rosalind Gill, «Postfeminist Media Culture: Elements of a Sensibility» (2007). **Primer uso:** 1919, Revista Judy (Greenwich Village, Nueva York): «JUDY is a post-feminist», texto firmado «P. D.» (Phyllis Duganne). **Figuras:** Rosalind Gill, Angela McRobbie, Susan Bolotin y Susan Faludi. **Se conecta con:** Posestructuralismo, Posesencialismo, Posgénero y Posqueer. **Fuentes de la ficha:** Open Research Online (Open University): Gill, «Postfeminist media culture», European Journal of Cultural Studies 10(2), 2007; Gotham Center for New York City History, «Judy: A Magazine, Greenwich Village, 1919». **Nota:** El uso moderno se suele datar en 1982 (Susan Bolotin, New York Times Magazine). McRobbie amplía la crítica en The Aftermath of Feminism (2009)."
+ },
+ {
+  "id": "ciencia-posnormal",
+  "palabra": "Ciencia posnormal",
+  "resumen": "Cómo investigar y decidir cuando los hechos son inciertos, los valores chocan, hay mucho en juego y hay prisa.",
+  "valor": "P2",
+  "termino": "ciencia-posnormal",
+  "riesgo": false,
+  "historia_humana": "Entre 2019 y 2020, ciento cincuenta personas de toda Francia, elegidas por sorteo, escuchan a expertos sobre el clima y proponen medidas al Gobierno. No son científicas, pero su voz cuenta. Abrir así las decisiones a los afectados es la idea de la ciencia posnormal.",
+  "choque": {
+   "frase": "«Que decidan los científicos, que son los que saben.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "🤝",
+     "t": "Sí"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "No solo ellos"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te llega una carta: te han elegido por sorteo para debatir con expertos sobre el clima durante meses. ¿Aceptas?",
+   "opciones": [
+    {
+     "id": "acepto",
+     "t": "Acepto"
+    },
+    {
+     "id": "otro",
+     "t": "Que vaya otro"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 1993, Silvio Funtowicz y Jerome Ravetz defendieron que, con hechos inciertos y mucho en juego, la calidad del conocimiento **no la juzgan solo los expertos**: hace falta una comunidad con afectados y ciudadanos.",
+   "fuente": "APICE (Universidad de Bolonia): Funtowicz y Ravetz, «Science for the post-normal age», *Futures* 25(7), 1993",
+   "url": "https://apice.unibo.it/xwiki/bin/view/Publication/PostnormalscienceFutures25",
+   "busca": "El «pos» rompe con la ciencia normal, la que resuelve problemas con certeza y neutralidad. Si los hechos son inciertos y hay prisa, la mesa se abre a **más voces**.",
+   "saltos": [
+    {
+     "t": "Pensé que no me toca a mí",
+     "p": "En Francia, ciento cincuenta personas sorteadas deliberaron con expertos y propusieron medidas al Gobierno. No eran expertas."
+    },
+    {
+     "t": "Creí que la ciencia siempre da certezas",
+     "p": "En 1996, el Gobierno británico admitió un posible vínculo entre las «vacas locas» y una enfermedad humana, tras haber asegurado que la carne era segura."
+    },
+    {
+     "t": "No salté: acepté",
+     "p": "Bien visto. Escuchar a especialistas y aportar lo que sabes como afectado es justo lo que proponían Funtowicz y Ravetz."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué revista publicaron Funtowicz y Ravetz su artículo de 1993?",
+     "o": [
+      "*Nature*",
+      "*Futures*",
+      "*Wired*"
+     ],
+     "ok": 1,
+     "por": "En *Futures*. Allí publicó también Sardar «Welcome to Postnormal Times», en 2010."
+    },
+    {
+     "p": "¿De dónde viene el «normal» de posnormal?",
+     "o": [
+      "De la «ciencia normal» de Thomas Kuhn",
+      "De la «nueva normalidad» de 2020",
+      "De las normas de la ONU"
+     ],
+     "ok": 0,
+     "por": "Kuhn llamó «ciencia normal» al trabajo cotidiano dentro de un paradigma aceptado."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Cronológico",
+      "Fin",
+      "Ruptura"
+     ],
+     "ok": 2,
+     "por": "Es P2: abandona el supuesto de resolver problemas con certeza y neutralidad."
+    }
+   ],
+   "sabias": "Para que la incertidumbre no se escondiera, Funtowicz y Ravetz propusieron en 1990 la notación NUSAP: cada cifra va con su unidad, su margen, una valoración y hasta su «pedigrí»."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una consulta pública",
+     "t": "Busca una consulta pública o una asamblea ciudadana abierta cerca de ti y mira quién puede participar.",
+     "historia": "buscar una consulta pública cerca de ti y mirar quién puede participar"
+    },
+    {
+     "corta": "Decir la duda",
+     "t": "Cuando expliques algo esta semana, di también lo que no se sabe, con palabras como «probable».",
+     "historia": "decir también lo que no se sabe cuando expliques algo"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué encontraste o cómo reaccionaron al oír tu duda."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que deben decidir los científicos.",
+    "no": "Entraste pensando que no deben decidir solo ellos.",
+    "igual": "Entraste sin darle importancia a quién decide."
+   },
+   "hice": {
+    "acepto": "Cuando te tocó decidir, aceptaste deliberar.",
+    "otro": "Cuando te tocó decidir, preferiste que fuera otro.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que con hechos inciertos hacen falta más voces, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "tiempos-posnormales"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). Abandona el supuesto de la ciencia normal de resolver problemas con certeza y neutralidad. **Obra o hito que la fija:** Silvio O. Funtowicz y Jerome R. Ravetz, «Science for the Post-Normal Age», Futures 25(7) (1993). **Figuras:** Silvio Funtowicz y Jerome Ravetz. **Se conecta con:** Pospositivismo, Tiempos posnormales y Ciencia posacadémica. **Fuentes de la ficha:** APICE (Universidad de Bolonia): Funtowicz y Ravetz, «Science for the post-normal age», Futures 25(7): 739-755, 1993. **Nota:** El nombre alude a la «ciencia normal» de Thomas Kuhn."
+ },
+ {
+  "id": "posgenero",
+  "palabra": "Posgénero",
+  "resumen": "La propuesta de dejar atrás la división entre lo masculino y lo femenino, a menudo con ayuda de la técnica.",
+  "valor": "P5",
+  "termino": "posgenero-postgenerismo",
+  "riesgo": false,
+  "historia_humana": "En 1969, Le Guin publica *La mano izquierda de la oscuridad*: en su planeta helado nadie tiene un sexo fijo, y solo se adopta uno durante el periodo fértil. Es un experimento para imaginar la vida sin un género estable. La idea de dejarlo atrás se llama posgénero.",
+  "choque": {
+   "frase": "«Eso de superar el género es cosa de ahora.»",
+   "opciones": [
+    {
+     "id": "ahora",
+     "e": "🙄",
+     "t": "Es de ahora"
+    },
+    {
+     "id": "no",
+     "e": "🤔",
+     "t": "No lo creo"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te recomiendan una novela en la que nadie tiene un sexo fijo. ¿La empiezas?",
+   "opciones": [
+    {
+     "id": "leo",
+     "t": "La empiezo"
+    },
+    {
+     "id": "paso",
+     "t": "Paso"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "No es de ahora: en 1985, Donna Haraway publicó en *Socialist Review* un manifiesto que presentaba el cíborg, mezcla de organismo y máquina, como «una criatura de un mundo **posgénero**».",
+   "fuente": "CETAPS Repository (Universidade do Porto): Haraway, «A Manifesto for Cyborgs», *Socialist Review* 15(80), 1985",
+   "url": "https://cetapsrepository.letras.up.pt/items/ad64a138-02b0-423d-bb0b-c24e4d809f43/full",
+   "busca": "Aquí el «pos» da algo **por superado del todo**. No es lo mismo que reconocer más categorías: propone que los rasgos ligados a un sexo se elijan, no vengan impuestos.",
+   "saltos": [
+    {
+     "t": "Pensé que es una moda reciente",
+     "p": "Viene de los setenta y los ochenta: Le Guin en 1969, Firestone en 1970, Haraway en 1985."
+    },
+    {
+     "t": "Creí que es lo mismo que no binario",
+     "p": "No: las identidades no binarias piden reconocer más categorías; el posgénero propone dejarlas atrás. Son debates distintos."
+    },
+    {
+     "t": "No salté: la empecé",
+     "p": "Bien visto. Una novela es un buen laboratorio: deja imaginar sin pedirte que estés de acuerdo."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué año publicó Donna Haraway su manifiesto cíborg?",
+     "o": [
+      "1969",
+      "1985",
+      "2008"
+     ],
+     "ok": 1,
+     "por": "En 1985. 1969 es la novela de Le Guin y 2008, el informe de Dvorsky y Hughes."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en posgénero?",
+     "o": [
+      "Agotamiento: «lo que queda de»",
+      "Cronológico: «después de»",
+      "Fin: «después del final»"
+     ],
+     "ok": 2,
+     "por": "Es P5: no describe un género debilitado, sino que propone darlo por superado del todo."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Poshumano",
+      "Posdesarrollo",
+      "Posfactual"
+     ],
+     "ok": 0,
+     "por": "Poshumano imagina superar los límites del cuerpo; posgénero, la división por sexo."
+    }
+   ],
+   "sabias": "El manifiesto de Haraway termina con una frase que se volvió lema: «Prefiero ser un cíborg que una diosa»."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Repartos en casa",
+     "t": "Apunta qué colores, objetos o tareas de tu casa siguen repartidos por género, y cuáles mantendrías si empezaras de cero.",
+     "historia": "apuntar qué sigue repartido por género en tu casa y qué mantendrías"
+    },
+    {
+     "corta": "La voz de las máquinas",
+     "t": "Mira qué voz y qué nombre traen por defecto los asistentes de tus aparatos, y pregúntate por qué.",
+     "historia": "mirar qué voz traen por defecto tus asistentes y preguntarte por qué"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste y si algo te sorprendió."
+  },
+  "historia": {
+   "pensaba": {
+    "ahora": "Entraste pensando que superar el género es cosa de ahora.",
+    "no": "Entraste pensando que la idea viene de antes.",
+    "igual": "Entraste sin darle vueltas al género."
+   },
+   "hice": {
+    "leo": "Cuando te tocó decidir, empezaste la novela.",
+    "paso": "Cuando te tocó decidir, pasaste de leerla.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que la idea viene de lejos y no es lo mismo que otras, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "poshumano"
+  },
+  "saber_mas": "**Valor del prefijo:** P5, fin («después del final»). No describe un género debilitado, sino que propone darlo por superado del todo, a menudo mediante la técnica. **Obra o hito que la fija:** Donna Haraway, «A Manifesto for Cyborgs: Science, Technology, and Socialist Feminism in the 1980s» (1985). **Figuras:** Donna Haraway, George Dvorsky, James Hughes y Shulamith Firestone. **Se conecta con:** Poshumanismo, Poshumano, Posfeminismo y Posqueer. **Fuentes de la ficha:** CETAPS Repository (Universidade do Porto): Haraway, «A Manifesto for Cyborgs», Socialist Review 15(80), 1985; Wikipedia (en), Postgenderism. **Nota:** Como programa transhumanista con nombre propio lo formulan Dvorsky y Hughes en un informe del IEET (2008). Haraway dijo después que su «posgénero» se había malinterpretado."
+ },
+ {
+  "id": "era-pos-moore",
+  "palabra": "Era pos-Moore",
+  "resumen": "Los chips ya no mejoran solos cada dos años: las mejoras dependen del diseño, los materiales y el software.",
+  "valor": "P4",
+  "termino": "era-post-moore",
+  "riesgo": false,
+  "historia_humana": "En 1965, Gordon Moore, que poco después cofundaría Intel, se da cuenta de que el número de componentes de un chip se duplica cada año. Durante décadas, ordenadores y móviles mejoran casi solos. Cuando ese ritmo se frena, empieza la era pos-Moore.",
+  "choque": {
+   "frase": "«El móvil nuevo siempre va mucho más rápido.»",
+   "opciones": [
+    {
+     "id": "siempre",
+     "e": "🚀",
+     "t": "Siempre"
+    },
+    {
+     "id": "yano",
+     "e": "🤨",
+     "t": "Ya no"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu móvil va bien. El nuevo no es mucho más rápido, pero trae un chip hecho para la IA. ¿Lo cambias?",
+   "opciones": [
+    {
+     "id": "cambio",
+     "t": "Lo cambio"
+    },
+    {
+     "id": "sigo",
+     "t": "Sigo con el mío"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La «ley de Moore» no era una ley física, sino una previsión que la industria se empeñó en cumplir. En 2015, una orden ejecutiva de Estados Unidos ya pedía preparar la informática para la «**post-Moore's Law era**».",
+   "fuente": "Casa Blanca (archivo Obama): Executive Order 13702, 29 de julio de 2015",
+   "url": "https://obamawhitehouse.archives.gov/the-press-office/2015/07/29/executive-order-creating-national-strategic-computing-initiative",
+   "busca": "Los transistores siguen encogiendo, pero el ritmo regular **se ha vaciado**: es lo que queda de la ley. Por eso el móvil nuevo ya no es mucho más rápido, sino distinto.",
+   "saltos": [
+    {
+     "t": "Pensé que lo nuevo siempre corre más",
+     "p": "Hacia 2003-2005, los chips ya no podían subir su frecuencia sin calentarse: llegaron los procesadores de varios núcleos."
+    },
+    {
+     "t": "Lo cambié por lo nuevo",
+     "p": "Hoy las mejoras llegan con chips hechos a medida, no con un procesador milagroso. Conviene mirar qué hace distinto, no solo qué promete."
+    },
+    {
+     "t": "No salté: seguí con el mío",
+     "p": "Bien visto. Si ya no basta con esperar al siguiente chip, la eficiencia vuelve a importar, también la de usar bien el que tienes."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué observó Gordon Moore en 1965?",
+     "o": [
+      "Que los chips se calentaban",
+      "Que los componentes de un chip se duplicaban cada año",
+      "Que llegaría la IA"
+     ],
+     "ok": 1,
+     "por": "En 1975 ajustó el ritmo a cada dos años."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo en era pos-Moore?",
+     "o": [
+      "Cronológico",
+      "Derivación",
+      "Agotamiento"
+     ],
+     "ok": 2,
+     "por": "Es P4: los transistores siguen encogiendo, pero la regularidad de la ley se ha vaciado."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Criptografía poscuántica",
+      "Posfeminismo",
+      "Posimpresionismo"
+     ],
+     "ok": 0,
+     "por": "Las dos hablan del futuro de la informática: un ritmo que se frena y unas máquinas cuánticas que aún no han llegado."
+    }
+   ],
+   "sabias": "Moore solo se atrevió a predecir diez años: en 1965 calculó que en 1975 un chip reuniría unos 65.000 componentes. Su cálculo acabó guiando a toda una industria durante medio siglo."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Por qué lo cambiaste",
+     "t": "Recuerda la última vez que cambiaste de móvil u ordenador y apunta si fue porque iba lento o por algo nuevo.",
+     "historia": "apuntar por qué cambiaste de móvil la última vez"
+    },
+    {
+     "corta": "Leer un anuncio",
+     "t": "Mira el anuncio de un móvil nuevo y separa lo que promete en velocidad de lo que promete distinto.",
+     "historia": "separar en un anuncio de móvil lo que es más rápido de lo que es distinto"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste y si la próxima vez cambiarías por lo mismo."
+  },
+  "historia": {
+   "pensaba": {
+    "siempre": "Entraste pensando que el móvil nuevo siempre va mucho más rápido.",
+    "yano": "Entraste pensando que eso ya no pasa.",
+    "igual": "Entraste sin darle importancia a la velocidad."
+   },
+   "hice": {
+    "cambio": "Cuando te tocó decidir, cambiaste de móvil.",
+    "sigo": "Cuando te tocó decidir, seguiste con el tuyo.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que los chips ya no mejoran solos, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "criptografia-poscuantica"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). Los transistores siguen encogiendo, pero la regularidad de la ley se ha vaciado: lo que queda de ella. **Obra o hito que la fija:** Orden ejecutiva 13702 de EE. UU., que crea la National Strategic Computing Initiative (29 de julio de 2015). **Figuras:** Thomas N. Theis y H.-S. Philip Wong. **Se conecta con:** Criptografía poscuántica y Posdigital. **Fuentes de la ficha:** Casa Blanca (archivo Obama): Executive Order 13702, 29 de julio de 2015; Theis y Wong, «The End of Moore's Law: A New Beginning for Information Technology», Computing in Science & Engineering. **Nota:** La orden fija como objetivo preparar la computación para la «post-Moore's Law era»; Theis y Wong describen el frenazo de la frecuencia de reloj hacia 2003-2005."
+ },
+ {
+  "id": "arquitectura-posmoderna",
+  "palabra": "Arquitectura posmoderna",
+  "resumen": "Frente a la caja de cristal sin adornos, edificios con columnas, colores, citas históricas y humor.",
+  "valor": "P2",
+  "termino": "arquitectura-posmoderna",
+  "riesgo": false,
+  "historia_humana": "En 1964, el arquitecto Robert Venturi diseña una casa para su madre en Filadelfia, con frontón partido y una fachada casi de dibujo infantil: la imagen de «casa» vuelve a importar tanto como la función. Ese giro se llamó arquitectura posmoderna.",
+  "choque": {
+   "frase": "«Menos es más.»",
+   "opciones": [
+    {
+     "id": "convence",
+     "e": "🤝",
+     "t": "Me convence"
+    },
+    {
+     "id": "aburre",
+     "e": "🥱",
+     "t": "Me aburre"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu ayuntamiento estrena oficinas con pilastras gigantes, colores terrosos y guirnaldas. ¿Te gusta?",
+   "opciones": [
+    {
+     "id": "gusta",
+     "t": "Me gusta"
+    },
+    {
+     "id": "horror",
+     "t": "Me horroriza"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Al «menos es más» de Mies van der Rohe, Robert Venturi respondió en 1966 con un desafiante «**menos es aburrido**». Once años después, Charles Jencks dio nombre al cambio: arquitectura posmoderna.",
+   "fuente": "Wikipedia (en), «Complexity and Contradiction in Architecture»",
+   "url": "https://en.wikipedia.org/wiki/Complexity_and_Contradiction_in_Architecture",
+   "busca": "El «pos» rompe con la arquitectura de función pura y cero adornos. Recupera **ornamento, historia y humor**, y habla a la vez al experto y al público.",
+   "saltos": [
+    {
+     "t": "Me horrorizó a la primera",
+     "p": "Al Portland Building (1982) lo recibieron aplausos y abucheos. Durante años lo posmoderno fue lo pasado de moda; hoy se protege y se revaloriza."
+    },
+    {
+     "t": "Pensé que el adorno es un gasto inútil",
+     "p": "Para Jencks, el adorno es lenguaje: un «doble código» para hablar a la vez a los arquitectos y a la gente."
+    },
+    {
+     "t": "No salté: me gustó",
+     "p": "Bien visto. Y queda la pregunta: ¿qué te dice ese edificio y a quién se dirige?"
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién publicó *The Language of Post-Modern Architecture* en 1977?",
+     "o": [
+      "Robert Venturi",
+      "Charles Jencks",
+      "Mies van der Rohe"
+     ],
+     "ok": 1,
+     "por": "El crítico Charles Jencks. Venturi había abierto el camino en 1966."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Ruptura: «contra»",
+      "Cronológico: «después de»",
+      "Fin: «después del final»"
+     ],
+     "ok": 0,
+     "por": "Es P2: rechaza los supuestos del movimiento moderno: función, pureza y cero ornamento."
+    },
+    {
+     "p": "¿Qué palabra de PostLab se conecta con esta?",
+     "o": [
+      "Pospandemia",
+      "Posfactual",
+      "Posmodernidad"
+     ],
+     "ok": 2,
+     "por": "La filosofía tomó la palabra de la arquitectura y la crítica: Lyotard la convirtió en categoría en 1979."
+    }
+   ],
+   "sabias": "Jencks fijó la muerte del movimiento moderno el 15 de julio de 1972 a las 15.32 «o por ahí», con la voladura de Pruitt-Igoe. Tanta precisión, con ese «o por ahí», era parte de la ironía."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Un edificio con guiños",
+     "t": "Busca en tu ciudad un edificio con columnas, colores o guiños y piensa qué te dice y a quién.",
+     "historia": "buscar un edificio con guiños en tu ciudad y pensar qué te dice"
+    },
+    {
+     "corta": "El edificio feo",
+     "t": "Haz una foto a un edificio que te parezca feo y averigua de qué año es y quién lo diseñó.",
+     "historia": "averiguar de qué año es y quién diseñó un edificio que te parezca feo"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué edificio encontraste y si ahora lo miras distinto."
+  },
+  "historia": {
+   "pensaba": {
+    "convence": "Entraste pensando que menos es más.",
+    "aburre": "Entraste pensando que menos aburre.",
+    "igual": "Entraste sin darle importancia a los edificios."
+   },
+   "hice": {
+    "gusta": "Cuando te tocó decidir, el edificio te gustó.",
+    "horror": "Cuando te tocó decidir, el edificio te horrorizó.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que un edificio también habla, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "post-posmodernismo"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). Rechaza los supuestos del movimiento moderno (función, pureza, ausencia de ornamento) y recupera historia, símbolo y ornamento. **Obra o hito que la fija:** Charles Jencks, The Language of Post-Modern Architecture (1977). **Primer uso:** 1945, Joseph Hudnut, «The Post-Modern House», Architectural Record (mayo de 1945), citado a menudo como primer uso en arquitectura. **Figuras:** Charles Jencks, Robert Venturi, Paolo Portoghesi y Aldo Rossi. **Se conecta con:** Posmodernidad, Posfuncionalismo, Diseño posmoderno, Posmodernismo musical y Posmodernismo literario. **Fuentes de la ficha:** Canadian Centre for Architecture, catálogo: Jencks, The language of post-modern architecture (Rizzoli, Nueva York, 1977); Architectural Record, «From the Record Archives: The Post-Modern House» (Hudnut, 1945). **Nota:** Precedente: Venturi, Complexity and Contradiction in Architecture (1966). Jencks fechó la «muerte» del movimiento moderno en la voladura de Pruitt-Igoe (1972), con una hora que admitió inventada."
+ },
+ {
+  "id": "tiempos-posnormales",
+  "palabra": "Tiempos posnormales",
+  "resumen": "Un presente de transición: las viejas certezas se caen y todavía no hay otras.",
+  "valor": "P4",
+  "termino": "tiempos-posnormales",
+  "riesgo": false,
+  "historia_humana": "En 2010, millones de viajeros se quedan en tierra: una erupción en Islandia cierra durante días buena parte del cielo europeo. Un suceso local y modesto desordena medio continente. Ese mundo de sobresaltos encadenados es el de los tiempos posnormales.",
+  "choque": {
+   "frase": "«Cuando pase esta crisis, todo volverá a la normalidad.»",
+   "opciones": [
+    {
+     "id": "ojala",
+     "e": "🤞",
+     "t": "Ojalá"
+    },
+    {
+     "id": "nocreo",
+     "e": "🤨",
+     "t": "No creo"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un volcán en Islandia cierra el cielo de media Europa. Tu vuelo, cancelado. ¿Qué haces?",
+   "opciones": [
+    {
+     "id": "espero",
+     "t": "Espero a que reabran"
+    },
+    {
+     "id": "otro",
+     "t": "Busco otro camino"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 2010, el ensayista Ziauddin Sardar describió un tiempo en que **las viejas certezas mueren sin que nazcan otras**, y lo resumió en tres ces: complejidad, caos y contradicción.",
+   "fuente": "Repositorio de Middlesex University: Sardar, «Welcome to postnormal times», *Futures* 42(5), 2010",
+   "url": "https://repository.mdx.ac.uk/item/8372x",
+   "busca": "La normalidad no se ha cambiado por otra: queda como **certeza vaciada**. Por eso sirve más preparar varios caminos que esperar a que todo vuelva a ser como antes.",
+   "saltos": [
+    {
+     "t": "Esperé a que todo volviera a su sitio",
+     "p": "En 2010, una erupción modesta desordenó durante días los planes de millones de viajeros. A veces no hay un «sitio» al que volver."
+    },
+    {
+     "t": "Pensé que es mala suerte",
+     "p": "Para Sardar, todo está conectado: en 2008, un fallo de las hipotecas en Estados Unidos hundió economías de medio mundo."
+    },
+    {
+     "t": "No salté: busqué otro camino",
+     "p": "Bien visto. Trabajar con escenarios y margen de maniobra es la respuesta práctica a lo posnormal."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién escribió «Welcome to Postnormal Times» (2010)?",
+     "o": [
+      "Jerome Ravetz",
+      "Ziauddin Sardar",
+      "Thomas Kuhn"
+     ],
+     "ok": 1,
+     "por": "El ensayista Ziauddin Sardar, en la revista *Futures*."
+    },
+    {
+     "p": "¿Cuáles son las tres ces de Sardar?",
+     "o": [
+      "Complejidad, caos y contradicción",
+      "Clima, crisis y cambio",
+      "Ciencia, cultura y comercio"
+     ],
+     "ok": 0,
+     "por": "Describen un mundo conectado en el que pequeñas causas desatan grandes efectos."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posimpresionismo",
+      "Posgénero",
+      "Ciencia posnormal"
+     ],
+     "ok": 2,
+     "por": "Sardar amplió a toda la época la ciencia posnormal de Funtowicz y Ravetz (1993)."
+    }
+   ],
+   "sabias": "El «normal» de posnormal viene de Thomas Kuhn, que en 1962 llamó «ciencia normal» a la investigación rutinaria dentro de un paradigma aceptado; lo posnormal empieza cuando esa rutina ya no basta."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una certeza de antes",
+     "t": "Pregunta a alguien mayor qué daba por seguro a tu edad que hoy ya no se puede dar por seguro.",
+     "historia": "preguntar a alguien mayor qué daba por seguro a tu edad"
+    },
+    {
+     "corta": "Un plan B",
+     "t": "Para algo importante de esta semana, prepara un plan B por si falla lo previsto.",
+     "historia": "preparar un plan B para algo importante de esta semana"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué te contaron o si usaste tu plan B."
+  },
+  "historia": {
+   "pensaba": {
+    "ojala": "Entraste esperando que todo vuelva a la normalidad.",
+    "nocreo": "Entraste sin creer que vuelva la normalidad.",
+    "igual": "Entraste sin darle vueltas a la normalidad."
+   },
+   "hice": {
+    "espero": "Cuando te tocó decidir, esperaste a que reabrieran.",
+    "otro": "Cuando te tocó decidir, buscaste otro camino.",
+    "tiempo": "Cuando te tocó decidir, te quedaste parado."
+   },
+   "ahora": "Ahora sabes que la incertidumbre no es un fallo pasajero, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "ciencia-posnormal"
+  },
+  "saber_mas": "**Valor del prefijo:** P4, agotamiento («lo que queda de»). La normalidad no ha sido sustituida: queda como certeza vaciada mientras nada nuevo la reemplaza. **Obra o hito que la fija:** Ziauddin Sardar, «Welcome to Postnormal Times», Futures 42(5) (2010). **Figuras:** Ziauddin Sardar. **Se conecta con:** Ciencia posnormal. **Fuentes de la ficha:** Repositorio de Middlesex University: Sardar, «Welcome to postnormal times», Futures 42(5): 435-444, 2010. **Nota:** Amplía a la época entera la noción de ciencia posnormal de Funtowicz y Ravetz."
+ },
+ {
+  "id": "posfascismo",
+  "palabra": "Posfascismo",
+  "resumen": "Una derecha radical que hereda rasgos sueltos del fascismo histórico, pero compite en elecciones y acepta el parlamento.",
+  "valor": "P1",
+  "termino": "posfascismo",
+  "riesgo": true,
+  "historia_humana": "En 1995, en el congreso de Fiuggi, Gianfranco Fini, líder del Movimiento Social Italiano, se distancia del fascismo histórico, y su partido pasa a llamarse Alleanza Nazionale. La prensa empieza a hablar de «posfascistas»: una herencia reconvertida.",
+  "choque": {
+   "frase": "«Hoy se llama fascista a cualquiera.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "🤝",
+     "t": "Es verdad"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "No a cualquiera"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Italia, 1995. Un partido heredero del fascismo cambia de nombre y su líder se distancia del pasado. Piénsalo con calma: ¿es un cambio de verdad?",
+   "opciones": [
+    {
+     "id": "cambio",
+     "t": "Es un cambio de verdad"
+    },
+    {
+     "id": "fachada",
+     "t": "Es solo fachada"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 2000, el filósofo Gáspár Miklós Tamás escribió que el nuevo autoritarismo **no necesita camisas negras** ni partido único: le basta con convertir la ciudadanía plena en un privilegio de unos pocos.",
+   "fuente": "G. M. Tamás, «On Post-Fascism», *Boston Review* (verano de 2000)",
+   "url": "https://www.bostonreview.net/articles/g-m-tamas-post-fascism/",
+   "busca": "El «pos» dice **después de** el fascismo de entreguerras y **lo que queda** de él: rasgos sueltos, sin su programa completo. Para usar bien la palabra se miran rasgos, no nombres.",
+   "saltos": [
+    {
+     "t": "Me fié del cambio de nombre",
+     "p": "Un nombre nuevo no basta para saber qué cambia. Tamás propone mirar algo concreto: quién conserva todos sus derechos y quién no."
+    },
+    {
+     "t": "Pensé que todo es lo mismo de siempre",
+     "p": "Traverso distingue posfascismo de neofascismo: no quiere restaurar el pasado y se presenta como defensor de la democracia. Si todo es igual, la palabra deja de servir."
+    },
+    {
+     "t": "No salté: busqué rasgos",
+     "p": "Bien visto. Con rasgos concretos, como el nacionalismo étnico o los derechos de unos pocos, la palabra describe y no insulta."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién escribió «On Post-Fascism» en el año 2000?",
+     "o": [
+      "Enzo Traverso",
+      "Gáspár Miklós Tamás",
+      "Gianfranco Fini"
+     ],
+     "ok": 1,
+     "por": "El filósofo húngaro G. M. Tamás. Traverso lo actualizó en 2017."
+    },
+    {
+     "p": "¿Qué valores tiene el prefijo en posfascismo?",
+     "o": [
+      "Cronológico y agotamiento",
+      "Ruptura y fin",
+      "Solo derivación"
+     ],
+     "ok": 0,
+     "por": "Viene después del fascismo de entreguerras (P1) y conserva rasgos sueltos de él sin su programa completo (P4)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posfotografía",
+      "Posimpresionismo",
+      "Posdemocracia"
+     ],
+     "ok": 2,
+     "por": "Posdemocracia describe instituciones en pie pero vaciadas; el posfascismo compite dentro de ellas."
+    }
+   ],
+   "sabias": "Gáspár Miklós Tamás, que dio al término su sentido actual, había sido disidente bajo el régimen comunista húngaro y político liberal tras 1989, antes de acercarse al marxismo."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Rasgos, no insultos",
+     "t": "Cuando oigas una etiqueta política fuerte, apunta qué rasgos concretos haría falta ver para que fuera exacta.",
+     "historia": "apuntar qué rasgos concretos harían exacta la próxima etiqueta fuerte que oigas"
+    },
+    {
+     "corta": "Derechos de quién",
+     "t": "Elige una propuesta política de esta semana y pregúntate qué derechos cambia, de quién y con qué garantías.",
+     "historia": "preguntarte qué derechos cambia una propuesta, de quién y con qué garantías"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué rasgos apuntaste y si la etiqueta se sostenía."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que hoy se llama fascista a cualquiera.",
+    "no": "Entraste pensando que la palabra no se usa a la ligera.",
+    "igual": "Entraste sin darle importancia a las etiquetas."
+   },
+   "hice": {
+    "cambio": "Cuando te tocó decidir, viste un cambio de verdad.",
+    "fachada": "Cuando te tocó decidir, viste solo fachada.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que una etiqueta se sostiene con rasgos, no con nombres, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdemocracia"
+  },
+  "saber_mas": "**Valores del prefijo:** P1, cronológico («después de») y P4, agotamiento («lo que queda de»). Viene después del fascismo de entreguerras y conserva rasgos sueltos de él sin su programa completo: lo que queda de él. **Obra o hito que la fija:** G. M. Tamás, «On Post-Fascism» (2000). **Figuras:** Gáspár Miklós Tamás y Enzo Traverso. **Se conecta con:** Posdemocracia y Posfranquismo. **Fuentes de la ficha:** G. M. Tamás, «On Post-Fascism», Boston Review (verano de 2000); Bibliothèques de Paris: Traverso, Les nouveaux visages du fascisme (Textuel, 2017). **Nota:** En Italia se aplicó a Alleanza Nazionale tras la svolta di Fiuggi (1995); Traverso lo amplía en Les nouveaux visages du fascisme (2017)."
+ },
+ {
+  "id": "posdesarrollo",
+  "palabra": "Posdesarrollo",
+  "resumen": "No pide otro desarrollo, sino alternativas al desarrollo como único camino al bienestar.",
+  "valor": "P2",
+  "termino": "postdesarrollo",
+  "riesgo": false,
+  "historia_humana": "El 20 de enero de 1949, en su discurso de investidura, el presidente Harry Truman habla de «áreas subdesarrolladas» y promete llevarles el progreso técnico. Décadas después, sus críticos dirán que aquel día cambió la manera de nombrar a medio mundo. Esa crítica se llama posdesarrollo.",
+  "choque": {
+   "frase": "«Los países pobres tienen que desarrollarse como los ricos.»",
+   "opciones": [
+    {
+     "id": "claro",
+     "e": "🤝",
+     "t": "Claro"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "No necesariamente"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un presidente divide el mundo en países «desarrollados» y «subdesarrollados». ¿Te parece una buena forma de nombrarlo?",
+   "opciones": [
+    {
+     "id": "bien",
+     "t": "Me parece bien"
+    },
+    {
+     "id": "chirria",
+     "t": "Me chirría"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Gustavo Esteva lo contó así: el 20 de enero de 1949, en la investidura de Truman, dos mil millones de personas se volvieron subdesarrolladas. **No cambió su vida, sino la manera de nombrarlas.**",
+   "fuente": "Catálogo de la Biblioteca de BRAC University: *The Development Dictionary* (Zed Books, 1992)",
+   "url": "https://library.bracu.ac.bd/vufind/Record/2459/Details",
+   "busca": "El «pos» rompe con una idea: que crecer al estilo occidental es **el único camino** al bienestar. Busca alternativas propias, no versiones mejoradas del mismo modelo.",
+   "saltos": [
+    {
+     "t": "La palabra me pareció neutral",
+     "p": "Nombrar también es mirar. Para sus críticos, llamar «subdesarrollado» a medio mundo convirtió formas de vida distintas en una carencia que corregir desde fuera."
+    },
+    {
+     "t": "Pensé que crecer siempre es progresar",
+     "p": "Hoy se critica medir el bienestar solo con el PIB. La pregunta de fondo: ¿progreso para quién y según qué medida?"
+    },
+    {
+     "t": "No salté: me chirrió",
+     "p": "Bien visto. Esa incomodidad es el punto de partida del posdesarrollo."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién coordinó *The Development Dictionary* (1992)?",
+     "o": [
+      "Wolfgang Sachs",
+      "Harry Truman",
+      "Ivan Illich"
+     ],
+     "ok": 0,
+     "por": "Wolfgang Sachs, con autores como Gustavo Esteva, Arturo Escobar, Majid Rahnema y Vandana Shiva."
+    },
+    {
+     "p": "¿En qué año, el de la Cumbre de la Tierra de Río, salió ese diccionario?",
+     "o": [
+      "1949",
+      "1992",
+      "2008"
+     ],
+     "ok": 1,
+     "por": "En 1992. 1949 es el discurso de Truman y 2008, la Constitución de Ecuador con el buen vivir."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Cronológico: después del desarrollo",
+      "Agotamiento: lo que queda del desarrollo",
+      "Ruptura: alternativas al desarrollo"
+     ],
+     "ok": 2,
+     "por": "Es P2: no propone otro desarrollo, sino abandonar los supuestos de ese paradigma."
+    }
+   ],
+   "sabias": "Cada entrada de *The Development Dictionary* desmontaba una palabra clave, como «necesidades», «participación», «recursos» o «pobreza», para mostrar cómo orientaba la mirada."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Lo que no cuenta el PIB",
+     "t": "Apunta tres cosas valiosas de tu barrio o tu pueblo que no aparecen en ninguna estadística económica.",
+     "historia": "apuntar tres cosas valiosas de tu barrio que no salen en las estadísticas"
+    },
+    {
+     "corta": "Revisar una palabra",
+     "t": "Cuando leas «país en desarrollo» o «subdesarrollado», pregúntate qué medida se está usando.",
+     "historia": "preguntarte qué medida hay detrás de «subdesarrollado» cuando lo leas"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué apuntaste y si alguna de esas cosas se podría medir."
+  },
+  "historia": {
+   "pensaba": {
+    "claro": "Entraste pensando que hay que desarrollarse como los ricos.",
+    "no": "Entraste dudando de que haya un solo camino.",
+    "igual": "Entraste sin darle vueltas al desarrollo."
+   },
+   "hice": {
+    "bien": "Cuando te tocó decidir, la palabra te pareció bien.",
+    "chirria": "Cuando te tocó decidir, la palabra te chirrió.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que nombrar también es mirar, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "poscolonialismo"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). No propone otro desarrollo, sino alternativas al desarrollo: abandona los supuestos del paradigma anterior. **Obra o hito que la fija:** Wolfgang Sachs (ed.), The Development Dictionary: A Guide to Knowledge as Power (1992). **Figuras:** Wolfgang Sachs, Arturo Escobar, Gustavo Esteva y Majid Rahnema. **Se conecta con:** Posextractivismo, Poscrecimiento, Poscolonialismo y Posoccidentalismo. **Fuentes de la ficha:** Catálogo de la Biblioteca de BRAC University: The Development Dictionary (Zed Books, 1992); Wikipedia (en), «Post-development theory». **Nota:** Otras obras clave: Escobar, Encountering Development (1995), y Rahnema y Bawtree (eds.), The Post-Development Reader (1997). No consta quién acuñó el rótulo."
+ },
+ {
+  "id": "pedagogia-posmoderna",
+  "palabra": "Pedagogía posmoderna",
+  "resumen": "Una enseñanza que se pregunta quién decide qué se enseña y desde qué voz.",
+  "valor": "P2",
+  "termino": "pedagogia-posmoderna",
+  "riesgo": false,
+  "historia_humana": "En 1988, una estudiante de Stanford se encuentra con un curso obligatorio nuevo: el de cultura occidental se ha sustituido por otro que incluye autoras y autores no europeos. El debate sobre qué enseñar llega a los periódicos. Esa pregunta está en el centro de la pedagogía posmoderna.",
+  "choque": {
+   "frase": "«En clase hay que enseñar los clásicos de siempre.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "📚",
+     "t": "Los de siempre"
+    },
+    {
+     "id": "no",
+     "e": "🤔",
+     "t": "No solo esos"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu centro cambia las lecturas obligatorias: entran autores de fuera de Europa y sale un clásico. ¿Te parece bien?",
+   "opciones": [
+    {
+     "id": "bien",
+     "t": "Me parece bien"
+    },
+    {
+     "id": "mal",
+     "t": "Me parece mal"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 1991, Stanley Aronowitz y Henry Giroux propusieron en *Postmodern Education* una escuela que desconfiara de los grandes relatos, **abriera el currículo** a voces marginadas y enseñara a leer críticamente también la cultura popular.",
+   "fuente": "University of Minnesota Press, *Postmodern Education* (1991)",
+   "url": "https://www.upress.umn.edu/book-division/books/postmodern-education",
+   "busca": "El «pos» rompe con el currículo canónico y la autoridad de los grandes relatos de la escuela moderna. La pregunta es **quién decide** qué se enseña y desde qué voz.",
+   "saltos": [
+    {
+     "t": "Defendí la lista de siempre",
+     "p": "La lista de siempre también la decidió alguien. La pedagogía posmoderna pregunta quién y qué voces quedaron fuera."
+    },
+    {
+     "t": "Pensé que todo vale igual",
+     "p": "Sus críticos la acusan de relativismo. El reto actual es sumar voces sin perder el rigor que distingue hechos de opiniones."
+    },
+    {
+     "t": "No salté: pregunté por qué",
+     "p": "Bien visto. Preguntar por qué entra un libro y sale otro es justo la pregunta del enfoque."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quiénes escribieron *Postmodern Education* (1991)?",
+     "o": [
+      "Lyotard y Habermas",
+      "Usher y Edwards",
+      "Aronowitz y Giroux"
+     ],
+     "ok": 2,
+     "por": "Stanley Aronowitz y Henry Giroux. Usher y Edwards llevaron el debate a la educación de adultos en 1994."
+    },
+    {
+     "p": "¿De qué tradición venía Henry Giroux?",
+     "o": [
+      "La pedagogía crítica de Paulo Freire",
+      "La filosofía analítica",
+      "El conductismo"
+     ],
+     "ok": 0,
+     "por": "Giroux es heredero de la pedagogía crítica de Paulo Freire."
+    },
+    {
+     "p": "¿Qué palabra de PostLab se conecta con esta?",
+     "o": [
+      "Posfranquismo",
+      "Posmodernidad",
+      "Era pos-Moore"
+     ],
+     "ok": 1,
+     "por": "Toma de la posmodernidad la desconfianza hacia los grandes relatos y la lleva al aula."
+    }
+   ],
+   "sabias": "En *The Mouse That Roared* (1999), Giroux analizó las películas y los parques de Disney como una escuela fuera del aula: el currículo también está en la pantalla."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tu libro de texto",
+     "t": "Abre un libro de texto, tuyo o de alguien de casa, y cuenta qué voces aparecen y cuáles echas de menos.",
+     "historia": "contar qué voces aparecen en un libro de texto y cuáles faltan"
+    },
+    {
+     "corta": "Leer una película",
+     "t": "Mira una película o un anuncio infantil y apunta qué enseña sin decirlo.",
+     "historia": "apuntar qué enseña sin decirlo una película o un anuncio infantil"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué voces contaste o qué enseñaba la pantalla."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que en clase van los clásicos de siempre.",
+    "no": "Entraste pensando que no solo los de siempre.",
+    "igual": "Entraste sin darle vueltas a qué se enseña."
+   },
+   "hice": {
+    "bien": "Cuando te tocó decidir, el cambio te pareció bien.",
+    "mal": "Cuando te tocó decidir, el cambio te pareció mal.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que alguien decide qué se enseña, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posmodernidad"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). Rompe con el currículo canónico y la autoridad de los grandes relatos de la escuela moderna. **Obra o hito que la fija:** Stanley Aronowitz y Henry Giroux, Postmodern Education: Politics, Culture, and Social Criticism (1991). **Figuras:** Stanley Aronowitz, Henry Giroux, Robin Usher y Richard Edwards. **Se conecta con:** Posmodernidad, Pedagogía poscrítica, Psicología posmoderna, Pensamiento posformal y Posreconceptualización curricular. **Fuentes de la ficha:** University of Minnesota Press, Postmodern Education (1991)."
+ },
+ {
+  "id": "posfenomenologia",
+  "palabra": "Posfenomenología",
+  "resumen": "Cómo los aparatos que usamos cambian lo que percibimos y cómo nos relacionamos con el mundo.",
+  "valor": "P3",
+  "termino": "postfenomenologia",
+  "riesgo": false,
+  "historia_humana": "Una persona ciega camina con su bastón y, al poco, ya no nota el bastón: nota el suelo en la punta. Merleau-Ponty lo describió en 1945, y Don Ihde lo tomó como punto de partida para estudiar cómo nos cambian los aparatos. Eso es la posfenomenología.",
+  "choque": {
+   "frase": "«El móvil es solo una herramienta.»",
+   "opciones": [
+    {
+     "id": "solo",
+     "e": "🔧",
+     "t": "Solo eso"
+    },
+    {
+     "id": "mas",
+     "e": "🤔",
+     "t": "Es más que eso"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un indicador del panel dice que la válvula está cerrada. ¿Te fías o lo compruebas?",
+   "opciones": [
+    {
+     "id": "fio",
+     "t": "Me fío"
+    },
+    {
+     "id": "compruebo",
+     "t": "Lo compruebo"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En Three Mile Island (1979), un indicador mostraba **la orden** enviada a una válvula, no su posición real, y los operadores lo leyeron mal. Para Don Ihde, todo aparato media: amplía algo y oculta otra cosa.",
+   "fuente": "Don Ihde, «Postphenomenology Again?», working paper, Aarhus University",
+   "url": "https://sts.au.dk/fileadmin/sts/publications/working_papers/Ihde_-_Postphenomenology_Again.pdf",
+   "busca": "El «pos» prolonga la fenomenología desde dentro y la lleva a los **aparatos**: gafas, termómetros, móviles. No son neutros: cambian lo que percibimos.",
+   "saltos": [
+    {
+     "t": "Me fié del indicador",
+     "p": "Leer un aparato es interpretar. Si el aparato muestra algo distinto de lo que creemos, la lectura falla."
+    },
+    {
+     "t": "Pensé que el aparato es neutro",
+     "p": "El telescopio de Galileo amplía la vista hasta las lunas de Júpiter, pero reduce el campo visual. Toda mediación transforma."
+    },
+    {
+     "t": "No salté: lo comprobé",
+     "p": "Bien visto. Preguntarse qué mide de verdad un aparato es pensar como la posfenomenología."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Quién dio nombre a la posfenomenología en 1993?",
+     "o": [
+      "Edmund Husserl",
+      "Don Ihde",
+      "Peter-Paul Verbeek"
+     ],
+     "ok": 1,
+     "por": "Don Ihde, con *Postphenomenology*. Verbeek la extendió después a la ética y al diseño."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Radicalización: «más allá, desde dentro»",
+      "Ruptura: «contra»",
+      "Fin: «después del final»"
+     ],
+     "ok": 0,
+     "por": "Es P3: prolonga el método fenomenológico desde dentro y lo lleva a la técnica."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posextractivismo",
+      "Posfascismo",
+      "Posdigital"
+     ],
+     "ok": 2,
+     "por": "Cuando lo digital es el fondo de todo, describir cómo nos median los aparatos es más útil que nunca."
+    }
+   ],
+   "sabias": "Antes de centrarse en los aparatos, Don Ihde escribió una fenomenología del sonido: *Listening and Voice* (1976), un libro entero sobre qué significa escuchar."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "El aparato invisible",
+     "t": "Fíjate en qué aparato llevas tan incorporado que solo lo notas cuando falta, y apunta qué cambia sin él.",
+     "historia": "apuntar qué cambia el día que te falta el aparato que más llevas encima"
+    },
+    {
+     "corta": "Lo que te da a leer",
+     "t": "Elige un aparato que te dé números, como un reloj, una báscula o una app, y pregúntate qué mide de verdad.",
+     "historia": "preguntarte qué mide de verdad un aparato que te da números"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué descubriste sobre ese aparato."
+  },
+  "historia": {
+   "pensaba": {
+    "solo": "Entraste pensando que el móvil es solo una herramienta.",
+    "mas": "Entraste pensando que el móvil es más que una herramienta.",
+    "igual": "Entraste sin darle vueltas a tus aparatos."
+   },
+   "hice": {
+    "fio": "Cuando te tocó decidir, te fiaste del indicador.",
+    "compruebo": "Cuando te tocó decidir, lo comprobaste.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que los aparatos cambian lo que percibes, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdigital"
+  },
+  "saber_mas": "**Valor del prefijo:** P3, radicalización («más allá, desde dentro»). Prolonga el método fenomenológico desde dentro y lo lleva al terreno de la técnica y la mediación material. **Obra o hito que la fija:** Don Ihde, Postphenomenology: Essays in the Postmodern Context (1993). **Figuras:** Don Ihde y Peter-Paul Verbeek. **Se conecta con:** Poshumanismo y Posdigital. **Fuentes de la ficha:** Don Ihde, «Postphenomenology Again?», working paper, Aarhus University; Biblio, Postphenomenology (Northwestern University Press, 1993). **Nota:** Technology and the Lifeworld (1990) ya formula las relaciones entre persona y técnica; el rótulo da título al libro de 1993."
+ },
+ {
+  "id": "abstraccion-pospictorica",
+  "palabra": "Abstracción pospictórica",
+  "resumen": "Pintura de los años sesenta que deja la mancha y el gesto por campos de color limpio y bordes nítidos.",
+  "valor": "P2",
+  "termino": "abstraccion-pospictorica",
+  "riesgo": false,
+  "historia_humana": "En 1952, Helen Frankenthaler vierte pintura muy diluida sobre un lienzo sin preparar, y la tela la absorbe como una acuarela: así nace *Mountains and Sea*. Al año siguiente, Louis y Noland ven el cuadro y adoptan la técnica. Esa pintura sin gesto se llamó abstracción pospictórica.",
+  "choque": {
+   "frase": "«Eso lo pinta mi sobrino.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "😅",
+     "t": "Seguro que sí"
+    },
+    {
+     "id": "no",
+     "e": "🤨",
+     "t": "No tan fácil"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tienes un lienzo sin preparar y pintura muy aguada. ¿Pincel, o dejas que la tela beba el color?",
+   "opciones": [
+    {
+     "id": "pincel",
+     "t": "Con pincel"
+    },
+    {
+     "id": "verter",
+     "t": "Que beba el color"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 1964, el crítico Clement Greenberg reunió en Los Ángeles a 31 pintores de Estados Unidos y Canadá y les dio nombre: «Post-Painterly Abstraction». Lo que parece fácil respondía a una tesis: **solo color** y superficie plana.",
+   "fuente": "Tate, Art Terms: Post-painterly abstraction",
+   "url": "https://www.tate.org.uk/art/art-terms/p/post-painterly-abstraction",
+   "busca": "El «pos» rompe con la pintura **pictórica**, la de mancha y gesto de Pollock. Aquí no se ve la mano: solo color, espacio y bordes nítidos.",
+   "saltos": [
+    {
+     "t": "Pensé que es fácil",
+     "p": "Frankenthaler empapaba lienzos sin preparar con pintura diluida: el color dejaba de ser capa y se fundía con la tela. Hay técnica detrás."
+    },
+    {
+     "t": "Creí que sin gesto no hay arte",
+     "p": "Greenberg defendía lo contrario: cada arte debe quedarse en lo propio de su medio. En pintura, el color y la superficie plana."
+    },
+    {
+     "t": "No salté: dejé beber el color",
+     "p": "Bien visto. Es lo que hicieron Louis y Noland tras ver el cuadro de Frankenthaler en 1953."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Dónde se celebró la exposición de 1964?",
+     "o": [
+      "En el MoMA de Nueva York",
+      "En el museo del condado de Los Ángeles (LACMA)",
+      "En la Tate de Londres"
+     ],
+     "ok": 1,
+     "por": "En el LACMA, con Greenberg como comisario. Después viajó a Mineápolis y Toronto."
+    },
+    {
+     "p": "¿Qué valor tiene el prefijo?",
+     "o": [
+      "Ruptura: «contra»",
+      "Radicalización: «más allá»",
+      "Derivación: «hijo de»"
+     ],
+     "ok": 0,
+     "por": "Es P2: abandona el gesto y la materia densa del expresionismo abstracto."
+    },
+    {
+     "p": "¿Qué palabra de PostLab se conecta con esta?",
+     "o": [
+      "Posverdad",
+      "Poscolonialismo",
+      "Posimpresionismo"
+     ],
+     "ok": 2,
+     "por": "Dos «pos» de la pintura: el de 1910, que radicaliza el impresionismo, y este de 1964, que rompe con el gesto."
+    }
+   ],
+   "sabias": "El «pictórico» del título viene de Heinrich Wölfflin, que en 1915 opuso lo «pictórico» a lo «lineal» para distinguir el Barroco del Renacimiento."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tu fondo de pantalla",
+     "t": "Mira el fondo de pantalla de tu móvil o el logotipo de tu marca favorita y busca qué queda en ellos del color puro.",
+     "historia": "buscar el color puro en tu fondo de pantalla o en un logotipo"
+    },
+    {
+     "corta": "Pintar sin gesto",
+     "t": "Haz una prueba: pinta o colorea algo sin que se note la mano, solo con zonas de color limpio.",
+     "historia": "pintar algo sin que se note la mano, solo con color limpio"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué encontraste o qué te salió, y si ahora te parece tan fácil."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que eso lo pinta cualquiera.",
+    "no": "Entraste pensando que no es tan fácil.",
+    "igual": "Entraste sin darle importancia a la pintura abstracta."
+   },
+   "hice": {
+    "pincel": "Cuando te tocó decidir, cogiste el pincel.",
+    "verter": "Cuando te tocó decidir, dejaste que la tela bebiera el color.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que detrás del color limpio hay una idea, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posimpresionismo"
+  },
+  "saber_mas": "**Valor del prefijo:** P2, ruptura («contra»). Abandona el gesto y la materia densa del expresionismo abstracto en favor de la claridad y el color plano. **Obra o hito que la fija:** Exposición «Post-Painterly Abstraction», Los Angeles County Museum of Art (1964). **Figuras:** Clement Greenberg, Helen Frankenthaler, Morris Louis y Kenneth Noland. **Se conecta con:** Posimpresionismo y Posminimalismo. **Fuentes de la ficha:** Tate, Art Terms: Post-painterly abstraction; Wikipedia (en), Post-painterly abstraction. **Nota:** La exposición, comisariada por Greenberg, reunió a 31 artistas y viajó después al Walker Art Center y a la Art Gallery of Toronto."
+ },
+ {
+  "id": "poscolonialismo",
+  "palabra": "Poscolonialismo",
+  "resumen": "Estudia cómo, tras las independencias, sigue viva la herencia de los imperios en el saber, la cultura y la identidad.",
+  "valor": "P1",
+  "termino": "poscolonialismo",
+  "riesgo": true,
+  "historia_humana": "En 1986, el escritor keniano Ngũgĩ wa Thiong'o se despide del inglés como lengua literaria y decide escribir en kikuyu: la lengua del colonizador, dice, también coloniza la imaginación. Esa herencia que sigue tras las independencias es lo que estudia el poscolonialismo.",
+  "choque": {
+   "frase": "«Las colonias se acabaron hace mucho.»",
+   "opciones": [
+    {
+     "id": "si",
+     "e": "🤝",
+     "t": "Hace mucho"
+    },
+    {
+     "id": "no",
+     "e": "🤔",
+     "t": "No del todo"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Escribes una novela. Tu lengua materna no es la que más se lee en el mundo. Piénsalo con calma: ¿en qué lengua la escribes?",
+   "opciones": [
+    {
+     "id": "mas",
+     "t": "En la que más se lee"
+    },
+    {
+     "id": "mia",
+     "t": "En mi lengua"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "El punto de partida suele situarse en un libro de 1978, *Orientalism*: Edward W. Said mostró que «Oriente» era en buena medida **una construcción de Occidente**, útil para justificar su dominio.",
+   "fuente": "Stanford Encyclopedia of Philosophy, «Colonialism», §5 Theories of Decolonization and Post-colonial Theory",
+   "url": "https://plato.stanford.edu/entries/colonialism/",
+   "busca": "Viene **después** de las independencias, pero sobre todo rompe con lo que los imperios dejaron en el saber: quién habla por quién, en qué lengua, con qué mapa.",
+   "saltos": [
+    {
+     "t": "Elegí la lengua que más se lee",
+     "p": "Es lo práctico, y mucha gente lo hace. Ngũgĩ dejó el inglés en 1986: decía que la lengua del colonizador también coloniza la imaginación."
+    },
+    {
+     "t": "Pensé que es solo historia",
+     "p": "Hoy se debate en museos que devuelven piezas, como los bronces de Benín, y en la IA, entrenada sobre todo con textos en inglés."
+    },
+    {
+     "t": "No salté: elegí mi lengua",
+     "p": "Bien visto. Escribir en la propia lengua es una de las respuestas poscoloniales, no la única."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué libro de 1978 se toma como punto de partida?",
+     "o": [
+      "*Decolonising the Mind*",
+      "*Orientalism*, de Edward W. Said",
+      "«Can the Subaltern Speak?»"
+     ],
+     "ok": 1,
+     "por": "*Orientalism*. Los otros son de Ngũgĩ (1986) y de Spivak (1988)."
+    },
+    {
+     "p": "¿Qué valores tiene el prefijo en poscolonialismo?",
+     "o": [
+      "Agotamiento y fin",
+      "Solo derivación",
+      "Cronológico y ruptura"
+     ],
+     "ok": 2,
+     "por": "Nombra lo que viene tras las independencias (P1), pero sobre todo rompe con el saber que dejó el colonialismo (P2)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta?",
+     "o": [
+      "Posfactual",
+      "Posfotografía",
+      "Posdesarrollo"
+     ],
+     "ok": 2,
+     "por": "Posdesarrollo critica el ideal de progreso exportado al Sur como un discurso de poder."
+    }
+   ],
+   "sabias": "Edward Said fundó en 1999, junto al director Daniel Barenboim, la West-Eastern Divan Orchestra, que reúne a jóvenes músicos israelíes y de países árabes."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mirar un mapa",
+     "t": "Busca un mapa del mundo en casa o en clase y fíjate en qué queda en el centro y qué nombres usa.",
+     "historia": "fijarte en qué queda en el centro de un mapa del mundo"
+    },
+    {
+     "corta": "Una pieza de museo",
+     "t": "Elige una pieza de un museo que te guste y averigua de dónde vino y cómo llegó allí.",
+     "historia": "averiguar de dónde vino y cómo llegó a su museo una pieza que te guste"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué descubriste y si cambió cómo lo miras."
+  },
+  "historia": {
+   "pensaba": {
+    "si": "Entraste pensando que las colonias se acabaron hace mucho.",
+    "no": "Entraste pensando que algo de las colonias sigue.",
+    "igual": "Entraste sin darle vueltas a las colonias."
+   },
+   "hice": {
+    "mas": "Cuando te tocó decidir, elegiste la lengua que más se lee.",
+    "mia": "Cuando te tocó decidir, elegiste tu lengua.",
+    "tiempo": "Cuando te tocó decidir, no te decidiste."
+   },
+   "ahora": "Ahora sabes que la independencia no borra de golpe una manera de mirar, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posdesarrollo"
+  },
+  "saber_mas": "**Valores del prefijo:** P1, cronológico («después de») y P2, ruptura («contra»). Nombra lo que viene tras las independencias, pero sobre todo rompe con las categorías de saber que el colonialismo dejó instaladas. **Obra o hito que la fija:** Edward W. Said, Orientalism (1978). **Figuras:** Edward W. Said, Gayatri Chakravorty Spivak, Homi K. Bhabha y Frantz Fanon. **Se conecta con:** Posoccidentalismo, Post-poscolonialismo, Poscolonialismo en RI, Teoría literaria poscolonial, Historia poscolonial y Antropología poscolonial. **Fuentes de la ficha:** Stanford Encyclopedia of Philosophy, «Colonialism», §5 Theories of Decolonization and Post-colonial Theory. **Nota:** La SEP cita Orientalism por una reedición de 1979 y considera «Can the Subaltern Speak?» (Spivak, 1988) el segundo texto canónico. Sitúa a Fanon en otra línea, la descolonización."
+ },
+ {
+  "id": "post-posmodernismo",
+  "palabra": "Post-posmodernismo",
+  "resumen": "Los intentos de nombrar lo que viene después de la ironía posmoderna: más sinceridad, más afecto, más realidad.",
+  "valor": "P2",
+  "termino": "post-posmodernismo",
+  "riesgo": false,
+  "historia_humana": "En 1993, el novelista David Foster Wallace escribe un ensayo con un aviso: la televisión se ha tragado la ironía, y los rebeldes del futuro serán quienes se atrevan a ser sinceros. A los intentos de salir de la ironía posmoderna se les llama post-posmodernismo.",
+  "choque": {
+   "frase": "«Hoy todo se dice en broma.»",
+   "opciones": [
+    {
+     "id": "todo",
+     "e": "😏",
+     "t": "Todo"
+    },
+    {
+     "id": "notodo",
+     "e": "🤨",
+     "t": "No todo"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Quieres decirle a alguien algo que de verdad te importa. ¿Lo dices en serio o con un meme?",
+   "opciones": [
+    {
+     "id": "serio",
+     "t": "En serio"
+    },
+    {
+     "id": "meme",
+     "t": "Con un meme"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "El doble prefijo no salió de la filosofía, sino del **paisajismo**: en 1996, Tom Turner lo puso en el subtítulo de *City as Landscape*, un libro para pensar cómo diseñar ciudades.",
+   "fuente": "Catálogo de la AUT (Nueva Zelanda): Turner, *City as Landscape: A Post-Postmodern View of Design and Planning* (Spon, Londres, 1996)",
+   "url": "https://librarysearch.aut.ac.nz/vufind/Record/1100526?print=1",
+   "busca": "Da por **agotada** la ironía posmoderna y busca sinceridad y realidad. Para unos autores es ruptura; para otros, la misma lógica llevada más lejos.",
+   "saltos": [
+    {
+     "t": "Elegí el meme para protegerme",
+     "p": "En 1993, David Foster Wallace avisó de que la ironía se había vuelto una jaula y pidió atreverse a ser sinceros."
+    },
+    {
+     "t": "Pensé que la ironía ya no sirve",
+     "p": "En redes conviven la ironía extrema y la búsqueda de autenticidad. El post-posmodernismo nombra esa mezcla, no la victoria de una sobre otra."
+    },
+    {
+     "t": "No salté: lo dije en serio",
+     "p": "Bien visto. Es la «nueva sinceridad» que muchos reclamaban tras la ironía de fin de siglo."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué tipo de libro apareció el doble prefijo en 1996?",
+     "o": [
+      "Una novela",
+      "Un libro de paisajismo y urbanismo",
+      "Un manual de filosofía"
+     ],
+     "ok": 1,
+     "por": "*City as Landscape*, de Tom Turner: quería ir más allá del funcionalismo moderno y del eclecticismo posmoderno."
+    },
+    {
+     "p": "¿Qué valores del prefijo lleva?",
+     "o": [
+      "Ruptura y radicalización",
+      "Cronológico y fin",
+      "Agotamiento y derivación"
+     ],
+     "ok": 0,
+     "por": "Casi todos sus usos rompen con la ironía posmoderna (P2); en Nealon, es la misma lógica llevada más lejos (P3)."
+    },
+    {
+     "p": "¿Qué palabra de PostLab viene después, con un tercer «pos»?",
+     "o": [
+      "Posmodernidad",
+      "Posfotografía",
+      "POSTPOSTPOST"
+     ],
+     "ok": 2,
+     "por": "POSTPOSTPOST (2023) apila un tercer prefijo y rechaza a la vez la ironía y la vuelta a la sinceridad."
+    }
+   ],
+   "sabias": "En 2010, Vermeulen y Van den Akker llamaron «metamodernismo» a una sensibilidad que oscila entre el entusiasmo moderno y la ironía posmoderna."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Decirlo en serio",
+     "t": "Esta semana, di en serio a alguien de confianza algo que normalmente dirías en broma.",
+     "historia": "decir en serio algo que normalmente dirías en broma"
+    },
+    {
+     "corta": "Revisar tus memes",
+     "t": "Revisa los últimos cinco memes que compartiste y apunta cuáles iban en serio por debajo de la broma.",
+     "historia": "apuntar cuáles de tus últimos memes iban en serio por debajo de la broma"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira cómo reaccionaron o qué encontraste en tus memes."
+  },
+  "historia": {
+   "pensaba": {
+    "todo": "Entraste pensando que hoy todo se dice en broma.",
+    "notodo": "Entraste pensando que no todo es broma.",
+    "igual": "Entraste sin darle vueltas a la ironía."
+   },
+   "hice": {
+    "serio": "Cuando te tocó decidir, lo dijiste en serio.",
+    "meme": "Cuando te tocó decidir, lo dijiste con un meme.",
+    "tiempo": "Cuando te tocó decidir, te lo callaste."
+   },
+   "ahora": "Ahora sabes que tras la ironía se busca otra vez lo sincero, y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "postpostpost"
+  },
+  "saber_mas": "**Valores del prefijo:** P2, ruptura («contra») y P3, radicalización («más allá, desde dentro»). Casi todos sus usos se apartan de la ironía posmoderna; en Nealon, en cambio, es la misma lógica llevada más lejos. **Obra o hito que la fija:** Tom Turner, City as Landscape: A Post-Postmodern View of Design and Planning (1996). **Figuras:** Tom Turner, Jeffrey T. Nealon, Alan Kirby y Linda Hutcheon. **Se conecta con:** Posmodernidad, Posmodernismo literario, Posironía, Arquitectura posmoderna y POSTPOSTPOST. **Fuentes de la ficha:** Catálogo de la AUT (Nueva Zelanda): Turner, City as Landscape: A Post-Postmodern View of Design and Planning (Spon, Londres, 1996); De Gruyter: Nealon, Post-Postmodernism: or, The Cultural Logic of Just-in-Time Capitalism (Stanford UP, 2012). **Nota:** Rótulo paraguas: Kirby (2006) propone «pseudomodernismo»; Nealon (2012) lo lee como intensificación; Hutcheon añade en 2002 un epílogo sobre el destino de lo posmoderno."
+ },
+ {
+  "id": "postpostpost",
+  "palabra": "POSTPOSTPOST",
+  "resumen": "Un movimiento artístico que apila tres «pos» y juega a que nunca sepas si va en serio.",
+  "valor": "P4",
+  "termino": "postpostpost",
+  "riesgo": false,
+  "historia_humana": "En 2023, el creador Al Hassan Elwan lanza con la marca POSTPOSTPOST un libro que se presenta como nueva vanguardia: rechaza a la vez la ironía y la vuelta a la sinceridad, y nunca deja claro si va en serio. Tres «pos» seguidos para nombrar el presente: POSTPOSTPOST.",
+  "choque": {
+   "frase": "«Ya no sé si esto va en serio o es una broma.»",
+   "opciones": [
+    {
+     "id": "mepasa",
+     "e": "😵",
+     "t": "Me pasa"
+    },
+    {
+     "id": "nunca",
+     "e": "🤨",
+     "t": "A mí nunca"
+    },
+    {
+     "id": "igual",
+     "e": "😐",
+     "t": "Me da igual"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Un vídeo parece arte y, a la vez, anuncio de una marca. ¿Te lo tomas en serio?",
+   "opciones": [
+    {
+     "id": "serio",
+     "t": "Sí, en serio"
+    },
+    {
+     "id": "broma",
+     "t": "Es una broma"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "No es un chiste de internet: tiene libro y película. En 2023 salió *POSTPOSTPOST: Reflections on a New Avant-garde*, y en 2024 la plataforma DIS publicó **su película**, de Al Hassan Elwan.",
+   "fuente": "DIS: película *POSTPOSTPOST* (2024), de Al Hassan Elwan, y el volumen inaugural de 2023",
+   "url": "https://dis.art/postpostpost",
+   "busca": "Apila tres «pos»: recicla **lo que queda** de la cadena de rechazos posmodernos y desciende, como estilo, del post-posmodernismo. Su juego es la metaironía: nunca sabes si va en serio.",
+   "saltos": [
+    {
+     "t": "Pensé que todo era broma",
+     "p": "La metaironía juega justo con eso. En el arte es un juego; en la vida diaria obliga a preguntar qué es ficción y qué es hecho."
+    },
+    {
+     "t": "Me lo tomé todo en serio",
+     "p": "Sus ficciones se presentan como reales a propósito. Mirar quién lo firma y dónde se publica ayuda a leerlo."
+    },
+    {
+     "t": "No salté: dudé",
+     "p": "Bien visto. Dudar con método, sin caer en el «todo da igual», es la mejor respuesta a la metaironía."
+    }
+   ]
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Cuántos «pos» apila el nombre y qué palabra base lleva?",
+     "o": [
+      "Dos, y «moderno»",
+      "Tres, y «verdad»",
+      "Tres, y ninguna palabra base"
+     ],
+     "ok": 2,
+     "por": "Apila tres prefijos y se ahorra la base, como si a fuerza de tanto «después» se hubiera perdido el «antes»."
+    },
+    {
+     "p": "¿Qué valores del prefijo lleva POSTPOSTPOST?",
+     "o": [
+      "Cronológico y ruptura",
+      "Agotamiento y derivación",
+      "Radicalización y fin"
+     ],
+     "ok": 1,
+     "por": "Recicla lo que queda de los rechazos posmodernos (P4) y, como estilo, es «hijo de» el post-posmodernismo (P6)."
+    },
+    {
+     "p": "¿Con qué palabra de PostLab se conecta y te devuelve al principio?",
+     "o": [
+      "Pospandemia",
+      "Posverdad",
+      "Posfranquismo"
+     ],
+     "ok": 1,
+     "por": "Simulacros sin original que circulan como si fueran documentos: el terreno de la posverdad."
+    }
+   ],
+   "sabias": "La web de POSTPOSTPOST habla de simulacros de «quinto estadio»: añade una fase a las cuatro que Baudrillard describió en *Simulacres et simulation* (1981)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "¿En serio o en broma?",
+     "t": "Ante el próximo vídeo o meme que dude entre serio y broma, busca quién lo firma y dónde se publicó.",
+     "historia": "buscar quién firma el próximo vídeo que dude entre serio y broma"
+    },
+    {
+     "corta": "Tus tres «pos»",
+     "t": "Apunta tres palabras con «pos» que hayas oído este mes y qué clase de «después» dice cada una.",
+     "historia": "apuntar tres palabras con «pos» y qué clase de «después» dice cada una"
+    }
+   ],
+   "retorno": "el día de la vuelta, mira qué encontraste y si sabrías decir qué clase de «después» era."
+  },
+  "historia": {
+   "pensaba": {
+    "mepasa": "Entraste reconociendo que a veces no sabes si algo va en serio.",
+    "nunca": "Entraste seguro de distinguir lo serio de la broma.",
+    "igual": "Entraste sin darle vueltas a la ironía."
+   },
+   "hice": {
+    "serio": "Cuando te tocó decidir, te lo tomaste en serio.",
+    "broma": "Cuando te tocó decidir, lo tomaste a broma.",
+    "tiempo": "Cuando te tocó decidir, te quedaste en la duda."
+   },
+   "ahora": "Ahora sabes que tanto «después» puede hacer perder el «antes», y vas a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "posverdad"
+  },
+  "saber_mas": "**Valores del prefijo:** P4, agotamiento («lo que queda de») y P6, derivación («hijo de»). Recicla lo que queda de la cadena de rechazos posmodernos y funciona como estilo artístico que desciende del post-posmodernismo. **Obra o hito que la fija:** Al Hassan Elwan (POSTPOSTPOST), POSTPOSTPOST: Reflections on a New Avant-garde (2023). **Primer uso:** 2021, Ensayo de 2021 sobre ontología orientada a objetos y vanguardia, extractado en postpostpost.com. **Figuras:** Al Hassan Elwan y Ruba Al-Sweel. **Se conecta con:** Post-posmodernismo, Posironía, Arte posinternet, Posverdad, Post-posverdad y Posdigital. **Fuentes de la ficha:** DIS: película POSTPOSTPOST (2024), de Al Hassan Elwan, y el volumen inaugural de 2023; POSTPOSTPOST, web oficial. **Nota:** La web habla de simulacros de «quinto estadio», ampliación de los cuatro de Baudrillard. Hay película de lanzamiento (DIS, 2024) y un segundo volumen, «real»."
+ }
+]

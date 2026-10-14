@@ -268,3 +268,53 @@ export function poner(el, ...kids) {
 
 // El logo: medio círculo lleno (lo que ya no) y medio solo punteado (lo que todavía no)
 export const LOGO = '<svg class="logo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path class="lleno" d="M20 5A15 15 0 0 0 20 35Z"/><g class="puntos"><circle cx="27.50" cy="7.01" r="2.1" style="--i:0"/><circle cx="32.99" cy="12.50" r="2.1" style="--i:1"/><circle cx="35.00" cy="20.00" r="2.1" style="--i:2"/><circle cx="32.99" cy="27.50" r="2.1" style="--i:3"/><circle cx="27.50" cy="32.99" r="2.1" style="--i:4"/></g></svg>';
+
+// Seis imágenes, una por valor del prefijo (W12): un dibujo por manera de decir «después», no uno por término
+const DIBUJOS = {
+  P1: '<path d="M17 12v24"/><path d="M7 24h31"/><path d="M33 19l6 5-6 5"/>',
+  P2: '<path d="M6 28h12"/><path d="M21 32l6-12"/><path d="M30 22h12"/>',
+  P3: '<circle cx="18" cy="24" r="9"/><path d="M18 24h22"/><path d="M35 19l6 5-6 5"/>',
+  P4: '<rect x="13" y="9" width="22" height="30" rx="4" stroke-dasharray="4 4"/><path d="M16 33h16" stroke-width="5"/>',
+  P5: '<path d="M7 24h21"/><path d="M29 12v24"/><circle cx="38" cy="24" r="2.6" fill="currentColor" stroke="none"/>',
+  P6: '<circle cx="13" cy="24" r="4.5" fill="currentColor" stroke="none"/><path d="M16 22c8-1 10-9 19-10"/><path d="M16 26c8 1 10 9 19 10"/><circle cx="36" cy="12" r="3" fill="currentColor" stroke="none"/><circle cx="36" cy="36" r="3" fill="currentColor" stroke="none"/>',
+};
+export function imgValor(c, { grande = false } = {}) {
+  if (!DIBUJOS[c]) return null;
+  return h('span', { class: `vimg${grande ? ' grande' : ''}`, style: { '--c': `var(--v-${c})` }, 'aria-hidden': 'true',
+    html: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" focusable="false">${DIBUJOS[c]}</svg>` });
+}
+
+// Escuchar (W8): lee un texto con la voz del dispositivo, en trozos cortos para que no se corte en el móvil
+export const HAY_VOZ = typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
+let alParar = null;
+export function pararVoz() {
+  if (HAY_VOZ) { try { speechSynthesis.cancel(); } catch (e) { /* nada */ } }
+  const f = alParar; alParar = null; if (f) f();
+}
+export function leerEnVoz(texto, alFin) {
+  if (!HAY_VOZ) return;
+  pararVoz();
+  const limpio = String(texto).replace(/\*\*?|_/g, '').replace(/\s+/g, ' ').trim();
+  const trozos = limpio.match(/[^.!?¿¡…]{1,220}[.!?…»]*|.{1,220}/g) || [];
+  const voces = speechSynthesis.getVoices().filter(v => /^es(-|_)ES/i.test(v.lang));
+  alParar = alFin || null;
+  trozos.forEach((t, i) => {
+    const u = new SpeechSynthesisUtterance(t.trim());
+    u.lang = 'es-ES'; if (voces.length) u.voice = voces[0];
+    if (i === trozos.length - 1) u.onend = () => { const f = alParar; alParar = null; if (f) f(); };
+    speechSynthesis.speak(u);
+  });
+}
+// Botón «Escuchar» que lee lo que devuelva texto(); vuelve a pulsarse para parar
+export function botonEscuchar(texto, etiqueta = 'Escuchar') {
+  if (!HAY_VOZ) return null;
+  const b = h('button', { class: 'btn small escuchar', type: 'button', 'aria-pressed': 'false' });
+  const pon = on => { b.setAttribute('aria-pressed', String(on)); b.replaceChildren(h('span', { 'aria-hidden': 'true' }, on ? '■ ' : '🔊 '), on ? 'Parar' : etiqueta); };
+  pon(false);
+  b.addEventListener('click', () => {
+    if (b.getAttribute('aria-pressed') === 'true') { pararVoz(); return; }
+    pon(true);
+    leerEnVoz(texto(), () => pon(false));
+  });
+  return b;
+}

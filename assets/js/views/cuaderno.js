@@ -2,6 +2,7 @@ import { h, poner, cabeza, recuadro, descargar, fecha, plural } from '../lib.js'
 import * as cuaderno from '../cuaderno.js';
 import { EJES, ORDEN_EJES, PELDANOS, INSIGNIAS } from '../cuaderno.js';
 import { EMOCIONES } from './ficha.js';
+import { obtener } from '../episodio.js';
 
 const DONDE = { ser: '#/pensar/termometro', saber: '#/aprender', hacer: '#/jugar', crear: '#/pensar/relato' };
 const TIPOS = { sap: 'Termómetro', cincop: 'Laboratorio de las cinco P', caza: 'Caza de posts', bautizo: 'Bautizo' };
@@ -10,10 +11,16 @@ const EMO = Object.fromEntries(EMOCIONES);
 export function render(root, ctx) {
   document.title = 'Tu cuaderno · PostLab';
   const cuerpo = h('div');
+  // Tus episodios (W16): palabras, misiones, vueltas e historias. La racha se pausa, no se pierde
+  const episodios = h('div', { class: 'ep-cuaderno' });
   root.append(
-    cabeza(2, 'Tu cuaderno', 'Aquí queda lo que haces en PostLab, ordenado en cuatro ejes: lo que sientes, lo que sabes, lo que haces y lo que crees. Vive solo en este navegador: nadie más lo ve, ni siquiera nosotros.'),
+    cabeza(2, 'Tu cuaderno', 'Aquí queda lo que haces en PostLab: tus episodios, con sus misiones y tus historias, y tus cuatro ejes: lo que sientes, lo que sabes, lo que haces y lo que crees. Vive solo en este navegador: nadie más lo ve, ni siquiera nosotros.'),
+    h('section', { id: 'episodios' }, h('h2', null, 'Tus episodios'), episodios),
     cuerpo,
   );
+  obtener(ctx).then(E => E.cuaderno(episodios, {
+    alVolver: id => { location.hash = `#/vuelta/${encodeURIComponent(id)}`; },
+    alAbrir: id => { location.hash = `#/episodio/${encodeURIComponent(id)}`; } })).catch(() => {});
   let creencias = null;
   ctx.pensar().then(p => { creencias = p.creencias; pintar(); }).catch(() => {});
 

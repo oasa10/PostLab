@@ -572,3 +572,80 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .logo-grande { flex: none; font-size: 84px; line-height: 0; }
 .logo-grande .logo { width: 1em; height: 1em; }
 @media (max-width: 520px) { .logo-explica { flex-direction: column; align-items: flex-start; gap: 8px; } .logo-grande { font-size: 64px; } }
+
+/* ---------- PostLab 2.1 ---------- */
+/* El episodio común toma los colores de PostLab */
+.ep, .ep-portada {
+  --ep-acento: var(--accent); --ep-acento-suave: var(--accent-bg); --ep-tinta: var(--ink); --ep-texto: var(--text);
+  --ep-gris: var(--muted); --ep-fondo: var(--surface); --ep-suave: var(--surface-2); --ep-linea: var(--line);
+  --ep-ambar: var(--v-P4); --ep-ambar-suave: var(--warn-bg); --ep-bien: var(--ok); --ep-mal: var(--danger);
+  --ep-rosa: var(--e-ser); --ep-rosa-suave: color-mix(in srgb, var(--e-ser) 12%, var(--surface));
+  --ep-azul: var(--e-saber); --ep-azul-suave: color-mix(in srgb, var(--e-saber) 12%, var(--surface));
+  --ep-arriba: 0px;
+}
+.ep-sitio { margin: 8px auto 18px; }
+.ep-todos { max-width: 40rem; margin: 0 auto 30px; }
+.ep-todos > summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 6px 0; }
+
+/* Portada: la promesa y una sola puerta (W1, W5) */
+.hero .marca { font-size: clamp(2.2rem, 7vw, 3.6rem); }
+.hero .promesa { font-family: var(--serif); font-size: clamp(1.35rem, 3.6vw, 1.95rem); line-height: 1.3; color: var(--ink); margin: .15em 0 .35em; max-width: 21em; }
+.hero .promesa b { font-weight: 600; color: var(--accent); }
+.hero .firma { font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 0 0 20px; }
+.puerta { margin-top: 4px; }
+.tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+@media (max-width: 900px) { .tres { grid-template-columns: 1fr; } }
+.tres .card { display: flex; flex-direction: column; gap: 6px; }
+.tres .card h3 { margin: 0; }
+.tres .card p { margin: 0; }
+.tres .card > .btn { align-self: flex-start; margin-top: auto; }
+.reto-imgs { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0; }
+.marcador { display: flex; gap: 22px; margin: 4px 0 10px; }
+.marcador dt { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.marcador dd { margin: 0; font-weight: 700; font-size: 1.15rem; color: var(--ink); }
+.sirve { margin: 2px 0 0; padding-left: 18px; }
+.sirve li { margin: 6px 0; }
+.todo { scroll-margin-top: 80px; outline: none; border-top: 1px solid var(--line); padding-top: 26px; margin-top: 34px; }
+
+/* Seis imágenes, una por valor (W12) */
+.vimg { --s: 34px; display: inline-grid; place-items: center; width: var(--s); height: var(--s); border-radius: 9px; background: color-mix(in srgb, var(--c) 15%, var(--surface)); color: var(--c); flex: none; font-style: normal; }
+.vimg svg { width: 74%; height: 74%; display: block; }
+.vimg.grande { --s: 56px; border-radius: 14px; }
+.vcard .vimg, .vbtn .vimg { float: right; margin: 0 0 4px 8px; }
+.ficha-titulo { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.ficha-titulo h1 { margin-bottom: .1em; }
+.ficha-imgs { display: flex; gap: 6px; margin-top: 4px; }
+.clue-img { display: flex; gap: 14px; align-items: stretch; }
+.clue-img .clue { flex: 1; margin: 0; }
+.pista-valor { margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-width: 84px; font-family: var(--serif); font-style: italic; font-size: .88rem; color: var(--text-2); text-align: center; }
+@media (max-width: 520px) { .clue-img { flex-direction: column; gap: 8px; } .pista-valor { flex-direction: row; justify-content: flex-start; } .pista-valor .vimg.grande { --s: 42px; } }
+
+/* Historia humana al principio de la ficha (W13) y Escuchar (W8) */
+.historia-humana { border-left: 4px solid var(--c); background: color-mix(in srgb, var(--c) 7%, var(--surface)); border-radius: 0 var(--radius) var(--radius) 0; padding: 12px 16px; margin: 16px 0 6px; }
+.historia-humana .ct { display: block; font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); margin-bottom: 4px; }
+.historia-humana p { font-family: var(--serif); font-size: 1.12rem; line-height: 1.5; margin: 0 0 10px; color: var(--ink); }
+.btn.escuchar[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+
+/* Explorar: buscador con su cuenta y filtros plegados (W11) */
+.buscador { display: flex; align-items: center; gap: 12px; }
+.buscador input { flex: 1; min-width: 0; }
+.buscador .cuenta { white-space: nowrap; font-size: .92rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) { .buscador { flex-wrap: wrap; gap: 6px; } .buscador .cuenta { width: 100%; padding-left: 16px; } }
+.resbar { scroll-margin-top: 80px; display: block; }
+.plegable-filtros > summary { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; list-style: none; border: 1px solid var(--line-strong); background: var(--surface); color: var(--text); padding: 7px 14px; border-radius: 999px; font: 500 .9rem var(--sans); }
+.plegable-filtros > summary::-webkit-details-marker { display: none; }
+.plegable-filtros[open] > summary { margin-bottom: 12px; border-color: var(--accent); }
+.plegable-filtros .n-filtros { color: var(--accent); font-weight: 600; }
+
+/* Modo clase (W15) */
+.clase-pasos { padding-left: 22px; max-width: 46rem; }
+.clase-pasos li { margin: 8px 0; }
+.clase-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.clase-card { border-top: 4px solid var(--c); display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; }
+.clase-card p { margin: 0; }
+.clase-cab { display: flex; gap: 10px; align-items: center; }
+.clase-cab h3 { margin: 0; font-size: 1.1rem; }
+.clase-card .btns { margin-top: auto; }
+ol.tiempos li { margin: 4px 0; }
+.ficha-titulo h1 { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 760px) { .hero-art { display: none; } }

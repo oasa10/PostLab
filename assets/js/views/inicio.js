@@ -1,41 +1,78 @@
-import { h, poner, VALORES, CODIGOS, plural, tip, tipTerm, valColor, anio, recuadro, dialogo, inline, LOGO } from '../lib.js';
+import { h, poner, VALORES, CODIGOS, plural, tip, tipTerm, valColor, anio, recuadro, dialogo, inline, LOGO, storage, imgValor } from '../lib.js';
+import { obtener } from '../episodio.js';
 import * as cuaderno from '../cuaderno.js';
 import { EJES, ORDEN_EJES, PELDANOS } from '../cuaderno.js';
 
+export const PROMESA = ['El mundo cambia antes de que entendamos qué cambia.', 'PostLab te da las palabras para nombrarlo.'];
+
 export function render(root, ctx) {
-  document.title = 'PostLab · Consulta, juega y aprende con todo lo post';
+  document.title = 'PostLab · Las palabras para nombrar lo que cambia';
   const { terms, hitos, rels } = ctx;
   const fiables = terms.filter(t => t.estado === 'verificada' || t.estado === 'probable').length;
   const cuenta = c => terms.filter(t => t.valor.includes(c)).length;
   const azar = () => { const ok = terms.filter(ctx.juego); location.hash = `#/termino/${encodeURIComponent(ok[Math.floor(Math.random() * ok.length)].id)}`; };
 
-  const q = h('input', { type: 'search', name: 'q', placeholder: 'Busca un término, una persona o una obra', 'aria-label': 'Buscar en PostLab', autocomplete: 'off' });
+  const q = h('input', { type: 'search', name: 'q', placeholder: 'Busca un término, una persona o una obra', 'aria-label': 'Buscar en PostLab', autocomplete: 'off', enterkeyhint: 'search' });
   const form = h('form', { class: 'search-big', role: 'search', onsubmit: e => { e.preventDefault(); location.hash = `#/explorar?q=${encodeURIComponent(q.value.trim())}`; } }, q);
 
   const art = h('div', { class: 'hero-art' });
   const dato = h('div');
+  const puerta = h('div', { class: 'puerta' }, h('p', { class: 'muted small' }, 'Cargando el episodio de hoy…'));
   const c = cuaderno.leer();
+  const suave = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
+  const todo = h('section', { id: 'todo', class: 'todo', tabindex: '-1' },
+    h('h2', null, 'Todo lo que hay en PostLab'),
+    h('p', { class: 'lead' }, `${terms.length} palabras que empiezan por «después», con su fecha, sus fuentes y lo que significan hoy. Puedes venir a enterarte o venir a implicarte; lo mejor es pasar de una cosa a otra.`),
+    form,
+    h('div', { class: 'btns', style: { marginTop: '14px' } },
+      h('a', { class: 'btn primary', href: '#/explorar' }, 'Explorar los términos'),
+      h('button', { class: 'btn', type: 'button', onclick: azar }, '🎲 Un término al azar')),
+    h('div', { class: 'stats' },
+      h('div', { class: 'stat' }, h('b', null, terms.length), h('span', null, 'términos')),
+      h('div', { class: 'stat' }, h('b', null, hitos.length), h('span', null, 'hitos')),
+      h('div', { class: 'stat' }, h('b', null, rels.length), h('span', null, 'conexiones')),
+      h('div', { class: 'stat' }, h('b', null, fiables), h('span', null, 'fichas verificadas o probables'))));
+
+  // El reto (W7): «¿Qué post es?», con su marcador y el peldaño del saber a la vista
+  const mejor = storage('mejor:quepost');
+  const pSaber = cuaderno.peldano('saber', c);
+  const reto = h('article', { class: 'card reto' },
+    h('p', { class: 'eyebrow' }, 'El reto'),
+    h('h3', null, '¿Qué post es?'),
+    h('p', null, 'Diez definiciones, cuatro palabras para cada una. Cada pregunta lleva la imagen de su «después».'),
+    h('div', { class: 'reto-imgs', 'aria-hidden': 'true' }, CODIGOS.map(k => imgValor(k))),
+    h('dl', { class: 'marcador' },
+      h('div', null, h('dt', null, 'Tu mejor marca'), h('dd', null, mejor !== null && mejor !== undefined ? `${mejor}/10` : 'Sin jugar')),
+      h('div', null, h('dt', null, 'Tu peldaño'), h('dd', null, PELDANOS.saber[Math.max(pSaber, 0)].n))),
+    h('a', { class: 'btn primary', href: '#/jugar/quepost' }, mejor !== null && mejor !== undefined ? 'Superar mi marca' : 'Jugar el reto'));
+
   root.append(
     h('section', { class: 'hero' },
       h('div', null,
-        h('p', { class: 'eyebrow' }, 'Ya no, todavía no'),
         h('h1', { class: 'marca', html: `${LOGO}<span>Post<b>Lab</b></span>` }),
-        h('p', { class: 'sub' }, 'Consulta, juega y aprende con todo lo post'),
-        h('p', { class: 'lead' }, `Posmodernidad, posverdad, post-punk, poscolonialismo… Cuando algo deja de convencer y lo que viene aún no tiene nombre, le ponemos un «pos» delante. PostLab reúne ${terms.length} de esos «después», con su fecha, sus fuentes y lo que significan hoy, para que los consultes, juegues con ellos y los uses para pensar tu época.`),
-        form,
-        h('div', { class: 'btns', style: { marginTop: '14px' } },
-          h('a', { class: 'btn primary', href: '#/explorar' }, 'Explorar los términos'),
-          h('button', { class: 'btn', type: 'button', onclick: azar }, '🎲 Un término al azar'),
-          h('a', { class: 'btn', href: '#/pensar' }, 'Pensar y aplicar')),
-        h('div', { class: 'stats' },
-          h('div', { class: 'stat' }, h('b', null, terms.length), h('span', null, 'términos')),
-          h('div', { class: 'stat' }, h('b', null, hitos.length), h('span', null, 'hitos')),
-          h('div', { class: 'stat' }, h('b', null, rels.length), h('span', null, 'conexiones')),
-          h('div', { class: 'stat' }, h('b', null, fiables), h('span', null, 'fichas verificadas o probables')))),
+        h('p', { class: 'promesa' }, PROMESA[0], h('br'), h('b', null, PROMESA[1])),
+        h('p', { class: 'firma' }, 'Ya no, todavía no'),
+        puerta,
+        h('p', { class: 'small', style: { marginTop: '14px' } },
+          h('a', { href: '#todo', onclick: e => { e.preventDefault(); todo.scrollIntoView({ behavior: suave(), block: 'start' }); todo.focus({ preventScroll: true }); } }, 'Ver todo lo que hay en PostLab ↓'))),
       art),
+    h('section', { class: 'tres' },
+      reto,
+      h('article', { class: 'card' },
+        h('p', { class: 'eyebrow' }, 'Para qué te sirve'),
+        h('ul', { class: 'sirve' },
+          h('li', null, h('b', null, 'Leer una noticia'), ' y reconocer qué clase de «después» dice.'),
+          h('li', null, h('b', null, 'Hablar de tu época'), ' con palabras precisas.'),
+          h('li', null, h('b', null, 'Preparar una clase'), ' con fichas verificadas y datos abiertos.')),
+        h('p', { class: 'small', style: { margin: '10px 0 0' } }, h('a', { href: '#/conocer' }, 'Qué es PostLab y qué no es →'))),
+      h('article', { class: 'card clases' },
+        h('p', { class: 'eyebrow' }, 'Para clases y grupos'),
+        h('h3', null, 'Una palabra, en grupo'),
+        h('p', null, 'Elige una de las treinta, proyecta su episodio y que el grupo vote en el Choque y en el Reflejo, sin nombres. La ficha te hace de guion.'),
+        h('a', { class: 'btn', href: '#/clase' }, 'Abrir el modo clase'))),
+    todo,
     h('section', null,
       h('h2', null, 'Dos maneras de usar PostLab'),
-      h('p', { class: 'lead' }, 'Puedes venir a enterarte o venir a implicarte. Las dos valen, y lo mejor es pasar de una a otra.'),
       h('div', { class: 'dos-niveles' },
         h('div', { class: 'nivel-box n1' },
           h('p', { class: 'nivel' }, 'Nivel 1'), h('h2', null, 'Enterarte'),
@@ -68,7 +105,7 @@ export function render(root, ctx) {
       h('h2', null, 'Seis maneras de decir «después»'),
       h('p', { class: 'lead' }, 'El prefijo no siempre significa lo mismo. A veces solo pone fecha; otras rompe, radicaliza, constata un vaciamiento, anuncia un final o señala un parentesco.'),
       h('div', { class: 'vcards' }, CODIGOS.map(c => h('a', { class: 'vcard', href: `#/explorar?valor=${c}`, style: { '--c': `var(--v-${c})` } },
-        h('span', { class: 'n' }, `${c} · ${cuenta(c)} términos`), h('b', null, VALORES[c].nombre), h('i', null, `«${VALORES[c].llana}»`)))),
+        imgValor(c), h('span', { class: 'n' }, `${c} · ${cuenta(c)} términos`), h('b', null, VALORES[c].nombre), h('i', null, `«${VALORES[c].llana}»`)))),
       recuadro('recuerda', 'Para recordarlos en orden', h('i', null, 'Después de la fiesta, contra todo pronóstico, fuimos más allá; lo que quedó, tras el final, tuvo un hijo.'),
         h('div', { class: 'small', style: { marginTop: '4px' } }, 'Después de (P1), contra (P2), más allá (P3), lo que queda de (P4), después del final (P5) e hijo de (P6).')),
       h('p', { style: { marginTop: '12px' } }, h('a', { href: '#/aprender/valores' }, 'Cómo se distinguen los seis valores →'))),
@@ -78,6 +115,13 @@ export function render(root, ctx) {
       h('p', { class: 'kicker', style: { fontSize: '1.3rem', maxWidth: '36em' } }, 'Post es el prefijo del «ya no, todavía no»: declara que algo heredado ha perdido autoridad sin nombrar lo que lo sustituye.'),
       h('p', null, h('a', { href: '#/aprender' }, 'Empieza la ruta guiada →'))),
   );
+  // Una sola puerta (W5): el episodio del día
+  obtener(ctx).then(E => {
+    if (!puerta.isConnected) return;
+    E.portada(puerta, { boton: 'Empieza el episodio de hoy',
+      alAbrir: id => { location.hash = `#/episodio/${encodeURIComponent(id)}`; },
+      alVolver: id => { location.hash = `#/vuelta/${encodeURIComponent(id)}`; } });
+  }).catch(e => { console.error(e); poner(puerta, h('a', { class: 'btn primary', href: '#/explorar' }, 'Explorar los términos')); });
   ctx.contenido().then(m => {
     const con = terms.filter(t => m.get(t.id)?.sabias_que);
     const otro = () => {

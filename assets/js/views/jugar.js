@@ -1,8 +1,8 @@
-import { h, VALORES, CODIGOS, anio, shuffle, storage, corta, cabeza, recuadro } from '../lib.js';
+import { h, VALORES, CODIGOS, anio, shuffle, storage, corta, cabeza, recuadro, imgValor } from '../lib.js';
 import * as cuaderno from '../cuaderno.js';
 
 const JUEGOS = {
-  quepost: { titulo: '¿Qué post es?', texto: 'Lee la definición y elige el término entre cuatro. Diez rondas.', f: quePost },
+  quepost: { titulo: '¿Qué post es?', texto: 'Lee la definición, mira la imagen de su «después» y elige el término entre cuatro. Diez rondas.', f: quePost },
   ordena: { titulo: 'Ordena la historia', texto: 'Cinco términos al azar: ponlos en orden, del más antiguo al más reciente.', f: ordena },
   valores: { titulo: 'Seis maneras de decir «después»', texto: 'Sale un término y eliges qué clase de «después» expresa su prefijo. Diez rondas.', f: seisValores },
   antes: { titulo: '¿Antes o después?', texto: 'Dos términos: ¿el segundo nació antes o después que el primero? Sigue hasta que falles. ¿Llegarás a diez?', f: antesDespues },
@@ -81,7 +81,10 @@ function quePost(el, ctx) {
     }
     el.replaceChildren(cabecera(i, rondas.length, puntos),
       h('p', { class: 'muted small', style: { margin: '14px 0 6px' } }, `¿Qué término post responde a esta definición? Pista: familia ${t.familia.toLowerCase()}.`),
-      h('p', { class: 'clue', tabindex: '-1' }, t.nucleo),
+      h('div', { class: 'clue-img' },
+        t.valor[0] ? h('figure', { class: 'pista-valor', style: { '--c': `var(--v-${t.valor[0]})` } }, imgValor(t.valor[0], { grande: true }),
+          h('figcaption', null, `«${VALORES[t.valor[0]].llana}»`)) : null,
+        h('p', { class: 'clue', tabindex: '-1' }, t.nucleo)),
       h('div', { class: 'quiz-opts' }, botones), fb);
     el.querySelector('.clue').focus({ preventScroll: true });
   }
@@ -152,7 +155,7 @@ function seisValores(el, ctx) {
     const t = rondas[i];
     const fb = h('div', { 'aria-live': 'polite' });
     const botones = CODIGOS.map(c => h('button', { class: 'vbtn', type: 'button', style: { '--c': `var(--v-${c})` }, onclick: () => elegir(c) },
-      h('b', null, `${c} · ${VALORES[c].nombre}`), h('span', null, `«${VALORES[c].llana}»`)));
+      imgValor(c), h('b', null, `${c} · ${VALORES[c].nombre}`), h('span', null, `«${VALORES[c].llana}»`)));
     function elegir(c) {
       const ok = t.valor.includes(c);
       if (ok) puntos++;
