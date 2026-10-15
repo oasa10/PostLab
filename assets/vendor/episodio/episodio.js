@@ -93,7 +93,7 @@
       this.hablando = true;
       speechSynthesis.speak(u);
     },
-    parar() { if (this.ok) { try { speechSynthesis.cancel(); } catch (e) { } } this.hablando = false; }
+    parar() { if (window.Lector && window.Lector.ok) { window.Lector.parar(); } else if (this.ok) { try { speechSynthesis.cancel(); } catch (e) { } } this.hablando = false; }
   };
   let audioCtx = null;
   function pitido(prefs, tipo) {
@@ -182,7 +182,12 @@
     }
     function herramientas(R, cont) {
       const bar = h('div', { class: 'ep-herr' });
-      if (VOZ.ok) {
+      if (window.Lector && window.Lector.ok) {
+        // Lector 1.0: lee la pantalla por párrafos, con pausas, la voz elegida y el reproductor
+        const b = window.Lector.boton(() => cont.querySelectorAll('.ep-leer'), { clase: 'ep-mini', etiqueta: 'Escuchar', titulo: R.ep && R.ep.palabra ? R.ep.palabra : 'Esta pantalla' });
+        b.setAttribute('aria-label', 'Escuchar esta pantalla');
+        bar.appendChild(b);
+      } else if (VOZ.ok) {
         const b = btn('<span aria-hidden="true">🔊</span> Escuchar', 'ep-mini', () => {
           if (VOZ.hablando) { VOZ.parar(); b.innerHTML = '<span aria-hidden="true">🔊</span> Escuchar'; return; }
           const txt = Array.from(cont.querySelectorAll('.ep-leer')).map(n => n.innerText).join('. ');

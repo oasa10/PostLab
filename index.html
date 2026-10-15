@@ -21,12 +21,14 @@
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/vendor/episodio/episodio.css">
+  <link rel="stylesheet" href="assets/vendor/lector/lector.css">
   <link rel="stylesheet" href="assets/css/postlab.css">
   <script>
     // Tema elegido por quien visita (solo en su navegador)
     try { var t = localStorage.getItem('postlab:tema'); if (t === '"light"' || t === '"dark"') document.documentElement.dataset.theme = JSON.parse(t); } catch (e) {}
   </script>
   <script src="assets/vendor/d3-7.9.0.min.js" defer></script>
+  <script src="assets/vendor/lector/lector.js" defer></script>
   <script src="assets/vendor/episodio/episodio.js" defer></script>
   <script type="module" src="assets/js/main.js"></script>
 </head>

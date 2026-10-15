@@ -135,6 +135,7 @@ export function render(root, ctx) {
     h('div', { class: 'table-wrap' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'Versión'), h('th', { scope: 'col' }, 'Qué trajo'))),
       h('tbody', null,
+        h('tr', null, h('td', null, h('b', null, '2.1.1'), h('br'), h('span', { class: 'small muted' }, '15 de octubre de 2026')), h('td', null, '«Escuchar» nuevo: lee párrafo a párrafo, con pausas y marcando lo que suena; eliges la voz (las más naturales primero) y la velocidad, y puedes ir al párrafo anterior o al siguiente, pausar y parar.')),
         h('tr', null, h('td', null, h('b', null, '2.1'), h('br'), h('span', { class: 'small muted' }, 'Octubre de 2026')), h('td', null, 'La promesa, una sola puerta con el episodio del día, el reto con su marcador, el modo clase, una historia humana en treinta fichas, seis imágenes para los seis valores, el botón «Escuchar» y un buscador que baja al resultado.')),
         h('tr', null, h('td', null, h('b', null, '2.0'), h('br'), h('span', { class: 'small muted' }, '12 de octubre de 2026')), h('td', null, 'Fichas con contexto, ejemplos e implicaciones, los dos niveles y tu cuaderno con los cuatro ejes.'))))),
     h('p', { class: 'small muted', style: { marginTop: '8px' } }, 'La versión 2.0 queda entera en el historial del repositorio.'),

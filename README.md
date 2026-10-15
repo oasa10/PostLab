@@ -94,6 +94,7 @@ Los términos salen de un diccionario temático de lo post elaborado con ayuda d
 
 ## Versiones
 
+- **2.1.1** (15 de octubre de 2026): «Escuchar» nuevo, con el Lector común: lee párrafo a párrafo, con pausas y marcando lo que suena; eliges la voz (las más naturales primero) y la velocidad, y puedes ir al párrafo anterior o al siguiente, pausar y parar.
 - **2.1** (octubre de 2026): la promesa, el episodio del día, el reto con su marcador, el modo clase, las historias humanas, las seis imágenes, «Escuchar», el buscador que baja al resultado y el HTML de doble clic.
 - **2.0** (12 de octubre de 2026): fichas con contexto, ejemplos e implicaciones, los dos niveles y Tu cuaderno.
 

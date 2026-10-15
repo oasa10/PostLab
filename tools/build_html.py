@@ -67,7 +67,7 @@ for ruta in MODULOS:
 
 # ---------- CSS con las tipografías dentro
 css = ''
-for ruta in ['assets/vendor/episodio/episodio.css', 'assets/css/postlab.css']:
+for ruta in ['assets/vendor/episodio/episodio.css', 'assets/vendor/lector/lector.css', 'assets/css/postlab.css']:
     t = leer(ruta)
     t = re.sub(r"url\('\.\./fonts/([^']+)'\)", lambda m: "url('" + data_url('assets/fonts/' + m.group(1), 'font/woff2') + "')", t)
     css += f'/* {ruta} */\n{t}\n'
@@ -80,9 +80,10 @@ html = html.replace('<link rel="icon" href="assets/img/icono.svg" type="image/sv
 html = html.replace('<link rel="apple-touch-icon" href="assets/img/icono-180.png">',
                     f'<link rel="apple-touch-icon" href="{data_url("assets/img/icono-180.png", "image/png")}">')
 html = re.sub(r'\s*<link rel="stylesheet" href="assets/vendor/episodio/episodio.css">', '', html)
+html = re.sub(r'\s*<link rel=\"stylesheet\" href=\"assets/vendor/lector/lector.css\">', '', html)
 html = html.replace('<link rel="stylesheet" href="assets/css/postlab.css">', '<style>\n' + css + '</style>')
 clasicos = ''
-for ruta in ['assets/vendor/d3-7.9.0.min.js', 'assets/vendor/episodio/episodio.js']:
+for ruta in ['assets/vendor/d3-7.9.0.min.js', 'assets/vendor/lector/lector.js', 'assets/vendor/episodio/episodio.js']:
     patron = f'<script src="{ruta}" defer></script>'
     if patron not in html:
         raise SystemExit(f'index.html ha cambiado: no encuentro {patron}')

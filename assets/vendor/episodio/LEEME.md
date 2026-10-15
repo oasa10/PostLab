@@ -39,3 +39,5 @@ En modo grupo quien guía puede abrir cualquier episodio, aunque no sea el del d
 | `corto` | Opcional: `pregunta` y `accion` de la versión corta (ver la pregunta de llegada) |
 
 Los textos admiten `**negrita**` y `*cursiva*`. Cada web puede añadir sus propios campos (PostLab: `valor`, `termino` e `historia_humana`).
+
+**Escuchar (15-oct-2026).** Si la página carga el Lector común (`assets/vendor/lector`), el botón «Escuchar» de cada tiempo lo usa: lee la pantalla párrafo a párrafo, con la voz elegida y el reproductor. Sin el Lector, funciona como antes.

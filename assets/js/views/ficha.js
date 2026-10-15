@@ -70,9 +70,8 @@ export function render(root, ctx, parts, q) {
   // Primero una persona, después la definición (W13): la historia humana sale del episodio de la palabra
   const historia = h('div');
   const art = h('article');
-  // Escuchar la ficha (W8): lo que se ve, de arriba abajo, sin los datos de la tabla
-  const escuchar = botonEscuchar(() => [...art.querySelectorAll('h1, .historia-humana p, .nucleo, #s-porque .prosa, #s-paraque li, #s-ahora .prosa')]
-    .map(n => n.innerText.trim()).filter(Boolean).join('. ').replace(/\.\s*\./g, '.'), 'Escuchar la ficha');
+  // Escuchar la ficha (W8): lo que se ve, de arriba abajo, sin los datos de la tabla; párrafo a párrafo con el Lector
+  const escuchar = botonEscuchar(() => art.querySelectorAll('h1, .historia-humana p, .nucleo, #s-porque .prosa, #s-paraque li, #s-ahora .prosa'), 'Escuchar la ficha', t.lema);
   const tras = q && q.get('tras') === 'episodio';
   const linea = conLinea ? h('figure', { class: 'mini-tl' }) : null;
 

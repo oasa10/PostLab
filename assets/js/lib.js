@@ -284,37 +284,13 @@ export function imgValor(c, { grande = false } = {}) {
     html: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" focusable="false">${DIBUJOS[c]}</svg>` });
 }
 
-// Escuchar (W8): lee un texto con la voz del dispositivo, en trozos cortos para que no se corte en el móvil
-export const HAY_VOZ = typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
-let alParar = null;
-export function pararVoz() {
-  if (HAY_VOZ) { try { speechSynthesis.cancel(); } catch (e) { /* nada */ } }
-  const f = alParar; alParar = null; if (f) f();
-}
-export function leerEnVoz(texto, alFin) {
-  if (!HAY_VOZ) return;
-  pararVoz();
-  const limpio = String(texto).replace(/\*\*?|_/g, '').replace(/\s+/g, ' ').trim();
-  const trozos = limpio.match(/[^.!?¿¡…]{1,220}[.!?…»]*|.{1,220}/g) || [];
-  const voces = speechSynthesis.getVoices().filter(v => /^es(-|_)ES/i.test(v.lang));
-  alParar = alFin || null;
-  trozos.forEach((t, i) => {
-    const u = new SpeechSynthesisUtterance(t.trim());
-    u.lang = 'es-ES'; if (voces.length) u.voice = voces[0];
-    if (i === trozos.length - 1) u.onend = () => { const f = alParar; alParar = null; if (f) f(); };
-    speechSynthesis.speak(u);
-  });
-}
-// Botón «Escuchar» que lee lo que devuelva texto(); vuelve a pulsarse para parar
-export function botonEscuchar(texto, etiqueta = 'Escuchar') {
-  if (!HAY_VOZ) return null;
-  const b = h('button', { class: 'btn small escuchar', type: 'button', 'aria-pressed': 'false' });
-  const pon = on => { b.setAttribute('aria-pressed', String(on)); b.replaceChildren(h('span', { 'aria-hidden': 'true' }, on ? '■ ' : '🔊 '), on ? 'Parar' : etiqueta); };
-  pon(false);
-  b.addEventListener('click', () => {
-    if (b.getAttribute('aria-pressed') === 'true') { pararVoz(); return; }
-    pon(true);
-    leerEnVoz(texto(), () => pon(false));
-  });
-  return b;
+// Escuchar con el Lector común (assets/vendor/lector): lee por párrafos, con pausas, la voz elegida y un reproductor
+const LECTOR = typeof window !== 'undefined' ? window.Lector : null;
+export const HAY_VOZ = !!(LECTOR && LECTOR.ok);
+if (HAY_VOZ) LECTOR.configurar({ sitio: 'postlab', subir: '.toasts', color: '#6CC2BA' });
+export function pararVoz() { if (HAY_VOZ) LECTOR.parar(); }
+export function leerEnVoz(fuente, alFin) { if (HAY_VOZ) LECTOR.leer(fuente, { alCambiar: on => { if (!on && alFin) alFin(); } }); }
+// Botón «Escuchar»: fuente() devuelve los nodos que se leen, de arriba abajo; vuelve a pulsarse para parar
+export function botonEscuchar(fuente, etiqueta = 'Escuchar', titulo) {
+  return HAY_VOZ ? LECTOR.boton(fuente, { etiqueta, titulo, clase: 'btn small escuchar' }) : null;
 }
