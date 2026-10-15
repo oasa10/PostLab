@@ -523,7 +523,7 @@
     if (!segs.length) return false;
     E.segs = segs; E.op = op;
     E.i = Math.max(0, Math.min(op.desde || 0, segs.length - 1)); E.f = 0;
-    const tit = segs.slice(0, 3).find(x => x.tipo === 'titulo');
+    const tit = segs.slice(0, 6).find(x => x.el && x.el.tagName === 'H1') || segs.slice(0, 3).find(x => x.tipo === 'titulo');
     const uno = segs[0].limpio;
     E.titulo = op.titulo || (tit ? tit.limpio : uno.length > 60 ? uno.slice(0, uno.lastIndexOf(' ', 58)) + '…' : uno);
     E.estado = 'leyendo'; E.tocado = 0;
